@@ -1,0 +1,10 @@
+main:
+  - title: Главная
+    url: /
+
+  - title: PIONER
+    url: /docs/Pioner
+
+  - title: The_Braves
+    url: /docs/The_Braves
+
