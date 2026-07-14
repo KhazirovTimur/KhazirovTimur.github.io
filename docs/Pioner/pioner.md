@@ -1,5 +1,5 @@
 layout: page
 title: "Pioner"
-permalink: /docs/pioner
+permalink: /docs/Pioner/
 
 # This is pioner page
