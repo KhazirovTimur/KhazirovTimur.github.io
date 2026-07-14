@@ -1,5 +1,5 @@
 layout: page
 title: "The braves"
-permalink: /docs/TheBraves
+permalink: /docs/TheBraves/
 
 # The braves page
