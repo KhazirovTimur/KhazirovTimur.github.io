@@ -2,11 +2,11 @@
 - company: GFAGAMES
   current: true
   projects: [pioner]
-  role:   { en: "Game Designer (Balance / Technical)", ru: "Геймдизайнер (баланс / технический)" }
-  period: { en: "Nov 2024 — Present", ru: "Ноябрь 2024 — н. в." }
+  role:   { en: "Game Designer (Balance / Technical)", ru: "Геймдизайнер (баланс / техдизайн)" }
+  period: { en: "Nov 2024 — Present", ru: "Ноябрь 2024 — сейчас" }
   text:
     en: "Implement features directly in Blueprints, built a C++ loot parser for the team, balance progression, economy, loot and crafting of an open-world multiplayer shooter, own weapon mechanics from spec to release, and mentor junior designers."
-    ru: "Реализую фичи непосредственно на Blueprints, написал C++-парсер лута для команды, балансирую прогрессию, экономику, лут и крафт multiplayer-шутера с открытым миром, веду механики оружия от ТЗ до релиза, менторю младших дизайнеров."
+    ru: "Сам собираю фичи на Blueprints, написал для команды C++-парсер лута, балансирую прогрессию, экономику, лут и крафт multiplayer-шутера с открытым миром, веду механики оружия от ТЗ до релиза и менторю младших дизайнеров."
 
 - company: 101XP
   projects: [the-braves, craft-of-survival]
@@ -14,12 +14,12 @@
   period: { en: "Dec 2022 — Nov 2024", ru: "Декабрь 2022 — ноябрь 2024" }
   text:
     en: "When most of the team left, was one of two designers who shipped a major update of Craft of Survival, fixing locations in Unity myself. On The Braves built a tool that moved content data from Google Sheets into the admin panel, wrote specs for and supported many mechanics — hero skills, weapon mechanics, gamepad controls — and balanced live content."
-    ru: "Когда большая часть команды ушла, был одним из двух дизайнеров, которые довыпустили крупное обновление Craft of Survival, — сам чинил локации в Unity. На The Braves сделал инструмент переноса данных из Google-таблиц в админ-панель, писал ТЗ и сопровождал множество механик — скиллы героев, механики оружия, управление с геймпада — и балансировал live-контент."
+    ru: "Когда большая часть команды ушла, мы вдвоём с коллегой довыпустили крупное обновление Craft of Survival — локации в Unity я чинил сам. На The Braves сделал инструмент, который переносит данные из Google-таблиц в админку, писал ТЗ и сопровождал много механик — скиллы героев, оружие, управление с геймпада — и балансировал обновления."
 
 - company: 101XP
   projects: []
-  role:   { en: "QA Specialist (part-time while studying)", ru: "QA-специалист (part-time во время учёбы)" }
+  role:   { en: "QA Specialist (part-time while studying)", ru: "QA-специалист (подработка во время учёбы)" }
   period: { en: "May 2021 — Dec 2022", ru: "Май 2021 — декабрь 2022" }
   text:
     en: "A part-time role while finishing university: learned the production pipeline from the inside, bug triage and debugging workflows. After graduating I moved full-time into game design at the same studio."
-    ru: "Работа на неполный день, пока доучивался в университете: изучил производственный пайплайн изнутри, триаж багов и процессы отладки. После выпуска перешёл в той же студии на полный день в геймдизайн."
+    ru: "Подрабатывал, пока доучивался в университете: увидел, как устроено производство изнутри, разобрался в триаже багов и отладке. После выпуска перешёл в той же студии на полный день в геймдизайн."

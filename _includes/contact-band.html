@@ -10,7 +10,7 @@
     </div>
     <div class="contact-band__actions">
       {% include contact-links.html %}
-      <a class="btn btn--primary" href="{{ me.cv | relative_url }}" download>{{ t.download_cv[lang] }} <span aria-hidden="true">↓</span></a>
+      <a class="btn btn--primary" href="{{ me.cv[lang] | default: me.cv.en | relative_url }}" download>{{ t.download_cv[lang] }} <span aria-hidden="true">↓</span></a>
     </div>
   </div>
 </section>

@@ -4,4 +4,6 @@ email: "tkhazirov@gmail.com"
 telegram: "Cyrpy"                 # username without @
 linkedin: "https://www.linkedin.com/in/timur-khazirov-6b13b2207/"
 github: "KhazirovTimur"           # username
-cv: "/assets/files/Timur_Khazirov_CV.pdf"
+cv:                               # CV per site language
+  en: "/assets/files/Timur_Khazirov_CV.pdf"
+  ru: "/assets/files/Timur_Khazirov_CV_RU.pdf"

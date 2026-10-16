@@ -19,7 +19,7 @@ ui:
   download_cv:     { en: "Download CV", ru: "Скачать CV" }
   cv_short:        { en: "CV", ru: "CV" }
   contact:         { en: "Contact", ru: "Связаться" }
-  view_work:       { en: "View my work", ru: "Смотреть работы" }
+  view_work:       { en: "View my work", ru: "Мои работы" }
   read_case:       { en: "Read case", ru: "Подробнее" }
   open_project:    { en: "Open project", ru: "Открыть проект" }
   all_experience:  { en: "All commercial work", ru: "Все коммерческие проекты" }
@@ -42,8 +42,8 @@ ui:
   status_label:    { en: "Status", ru: "Статус" }
   links_label:     { en: "Links", ru: "Ссылки" }
   stack_label:     { en: "Tools & tech", ru: "Инструменты и технологии" }
-  contacts_title:  { en: "Let’s talk", ru: "Давайте пообщаемся" }
+  contacts_title:  { en: "Let’s talk", ru: "Давайте поговорим" }
   contacts_text:
     en: "I’m open to Technical / Gameplay Designer roles — on-site with relocation or remote. The fastest way to reach me is e-mail or Telegram."
-    ru: "Рассматриваю позиции Technical / Gameplay Designer — в офисе с релокацией или удалённо. Быстрее всего со мной связаться по почте или в Telegram."
-  footer_note:     { en: "Built with Jekyll · Hosted on GitHub Pages", ru: "Сделано на Jekyll · Размещено на GitHub Pages" }
+    ru: "Ищу работу Technical или Gameplay Designer — в офисе с релокацией или удалённо. Быстрее всего ответить смогу в почте или в Telegram."
+  footer_note:     { en: "Built with Jekyll · Hosted on GitHub Pages", ru: "Сделано на Jekyll · Живёт на GitHub Pages" }

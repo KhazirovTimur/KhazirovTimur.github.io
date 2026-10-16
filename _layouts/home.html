@@ -22,7 +22,7 @@ layout: default
       <p class="hero__lead">{{ h.lead }}</p>
       <div class="btn-row">
         <a class="btn btn--primary" href="#work">{{ t.view_work[lang] }} <span aria-hidden="true">↓</span></a>
-        <a class="btn btn--ghost" href="{{ me.cv | relative_url }}" download>{{ t.download_cv[lang] }}</a>
+        <a class="btn btn--ghost" href="{{ me.cv[lang] | default: me.cv.en | relative_url }}" download>{{ t.download_cv[lang] }}</a>
         <a class="btn btn--ghost" href="#contact">{{ t.contact[lang] }}</a>
       </div>
     </div>

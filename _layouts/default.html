@@ -69,7 +69,7 @@
             {%- if page.ref == item.ref or page.section == item.ref -%}{%- assign is_active = true -%}{%- endif %}
           <li><a href="{{ item_url | relative_url }}"{% if is_active %} aria-current="page"{% endif %}>{{ item[lang] }}</a></li>
           {%- endfor %}
-          <li class="site-nav__cv"><a class="btn btn--small btn--ghost" href="{{ me.cv | relative_url }}" download>{{ t.download_cv[lang] }}</a></li>
+          <li class="site-nav__cv"><a class="btn btn--small btn--ghost" href="{{ me.cv[lang] | default: me.cv.en | relative_url }}" download>{{ t.download_cv[lang] }}</a></li>
         </ul>
       </nav>
 
