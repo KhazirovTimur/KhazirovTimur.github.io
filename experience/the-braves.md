@@ -6,11 +6,11 @@ section: experience
 order: 2
 title: The Braves
 eyebrow: "101XP · Unity · 2022 — 2024"
-summary: "Live-service action game in the spirit of Vampire Survivors. When most of the team left, I was one of two designers who shipped a major update — fixing locations in Unity myself."
+summary: "Live-service action game in the spirit of Vampire Survivors. I built a content pipeline tool, wrote specs for and supported many mechanics — hero skills, weapon mechanics, gamepad controls — and balanced live content and events."
 cover: "https://cdn.cloudflare.steamstatic.com/steam/apps/2479830/header.jpg"
 cover_label: "Unity"
 accent: teal
-tags: [Shipping, Unity, Tools, Live-ops]
+tags: [Tools, Mechanics, Gamepad, Live-ops]
 role: "Technical Game Designer"
 company: 101XP
 period: "Dec 2022 — Nov 2024"
@@ -21,7 +21,6 @@ status: "Released"
 links:
   - { label: "Steam page", url: "https://store.steampowered.com/app/2479830/The_Braves/" }
 highlights:
-  - { value: "2", label: "designers left to ship a major update — and it shipped" }
   - { value: "~5×", label: "faster content integration with my tool" }
 stack: [Unity, "C#", ScriptableObjects, Google Sheets, Jira, Confluence, Git]
 permalink: /experience/the-braves/
@@ -32,18 +31,6 @@ permalink: /experience/the-braves/
 **The Braves** is a live-service action game heavily inspired by *Vampire Survivors*, built around hero collection, progression systems and a steady flow of new content.
 
 As a technical game designer I worked both on the game itself and on the way content got into it. Since the game was continuously updated, most features were shaped through iteration — internal feedback, playtests and production priorities — rather than designed once and left alone.
-
-## Shipping a major update with a team of two
-
-**Situation.** After the decision to pause support for the project, most of the team left. A fairly large update was still unfinished, and it had to be released anyway. Two game designers remained — me and one colleague.
-
-**What I did.** Much of the remaining work was outside a designer’s usual scope, so I took it on myself in Unity:
-
-- fixed location bugs — collisions, NavMesh, enemy spawners and other level issues;
-- worked through the studio’s internal tools that nobody had time to teach me, figuring them out on the fly;
-- kept testing and fixing until the content was stable enough to ship.
-
-**Result.** The update **was released successfully**. This is where my habit of learning the engine beyond design paid off: when there was nobody to hand a task to, I could still do it.
 
 ## Content pipeline tool
 

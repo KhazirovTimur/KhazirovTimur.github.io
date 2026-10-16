@@ -1,0 +1,5 @@
+{%- assign s = site.data.samples[include.key] -%}
+{%- assign url = s[page.lang] -%}
+{%- assign fallback = false -%}
+{%- if url == nil or url == "" -%}{%- assign url = s.ru -%}{%- assign fallback = true -%}{%- endif -%}
+<a href="{{ url }}" target="_blank" rel="noopener">{{ include.label }}</a>{% if fallback and page.lang == "en" %} <span class="lang-note">(currently in Russian)</span>{% endif %}

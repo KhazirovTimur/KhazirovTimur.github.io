@@ -21,9 +21,9 @@ status: "Released, live"
 links:
   - { label: "Steam page", url: "https://store.steampowered.com/app/3105890/PIONER/" }
 highlights:
-  - { value: "3,076", label: "loot spawners exported by my C++ parser" }
-  - { value: "304", label: "map zones covered in one pass" }
-  - { value: "166", label: "loot tables traced to every spawn point" }
+  - { value: "~3,000", label: "loot spawners exported by my C++ parser" }
+  - { value: "300+", label: "zones of the largest map in one pass" }
+  - { value: "160+", label: "loot tables traced to every spawn point" }
 stack: [Unreal Engine 5, Blueprints, "C++", Gameplay Tags, Enhanced Input, Data Tables, Primary Data Assets, Behavior Trees, Excel / Google Sheets, Jira, Confluence, Git]
 loop:
   - { title: "Explore", text: "open world, quests, enemies" }
@@ -52,15 +52,29 @@ I joined the team in November 2024 as a game designer focused on balance and tec
 
 **Problem.** Loot in PIONER is placed through thousands of spawners scattered across the open world, each with its own spawn rules, respawn timers and loot tables. To answer a simple balance question — *how much of what does a player find in this area?* — a designer had to open spawners one by one in the editor. That doesn’t scale.
 
-**Solution.** I wrote a **C++ tool that walks the level, reads every spawner and resolves its loot logic**, then exports one flat CSV. For each spawner it records:
+**Solution.** I wrote a **C++ tool that walks a level, reads every spawner and resolves its loot logic**, then exports one flat CSV. For each spawner it records:
 
 - zone, spawner class and world coordinates;
 - spawn rule (local unique / global) and respawn type and timers;
 - every loot table it can roll, with weights and the **expected number of items**.
 
-**Result.** The whole map’s loot became a spreadsheet: **3,076 spawners across 304 zones and 166 loot tables** in one export. Loot can now be filtered, summed and compared by zone, tier or item category — and checked again after every change.
+<div class="data-sample" markdown="0">
+<p class="data-sample__title">Output format · names and values are anonymised</p>
+<div class="data-sample__scroll"><table>
+<thead><tr><th>Zone</th><th>Spawner</th><th>Respawn</th><th>Timer, s</th><th>Loot table</th><th>Weight</th><th>Expected items</th></tr></thead>
+<tbody>
+<tr><td>Zone_A</td><td>ItemSpawner_T2_07</td><td>After pickup</td><td>300</td><td>Misc_T2</td><td>5</td><td>6.7</td></tr>
+<tr><td></td><td></td><td></td><td></td><td>Junk_Rare</td><td>1</td><td>1.3</td></tr>
+<tr><td>Zone_B</td><td>Chest_Uncommon_03</td><td>Timer</td><td>600</td><td>Chest_Common_Weapon</td><td>15</td><td>0.15</td></tr>
+<tr><td></td><td></td><td></td><td></td><td>Chest_Uncommon_Armor</td><td>25</td><td>0.25</td></tr>
+</tbody></table></div>
+</div>
 
-{% include figure.html src="/assets/img/pioner/loot-density-en.webp" alt="Hex map of expected loot per map cell in PIONER, built from the parser’s CSV" caption="Built from the parser’s output: expected loot per map cell across the whole world. Hot spots and empty areas are visible at a glance — something that is impossible to see from inside the editor." %}
+**Result.** The loot of the game’s largest map became a spreadsheet: **about 3,000 spawners, 300+ zones and 160+ loot tables** in a single export. Loot can now be filtered, summed and compared by zone, tier or item category — and checked again after every change.
+
+The first thing the export made visible was how unevenly loot is concentrated — a picture you simply can’t get by clicking through spawners in the editor:
+
+{% include figure.html src="/assets/img/pioner/loot-concentration-en.webp" alt="Concentration curve: share of all loot on the map versus share of zones ranked by loot" caption="Built from the parser’s export for the largest map: zones ranked by expected loot. Around 10% of zones hold almost half of all loot — useful when deciding where to add, cut or move spawners." %}
 
 ## Balancing an open-world economy
 
@@ -76,7 +90,7 @@ I balance a set of systems that all depend on each other:
 
 A change in one place ripples through the others — for example, weapon damage affects time-to-kill, which affects ammo consumption and ultimately the player’s income. I work through balance spreadsheets, internal playtests and player feedback, and re-tune as live content ships.
 
-A sample of how I build balance tables — weapon TTK by distance, with a hit-probability model based on spread and target size: [weapon balance sheet](https://docs.google.com/spreadsheets/d/1Xv2YxddwvuSKo2Um3U_SDI2i0Uyn7LrVDbQS9R2T3fQ/edit?usp=sharing){:target="_blank" rel="noopener"}.
+Outside of production work, I also put together a sample sheet that balances one weapon category and shows formula approaches I like to use — TTK by distance and a hit-probability model based on spread area versus target size: {% include sample-link.html key="balance_sheet" label="weapon balance sample" %}. It is a showcase of methods, not live game data.
 
 ## Features I owned end-to-end
 

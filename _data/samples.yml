@@ -1,0 +1,5 @@
+# Work samples. Each language gets its own link; if `en` is empty, the English
+# pages fall back to the Russian file and say so.
+balance_sheet:
+  ru: "https://docs.google.com/spreadsheets/d/1Xv2YxddwvuSKo2Um3U_SDI2i0Uyn7LrVDbQS9R2T3fQ/edit?usp=sharing"
+  en: ""
