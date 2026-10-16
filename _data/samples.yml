@@ -1,5 +1,6 @@
-# Work samples. Each language gets its own link; if `en` is empty, the English
-# pages fall back to the Russian file and say so.
+# Work samples. Each language gets its own link; if one is empty, the page
+# falls back to the Russian file and says so.
+# To use a Google Sheets copy of the English file, paste its share link into `en`.
 balance_sheet:
   ru: "https://docs.google.com/spreadsheets/d/1Xv2YxddwvuSKo2Um3U_SDI2i0Uyn7LrVDbQS9R2T3fQ/edit?usp=sharing"
-  en: ""
+  en: "/assets/files/Weapon_balance_sample_EN.xlsx"
