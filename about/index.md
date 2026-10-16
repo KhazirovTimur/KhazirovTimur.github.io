@@ -20,11 +20,17 @@ Since I was still studying, I needed a part-time job, and the role available to 
 
 Since then I have worked as a technical game designer on live-service games in Unity and, since November 2024, as a game designer on **PIONER**, an open-world multiplayer shooter in Unreal Engine 5. My strongest areas are hands-on implementation in the engine and production tools, balance and economy, and gameplay mechanics.
 
-I believe the best gameplay decisions come from understanding both player psychology and the technical constraints of production — so I don’t stop at a design document, I take the feature into the engine.
+What this looks like in practice: when most of The Braves team left before a major update, I fixed locations, collisions, NavMesh and enemy spawners in Unity myself, learning the studio’s internal tools on the fly — and the update shipped. I don’t stop at a design document; if a feature needs me in the engine, I go there.
 
 ## What I’m looking for
 
 Technical Game Designer or Gameplay / Systems Designer roles where I can own features end-to-end and work closely with engineers. I’m open to relocation and remote work.
+
+## Work samples
+
+- [Weapon balance sheet](https://docs.google.com/spreadsheets/d/1Xv2YxddwvuSKo2Um3U_SDI2i0Uyn7LrVDbQS9R2T3fQ/edit?usp=sharing){:target="_blank" rel="noopener"} — TTK by distance with a hit-probability model (Google Sheets).
+- [Loot parser output](/experience/pioner/#loot-parser) — 3,076 spawners exported from an open world, visualised as a loot density map.
+- [Bot Arena source code](https://github.com/KhazirovTimur/BotArena){:target="_blank" rel="noopener"} — a complete Unity shooter prototype (C#).
 
 ## Education
 

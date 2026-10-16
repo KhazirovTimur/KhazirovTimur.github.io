@@ -21,8 +21,9 @@ status: "Released, live"
 links:
   - { label: "Steam page", url: "https://store.steampowered.com/app/3105890/PIONER/" }
 highlights:
-  - { value: "7", label: "interconnected systems under my balance" }
-  - { value: "C++", label: "loot parser tool built for the team" }
+  - { value: "3,076", label: "loot spawners exported by my C++ parser" }
+  - { value: "304", label: "map zones covered in one pass" }
+  - { value: "166", label: "loot tables traced to every spawn point" }
 stack: [Unreal Engine 5, Blueprints, "C++", Gameplay Tags, Enhanced Input, Data Tables, Primary Data Assets, Behavior Trees, Excel / Google Sheets, Jira, Confluence, Git]
 loop:
   - { title: "Explore", text: "open world, quests, enemies" }
@@ -47,9 +48,19 @@ I joined the team in November 2024 as a game designer focused on balance and tec
 - Prototyped and iterated on new mechanics in Blueprints as ongoing live content.
 - Worked inside existing Behavior Trees and C++ systems to understand how mechanics interact before changing them, and fixed gameplay issues via Blueprints.
 
-## Tooling: loot parser
+## Tooling: loot parser {#loot-parser}
 
-Checking loot distribution manually in the editor doesn’t scale for an open world. I wrote a **C++ tool that parses the loot logic and exports spawn-point data to CSV**, so loot can be reviewed and balanced in spreadsheets across the whole map at once.
+**Problem.** Loot in PIONER is placed through thousands of spawners scattered across the open world, each with its own spawn rules, respawn timers and loot tables. To answer a simple balance question — *how much of what does a player find in this area?* — a designer had to open spawners one by one in the editor. That doesn’t scale.
+
+**Solution.** I wrote a **C++ tool that walks the level, reads every spawner and resolves its loot logic**, then exports one flat CSV. For each spawner it records:
+
+- zone, spawner class and world coordinates;
+- spawn rule (local unique / global) and respawn type and timers;
+- every loot table it can roll, with weights and the **expected number of items**.
+
+**Result.** The whole map’s loot became a spreadsheet: **3,076 spawners across 304 zones and 166 loot tables** in one export. Loot can now be filtered, summed and compared by zone, tier or item category — and checked again after every change.
+
+{% include figure.html src="/assets/img/pioner/loot-density-en.webp" alt="Hex map of expected loot per map cell in PIONER, built from the parser’s CSV" caption="Built from the parser’s output: expected loot per map cell across the whole world. Hot spots and empty areas are visible at a glance — something that is impossible to see from inside the editor." %}
 
 ## Balancing an open-world economy
 
@@ -64,6 +75,8 @@ I balance a set of systems that all depend on each other:
 - **Economy** — loot distribution, vendor pricing, crafting and overall resource flow.
 
 A change in one place ripples through the others — for example, weapon damage affects time-to-kill, which affects ammo consumption and ultimately the player’s income. I work through balance spreadsheets, internal playtests and player feedback, and re-tune as live content ships.
+
+A sample of how I build balance tables — weapon TTK by distance, with a hit-probability model based on spread and target size: [weapon balance sheet](https://docs.google.com/spreadsheets/d/1Xv2YxddwvuSKo2Um3U_SDI2i0Uyn7LrVDbQS9R2T3fQ/edit?usp=sharing){:target="_blank" rel="noopener"}.
 
 ## Features I owned end-to-end
 

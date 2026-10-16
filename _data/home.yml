@@ -6,7 +6,7 @@ featured_personal: [helicopter, bot-arena, tiny-dozzer]
 en:
   eyebrow: "Technical Game Designer · Unreal Engine 5 · Unity"
   headline: "I design gameplay — and implement it in the engine myself."
-  lead: "Technical game designer with 5+ years in the industry and three shipped commercial titles. I prototype and implement features in UE5 Blueprints and C++ or Unity C#, build tools that speed up production, balance progression and economy, and design the mechanics players interact with."
+  lead: "5+ years in shooters and live-service games, three shipped titles. I take features from spec to Blueprints and C++, balance economies, and automate the team’s routine work."
   sheet:
     title: "Character sheet"
     rows:
@@ -21,7 +21,7 @@ en:
     - { value: "5+", label: "years in game development" }
     - { value: "3", label: "shipped commercial titles" }
     - { value: "20+", label: "mechanics designed and supported on commercial projects" }
-    - { value: "Tools", label: "built several internal tools that speed up the team’s work" }
+    - { value: "2+", label: "internal tools built to speed up the team’s work" }
   work:
     eyebrow: "Commercial work"
     title: "Shipped games I worked on in studios"
@@ -36,15 +36,13 @@ en:
       - title: "Technical design & implementation"
         text: "I prototype and ship features myself in UE5 Blueprints and C++ or Unity C#. I read production Blueprints, Behavior Trees and C++ code to understand how systems interact before changing them."
       - title: "Tools & pipeline"
-        text: "When a task repeats, I automate it: a C++ loot parser that exports spawn data to CSV, a tool that moves content data from Google Sheets into a project’s admin panel instead of slow manual entry."
+        text: "When a task repeats, I automate it: a C++ parser that exports all 3,076 loot spawners of an open world to CSV, a tool that moves content data from Google Sheets into an admin panel ~5× faster than by hand."
       - title: "Balance & economy"
         text: "Interconnected balance of progression, loot, crafting, vendor pricing and resource flow, driven by spreadsheets, playtests and player feedback."
       - title: "Gameplay & combat mechanics"
         text: "20+ mechanics across shipped games — weapon behaviour, hip-fire spread and crosshair, reload and perk systems, hero skills, boss variations and gamepad controls."
-      - title: "Documentation"
-        text: "Clear feature specs and balance tables that engineers, artists and QA can actually work from."
-      - title: "Mentoring"
-        text: "Reviewing design docs of junior designers, helping them own features and sharing hands-on Unreal Engine experience."
+      - title: "Team & documentation"
+        text: "Feature specs and balance tables engineers, artists and QA can work from. I mentor junior designers — reviewing their docs and helping them own features."
   career:
     eyebrow: "Career"
     title: "From QA to Technical Game Designer"
@@ -76,7 +74,7 @@ en:
 ru:
   eyebrow: "Технический геймдизайнер · Unreal Engine 5 · Unity"
   headline: "Проектирую геймплей — и сам реализую его в движке."
-  lead: "Технический геймдизайнер: 5+ лет в индустрии и три выпущенных коммерческих проекта. Прототипирую и реализую фичи на Blueprints и C++ в UE5 или на C# в Unity, делаю инструменты, ускоряющие производство, балансирую прогрессию и экономику и проектирую механики, с которыми взаимодействует игрок."
+  lead: "5+ лет в шутерах и live-service играх, три выпущенных проекта. Довожу фичи от ТЗ до Blueprints и C++, балансирую экономику и автоматизирую рутину команды."
   sheet:
     title: "Карточка персонажа"
     rows:
@@ -91,7 +89,7 @@ ru:
     - { value: "5+", label: "лет в геймдеве" }
     - { value: "3", label: "выпущенных коммерческих проекта" }
     - { value: "20+", label: "механик спроектировано и сопровождено на коммерческих проектах" }
-    - { value: "Тулинг", label: "несколько внутренних инструментов, ускоривших работу команды" }
+    - { value: "2+", label: "внутренних инструмента, ускоривших работу команды" }
   work:
     eyebrow: "Коммерческие проекты"
     title: "Выпущенные игры, над которыми я работал в студиях"
@@ -106,15 +104,13 @@ ru:
       - title: "Технический дизайн и реализация"
         text: "Сам прототипирую и довожу фичи до релиза на Blueprints и C++ в UE5 или на C# в Unity. Читаю продакшн-Blueprints, Behavior Trees и C++-код, чтобы понять взаимодействие систем до внесения изменений."
       - title: "Инструменты и пайплайн"
-        text: "Если задача повторяется, я её автоматизирую: C++-парсер лута с экспортом точек спавна в CSV, инструмент переноса данных контента из Google-таблиц в админ-панель проекта вместо медленного ручного ввода."
+        text: "Если задача повторяется, я её автоматизирую: C++-парсер, выгружающий в CSV все 3 076 спавнеров лута открытого мира, инструмент переноса данных из Google-таблиц в админ-панель — примерно в 5 раз быстрее, чем вручную."
       - title: "Баланс и экономика"
         text: "Взаимосвязанный баланс прогрессии, лута, крафта, цен торговцев и потока ресурсов на основе таблиц, плейтестов и отзывов игроков."
       - title: "Геймплейные и боевые механики"
         text: "20+ механик в выпущенных играх — поведение оружия, разброс от бедра и прицел, перезарядка и перки, скиллы героев, вариации боссов, управление с геймпада."
-      - title: "Документация"
-        text: "Понятные ТЗ на фичи и балансные таблицы, по которым программисты, художники и QA действительно могут работать."
-      - title: "Менторство"
-        text: "Ревью диздоков младших дизайнеров, помощь в ведении фич и передача практического опыта работы с Unreal Engine."
+      - title: "Команда и документация"
+        text: "ТЗ и балансные таблицы, по которым могут работать программисты, художники и QA. Менторю младших дизайнеров — ревьюю их доки и помогаю вести фичи."
   career:
     eyebrow: "Карьера"
     title: "Из QA в технические геймдизайнеры"

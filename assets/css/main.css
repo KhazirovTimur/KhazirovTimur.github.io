@@ -438,3 +438,12 @@ a { color: inherit; }
 @media (max-width: 1180px) and (min-width: 1025px) {
   .brand__role { display: none; }
 }
+
+/* Five pillars: the lead pillar spans two columns */
+.pillars li:first-child { grid-column: span 2; }
+@media (max-width: 600px) { .pillars li:first-child { grid-column: auto; } }
+
+/* Figures inside case studies */
+.figure { margin: 1.6em 0 2em; }
+.figure img { width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--border); background: var(--bg-alt); }
+.figure figcaption { margin-top: 10px; font-size: 14px; line-height: 1.5; color: var(--muted); }

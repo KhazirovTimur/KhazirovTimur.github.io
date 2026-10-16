@@ -13,8 +13,8 @@
   role:   { en: "Technical Game Designer", ru: "Технический геймдизайнер" }
   period: { en: "Dec 2022 — Nov 2024", ru: "Декабрь 2022 — ноябрь 2024" }
   text:
-    en: "Built a tool that moved content data from Google Sheets into the admin panel instead of manual entry, wrote specs for and supported many mechanics — hero skills, weapon mechanics, gamepad controls — designed boss variations and balanced live content."
-    ru: "Сделал инструмент переноса данных контента из Google-таблиц в админ-панель вместо ручного ввода, писал ТЗ и сопровождал множество механик — скиллы героев, механики оружия, управление с геймпада — проектировал вариации боссов и балансировал live-контент."
+    en: "When most of the team left, was one of two designers who shipped a major update of The Braves, fixing locations in Unity myself. Built a tool that moved content data from Google Sheets into the admin panel, wrote specs for and supported many mechanics — hero skills, weapon mechanics, gamepad controls — and balanced live content."
+    ru: "Когда большая часть команды ушла, был одним из двух дизайнеров, которые довыпустили крупное обновление The Braves, — сам чинил локации в Unity. Сделал инструмент переноса данных из Google-таблиц в админ-панель, писал ТЗ и сопровождал множество механик — скиллы героев, механики оружия, управление с геймпада — и балансировал live-контент."
 
 - company: 101XP
   projects: []
