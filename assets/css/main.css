@@ -129,15 +129,15 @@ a { color: inherit; }
 .lang-switch a[aria-current="true"] { background: var(--accent); color: var(--accent-ink); }
 
 .nav-toggle { display: none; width: 40px; height: 40px; border-radius: 10px; border: 1px solid var(--border-strong); background: var(--surface); cursor: pointer; padding: 0; }
-.nav-toggle__bar, .nav-toggle__bar::before, .nav-toggle__bar::after { display: block; width: 18px; height: 2px; background: var(--text); margin: 0 auto; position: relative; transition: transform .2s; }
-.nav-toggle__bar::before, .nav-toggle__bar::after { content: ""; position: absolute; left: 0; }
+.nav-toggle__bar, .nav-toggle__bar::before, .nav-toggle__bar::after { display: block; width: 18px; height: 2px; background: var(--text); margin: 0 auto; position: relative; transition: transform .2s, top .2s; }
+.nav-toggle__bar::before, .nav-toggle__bar::after { content: ""; position: absolute; left: 0; margin: 0; }
 .nav-toggle__bar::before { top: -6px; }
 .nav-toggle__bar::after { top: 6px; }
 .nav-toggle[aria-expanded="true"] .nav-toggle__bar { background: transparent; }
-.nav-toggle[aria-expanded="true"] .nav-toggle__bar::before { transform: translateY(6px) rotate(45deg); }
-.nav-toggle[aria-expanded="true"] .nav-toggle__bar::after { transform: translateY(-6px) rotate(-45deg); }
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar::before { top: 0; transform: rotate(45deg); }
+.nav-toggle[aria-expanded="true"] .nav-toggle__bar::after { top: 0; transform: rotate(-45deg); }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   .nav-toggle { display: block; }
   .site-header__inner { gap: 12px; }
   .site-header__tools { order: 2; }
@@ -432,9 +432,9 @@ a { color: inherit; }
 .badge--personal { background: rgba(12,14,18,.75); color: var(--text); border: 1px solid var(--border-strong); }
 .cards--compact .card__cover { aspect-ratio: 460 / 160; }
 .cards--compact .card__cover-label { font-size: clamp(24px, 3vw, 32px); }
-@media (max-width: 1100px) {
+@media (max-width: 1180px) and (min-width: 1025px) {
   .site-nav a:not(.btn) { padding: 8px 9px; font-size: 14px; }
 }
-@media (max-width: 1100px) and (min-width: 901px) {
+@media (max-width: 1180px) and (min-width: 1025px) {
   .brand__role { display: none; }
 }
