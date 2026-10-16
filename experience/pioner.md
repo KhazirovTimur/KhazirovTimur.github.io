@@ -72,9 +72,9 @@ I joined the team in November 2024 as a game designer focused on balance and tec
 
 **Result.** The loot of the game’s largest map became a spreadsheet: **about 3,000 spawners, 300+ zones and 160+ loot tables** in a single export. Loot can now be filtered, summed and compared by zone, tier or item category — and checked again after every change.
 
-The first thing the export made visible was how unevenly loot is concentrated — a picture you simply can’t get by clicking through spawners in the editor:
+The first thing the export gave was a picture of the whole map at once. Loot is meant to be uneven: it gathers around points of interest, and the most valuable loot sits in a large PvPvE zone. The heatmap makes it easy to check that the map actually works that way — and to spot areas that are empty or overloaded by mistake:
 
-{% include figure.html src="/assets/img/pioner/loot-concentration-en.webp" alt="Concentration curve: share of all loot on the map versus share of zones ranked by loot" caption="Built from the parser’s export for the largest map: zones ranked by expected loot. Around 10% of zones hold almost half of all loot — useful when deciding where to add, cut or move spawners." %}
+{% include figure.html src="/assets/img/pioner/loot-heatmap-en.webp" alt="Heatmap of expected loot across the largest map of PIONER, built from the parser’s export" caption="Built from the parser’s export for the largest map: expected loot per map cell. Bright clusters are points of interest and the high-value PvPvE zone. Coordinates and values are left out." %}
 
 ## Balancing an open-world economy
 

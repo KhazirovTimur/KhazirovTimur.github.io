@@ -14,7 +14,7 @@ en:
       - { k: "Engines", v: "Unreal Engine 5 · Unity" }
       - { k: "Implementation", v: "Blueprints · C++ · C# · Python" }
       - { k: "Focus", v: "Tech design · Balance · Economy · Gameplay" }
-      - { k: "Languages", v: "Russian (native) · English (B2–C1)" }
+      - { k: "Languages", v: "Russian (native) · English (C1)" }
       - { k: "Relocation", v: "Open · remote-capable" }
     status: "Open to new opportunities"
   stats:
@@ -82,7 +82,7 @@ ru:
       - { k: "Движки", v: "Unreal Engine 5 · Unity" }
       - { k: "Реализация", v: "Blueprints · C++ · C# · Python" }
       - { k: "Фокус", v: "Техдизайн · Баланс · Экономика · Геймплей" }
-      - { k: "Языки", v: "Русский (родной) · Английский (B2–C1)" }
+      - { k: "Языки", v: "Русский (родной) · Английский (C1)" }
       - { k: "Релокация", v: "Готов · можно удалённо" }
     status: "Ищу работу"
   stats:

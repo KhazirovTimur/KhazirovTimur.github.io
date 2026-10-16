@@ -5,7 +5,7 @@ lang: en
 section: experience
 order: 2
 title: The Braves
-eyebrow: "101XP · Unity · 2022 — 2024"
+eyebrow: "101XP · Unity · 2023 — 2024"
 summary: "Live-service action game in the spirit of Vampire Survivors. I built a content pipeline tool, wrote specs for and supported many mechanics — hero skills, weapon mechanics, gamepad controls — and balanced live content and events."
 cover: "https://cdn.cloudflare.steamstatic.com/steam/apps/2479830/header.jpg"
 cover_label: "Unity"
@@ -13,7 +13,7 @@ accent: teal
 tags: [Tools, Mechanics, Gamepad, Live-ops]
 role: "Technical Game Designer"
 company: 101XP
-period: "Dec 2022 — Nov 2024"
+period: "Mid 2023 — Nov 2024"
 engine: "Unity"
 platform: "PC (Steam)"
 genre: "Survivors-like action, live-service"
@@ -30,7 +30,7 @@ permalink: /experience/the-braves/
 
 **The Braves** is a live-service action game heavily inspired by *Vampire Survivors*, built around hero collection, progression systems and a steady flow of new content.
 
-As a technical game designer I worked both on the game itself and on the way content got into it. Since the game was continuously updated, most features were shaped through iteration — internal feedback, playtests and production priorities — rather than designed once and left alone.
+I joined the project after Craft of Survival and stayed on it until I left 101XP. As a technical game designer I worked both on the game itself and on the way content got into it. Since the game was continuously updated, most features were shaped through iteration — internal feedback, playtests and production priorities — rather than designed once and left alone.
 
 ## Content pipeline tool
 

@@ -9,12 +9,20 @@
     ru: "Сам собираю фичи на Blueprints, написал для команды C++-парсер лута, балансирую прогрессию, экономику, лут и крафт multiplayer-шутера с открытым миром, веду механики оружия от ТЗ до релиза и менторю младших дизайнеров."
 
 - company: 101XP
-  projects: [the-braves, craft-of-survival]
-  role:   { en: "Technical Game Designer", ru: "Технический геймдизайнер" }
-  period: { en: "Dec 2022 — Nov 2024", ru: "Декабрь 2022 — ноябрь 2024" }
+  projects: [the-braves]
+  role:   { en: "Technical Game Designer · The Braves", ru: "Технический геймдизайнер · The Braves" }
+  period: { en: "Mid 2023 — Nov 2024", ru: "Середина 2023 — ноябрь 2024" }
   text:
-    en: "When most of the team left, was one of two designers who shipped a major update of Craft of Survival, fixing locations in Unity myself. On The Braves built a tool that moved content data from Google Sheets into the admin panel, wrote specs for and supported many mechanics — hero skills, weapon mechanics, gamepad controls — and balanced live content."
-    ru: "Когда большая часть команды ушла, мы вдвоём с коллегой довыпустили крупное обновление Craft of Survival — локации в Unity я чинил сам. На The Braves сделал инструмент, который переносит данные из Google-таблиц в админку, писал ТЗ и сопровождал много механик — скиллы героев, оружие, управление с геймпада — и балансировал обновления."
+    en: "Built a tool that moved content data from Google Sheets into the admin panel ~5× faster than by hand. Wrote specs for and supported many mechanics — hero skills, weapon mechanics, gamepad controls — designed boss variations, set up content and balanced live updates and events."
+    ru: "Сделал инструмент, который переносит данные из Google-таблиц в админку примерно в 5 раз быстрее, чем руками. Писал ТЗ и сопровождал много механик — скиллы героев, оружие, управление с геймпада, — проектировал вариации боссов, заводил контент и балансировал обновления и ивенты."
+
+- company: 101XP
+  projects: [craft-of-survival]
+  role:   { en: "Technical Game Designer · Craft of Survival", ru: "Технический геймдизайнер · Craft of Survival" }
+  period: { en: "Dec 2022 — mid 2023", ru: "Декабрь 2022 — середина 2023" }
+  text:
+    en: "First project after moving from QA into design: set up content for regular updates. When most of the team left, I was one of two designers who shipped a major update, fixing locations in Unity myself."
+    ru: "Первый проект после перехода из QA в дизайн: заводил контент для регулярных обновлений. Когда большая часть команды ушла, мы вдвоём с коллегой довыпустили крупное обновление — локации в Unity я чинил сам."
 
 - company: 101XP
   projects: []

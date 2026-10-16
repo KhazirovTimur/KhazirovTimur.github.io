@@ -44,7 +44,7 @@ A five-year engineering programme, equivalent to a Bachelor’s plus Master’s 
 ## Languages
 
 - **Russian** — native
-- **English** — B2–C1: comfortable with documentation, technical discussions and day-to-day communication
+- **English** — C1: comfortable with documentation, technical discussions and day-to-day communication
 
 ## Additional skills
 
