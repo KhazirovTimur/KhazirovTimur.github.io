@@ -13,7 +13,7 @@ accent: teal
 tags: [Инструменты, Механики, Геймпад, Live-ops]
 role: "Технический геймдизайнер"
 company: 101XP
-period: "Середина 2023 — ноябрь 2024"
+period: "Март 2023 — ноябрь 2024"
 engine: "Unity"
 platform: "PC (Steam)"
 genre: "Survivors-like экшен, live-service"

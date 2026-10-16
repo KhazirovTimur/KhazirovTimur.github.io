@@ -12,7 +12,7 @@ accent: green
 tags: [Shipping, Unity, Level fixes, Live-service]
 role: "Technical Game Designer"
 company: 101XP
-period: "Dec 2022 — mid 2023"
+period: "Dec 2022 — Mar 2023"
 engine: "Unity"
 platform: "Android (Google Play)"
 genre: "Survival RPG, live-service"

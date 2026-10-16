@@ -1,0 +1,151 @@
+# Single source for both CVs (EN + RU).
+# Contacts come from _data/profile.yml, job titles and dates from _data/career.yml,
+# so the CVs can never disagree with the site on those.
+# Build: python3 tools/build_cv.py   (writes assets/files/Timur_Khazirov_CV*.pdf)
+
+title:
+  en: "Technical Game Designer"
+  ru: "Технический геймдизайнер"
+
+note:
+  en: "Open to relocation · Remote-capable"
+  ru: "Готов к релокации · Возможна удалённая работа"
+
+headings:
+  profile:     { en: "Profile", ru: "О себе" }
+  competencies: { en: "Core competencies", ru: "Ключевые компетенции" }
+  skills:      { en: "Technical skills", ru: "Технические навыки" }
+  experience:  { en: "Professional experience", ru: "Опыт работы" }
+  projects:    { en: "Personal projects", ru: "Личные проекты" }
+  education:   { en: "Education & certifications", ru: "Образование и сертификаты" }
+  additional:  { en: "Additional skills", ru: "Дополнительные навыки" }
+  languages:   { en: "Languages", ru: "Языки" }
+  portfolio:   { en: "Portfolio", ru: "Портфолио" }
+  project:     { en: "Project", ru: "Проект" }
+
+profile:
+  en:
+    - "Technical game designer with 5+ years of professional experience on multiplayer and live-service games in Unreal Engine and Unity, and three shipped commercial titles."
+    - "I own features from design through release, prototype gameplay in Blueprints and C++, balance combat, progression and economy systems, and work closely with engineering teams."
+    - "A strong technical background lets me iterate on gameplay quickly, build prototypes myself and create internal production tools."
+    - "Mentored junior designers; contributed to commercial PC and mobile titles."
+  ru:
+    - "Технический геймдизайнер: 5+ лет в коммерческой разработке multiplayer и live-service игр на Unreal Engine и Unity, три вышедших проекта."
+    - "Веду фичи от идеи до релиза, сам прототипирую геймплей на Blueprints и C++, балансирую бой, прогрессию и экономику и плотно работаю с программистами."
+    - "Технический бэкграунд позволяет быстро итерировать геймплей, собирать прототипы и делать внутренние инструменты для команды."
+    - "Менторил младших дизайнеров, участвовал в выпуске коммерческих проектов на PC и мобильных платформах."
+
+competencies:
+  en: ["Weapon & combat mechanics", "In-engine implementation (Blueprints / C++)", "Rapid prototyping & iteration", "Systems integration", "Vehicle & locomotion prototyping", "Design & technical documentation", "Cross-department collaboration", "Tools & workflow improvement", "Mentoring & feedback", "Balance & economy", "Systemic design"]
+  ru: ["Механики оружия и боя", "Реализация в движке (Blueprints / C++)", "Быстрое прототипирование и итерации", "Интеграция систем", "Прототипирование техники и передвижения", "Дизайн- и техническая документация", "Работа с разными отделами", "Улучшение инструментов и пайплайна", "Менторство и фидбек", "Баланс и экономика", "Системный дизайн"]
+
+skills:
+  - name: { en: "Design", ru: "Дизайн" }
+    text:
+      en: "Weapon & combat mechanics, gameplay systems integration, rapid prototyping & iteration, vehicle/locomotion prototyping, player progression, economy design, design & technical documentation"
+      ru: "Механики оружия и боя, интеграция геймплейных систем, прототипирование и итерации, прототипирование техники и передвижения, прогрессия игрока, дизайн экономики, документация"
+  - name: { en: "Unreal Engine", ru: "Unreal Engine" }
+    text:
+      en: "UE4/UE5, Blueprints, C++ gameplay programming, Gameplay Tags, Enhanced Input, Animation Blueprints, Behavior Trees, AI Controllers, State Machines, Data Tables, Primary Data Assets, NavMesh, Gameplay Debugging"
+      ru: "UE4/UE5, Blueprints, геймплейное программирование на C++, Gameplay Tags, Enhanced Input, Animation Blueprints, Behavior Trees, AI Controllers, State Machines, Data Tables, Primary Data Assets, NavMesh, Gameplay Debugging"
+  - name: { en: "Unity", ru: "Unity" }
+    text:
+      en: "C#, MonoBehaviour, ScriptableObjects, NavMesh, gameplay implementation & prototyping"
+      ru: "C#, MonoBehaviour, ScriptableObjects, NavMesh, реализация и прототипирование геймплея"
+  - name: { en: "Programming", ru: "Программирование" }
+    text: { en: "C++, C#, Python", ru: "C++, C#, Python" }
+  - name: { en: "Tools", ru: "Инструменты" }
+    text:
+      en: "Git, Bitbucket, Jira, Confluence, Miro, Rider, Visual Studio, Excel / Google Sheets"
+      ru: "Git, Bitbucket, Jira, Confluence, Miro, Rider, Visual Studio, Excel / Google Sheets"
+
+# Bullets per career entry. `ref` matches the project ref in _data/career.yml
+# (the QA entry has ref: qa). Order follows _data/career.yml.
+jobs:
+  pioner:
+    project:
+      en: "PIONER (Steam, released) — multiplayer open-world survival shooter, Unreal Engine 5"
+      ru: "PIONER (Steam, вышел) — multiplayer survival-шутер с открытым миром, Unreal Engine 5"
+    bullets:
+      en:
+        - "Owned four features end-to-end, from spec to in-engine implementation in Blueprints: hip-fire spread, dynamic crosshair, automatic reload and a full rework of the perk system — all integrated into existing systems without breaking them."
+        - "Balance a set of interconnected systems: combat, economy, progression, loot, crafting, vendor pricing and boss parameters."
+        - "Built a C++ tool that walks a level and exports every loot spawner (~3,000 on the largest map) with its loot tables and expected item counts to CSV, so loot can be balanced across the whole map in spreadsheets."
+        - "Prototype and iterate on weapons, armor, consumables and enemies for live updates, based on internal testing and player feedback."
+        - "Work hands-on inside existing Behavior Trees and C++ systems to understand how mechanics interact before changing them; fix gameplay issues via Blueprints."
+        - "Write and maintain balance tables and feature specs; mentor junior designers and review their design documents."
+        - "Work closely with engineers and artists to take new weapons and systems from concept to live content."
+      ru:
+        - "Вёл от ТЗ до реализации на Blueprints четыре фичи: разброс при стрельбе от бедра, динамический прицел, автоматическую перезарядку и полную переработку системы перков — и встроил их в существующие системы, ничего не сломав."
+        - "Балансирую набор связанных систем: бой, экономику, прогрессию, лут, крафт, цены у торговцев и параметры боссов."
+        - "Написал на C++ инструмент, который проходит по уровню и выгружает в CSV все спавнеры лута (около 3 000 на самой большой карте) с лут-таблицами и ожидаемым количеством предметов — лут всей карты можно балансировать в таблицах."
+        - "Прототипирую и дорабатываю оружие, броню, расходники и врагов для live-обновлений по итогам внутренних тестов и отзывов игроков."
+        - "Разбираюсь в существующих Behavior Trees и C++-системах, чтобы понять, как связаны механики, прежде чем их менять; геймплейные баги чиню через Blueprints."
+        - "Пишу и поддерживаю балансные таблицы и ТЗ; менторю младших дизайнеров и ревьюю их диздоки."
+        - "Вместе с программистами и художниками довожу новое оружие и системы от концепта до live-контента."
+  the-braves:
+    project:
+      en: "The Braves (Steam, released) — live-service action game in the spirit of Vampire Survivors, Unity"
+      ru: "The Braves (Steam, вышел) — live-service экшен в духе Vampire Survivors, Unity"
+    bullets:
+      en:
+        - "Built an internal tool that moves content data from Google Sheets into the project’s admin panel — content integration became roughly 5× faster."
+        - "Wrote specs for and supported many mechanics — hero skills, weapon mechanics, boss variations — from concept through implementation and balance."
+        - "Owned gamepad support and player-facing UI/UX flows, including a redesign of the achievement interface."
+        - "Set up content for live updates, calculated part of an in-game event’s balance, tuned enemy difficulty, rewards and the gacha economy."
+        - "Worked daily with programmers, artists and UI artists to ship ongoing live-service content."
+      ru:
+        - "Сделал внутренний инструмент, который переносит данные контента из Google-таблиц в админку проекта, — контент стал заводиться примерно в 5 раз быстрее."
+        - "Писал ТЗ и сопровождал много механик — скиллы героев, механики оружия, вариации боссов — от идеи до реализации и баланса."
+        - "Вёл поддержку геймпада и сценарии UI/UX, в том числе переделанный экран достижений."
+        - "Заводил контент для live-обновлений, считал часть баланса внутриигрового ивента, настраивал сложность врагов, награды и гача-экономику."
+        - "Каждый день работал с программистами, художниками и UI-художниками над регулярными live-обновлениями."
+  craft-of-survival:
+    project:
+      en: "Craft of Survival (Google Play, released) — single-player survival RPG, Unity"
+      ru: "Craft of Survival (Google Play, вышел) — одиночная survival-RPG, Unity"
+    bullets:
+      en:
+        - "First project after moving from QA into design: set up new content for regular updates."
+        - "When support for the project was paused and most of the team left, I was one of two designers who shipped a major unfinished update: fixed collisions, NavMesh and enemy spawners in Unity myself, learning the studio’s internal tools on the fly."
+      ru:
+        - "Первый проект после перехода из QA в дизайн: заводил новый контент для регулярных обновлений."
+        - "Когда поддержку проекта приостановили и большая часть команды ушла, мы вдвоём с коллегой довыпустили крупное недоделанное обновление: сам чинил в Unity коллизии, NavMesh и спавнеры врагов, по ходу осваивая внутренние инструменты студии."
+  qa:
+    bullets:
+      en:
+        - "Part-time role while finishing university and my entry point into the industry: learned production pipelines, bug triage and debugging workflows from the inside."
+      ru:
+        - "Подработка, пока доучивался в университете, и вход в индустрию: изнутри разобрался в производственном пайплайне, триаже багов и отладке."
+
+personal_projects:
+  - name: { en: "UE5 Helicopter Prototype", ru: "Прототип вертолёта на UE5" }
+    text:
+      en: "Flight model based on real lift, torque and drag formulas, plus a gimbal-mounted turret; Blueprints and C++. (Completed)"
+      ru: "Модель полёта на реальных формулах подъёмной силы, крутящего момента и сопротивления и турель на гимбале; Blueprints и C++. (Завершён)"
+  - name: { en: "Bot Arena (Unity)", ru: "Bot Arena (Unity)" }
+    text:
+      en: "Wave shooter inspired by COD: Zombies — enemy AI, wave spawning, three arenas, in-game shop, grenade rocket jump. github.com/KhazirovTimur/BotArena (Completed)"
+      ru: "Волновой шутер в духе COD: Zombies — AI врагов, волны, три арены, магазин, рокет-джамп на гранате. github.com/KhazirovTimur/BotArena (Завершён)"
+  - name: { en: "Tiny Dozzer (Mobile)", ru: "Tiny Dozzer (Mobile)" }
+    text:
+      en: "Arcade game about a bulldozer clearing trash, built in Unity; previously released on Google Play."
+      ru: "Аркада про бульдозер, который убирает мусор, на Unity; выходила в Google Play."
+
+education:
+  en:
+    - "Bauman Moscow State Technical University — Specialist degree (5-year, equivalent to Bachelor’s + Master’s), Information Security, 2022"
+    - "Michigan State University — Introduction to Game Development (Coursera certificate)"
+    - "Michigan State University — Principles of Game Design (Coursera certificate)"
+  ru:
+    - "МГТУ им. Н. Э. Баумана — специалитет (5 лет), информационная безопасность, 2022"
+    - "Michigan State University — Introduction to Game Development (сертификат Coursera)"
+    - "Michigan State University — Principles of Game Design (сертификат Coursera)"
+
+additional:
+  en: ["Blender (basic)", "Adobe Photoshop, Premiere", "Basic SFX and music creation", "Ableton Live, Reaper"]
+  ru: ["Blender (базовый уровень)", "Adobe Photoshop, Premiere", "Создание SFX и музыки на базовом уровне", "Ableton Live, Reaper"]
+
+languages:
+  en: "Russian — Native   |   English — C1"
+  ru: "Русский — родной   |   Английский — C1"

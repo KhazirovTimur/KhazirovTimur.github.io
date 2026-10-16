@@ -31,3 +31,9 @@ Built with plain Jekyll — no custom plugins — so GitHub Pages builds it as i
 bundle install
 bundle exec jekyll serve
 ```
+
+### CV (EN + RU)
+Оба CV генерируются из `_cv/cv.yml`, а должности, даты и контакты берутся из
+`_data/career.yml` и `_data/profile.yml` — те же данные, что на сайте.
+После правок: `python3 tools/build_cv.py` (нужны `pyyaml` и `playwright`),
+проверка: `python3 tools/build_cv.py --check`. Её же запускает GitHub Action при каждом push.

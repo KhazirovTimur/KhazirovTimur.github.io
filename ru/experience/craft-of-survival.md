@@ -12,7 +12,7 @@ accent: green
 tags: [Релиз, Unity, Локации, Live-service]
 role: "Технический геймдизайнер"
 company: 101XP
-period: "Декабрь 2022 — середина 2023"
+period: "Декабрь 2022 — март 2023"
 engine: "Unity"
 platform: "Android (Google Play)"
 genre: "Survival RPG, live-service"

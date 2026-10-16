@@ -13,7 +13,7 @@ accent: teal
 tags: [Tools, Mechanics, Gamepad, Live-ops]
 role: "Technical Game Designer"
 company: 101XP
-period: "Mid 2023 — Nov 2024"
+period: "Mar 2023 — Nov 2024"
 engine: "Unity"
 platform: "PC (Steam)"
 genre: "Survivors-like action, live-service"
