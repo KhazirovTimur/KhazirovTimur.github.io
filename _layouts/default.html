@@ -1,0 +1,103 @@
+{%- assign lang = page.lang | default: "en" -%}
+{%- assign t = site.data.i18n.ui -%}
+{%- assign me = site.data.profile -%}
+{%- comment -%} Find this page's translation (same `ref`, other `lang`). {%- endcomment -%}
+{%- assign en_url = "/" -%}
+{%- assign ru_url = "/ru/" -%}
+{%- for p in site.pages -%}
+  {%- if p.ref and p.ref == page.ref -%}
+    {%- if p.lang == "ru" -%}{%- assign ru_url = p.url -%}{%- else -%}{%- assign en_url = p.url -%}{%- endif -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if page.ref == "home" -%}
+  {%- capture page_title -%}{{ t.name[lang] }} — {{ t.role[lang] }}{%- endcapture -%}
+{%- else -%}
+  {%- capture page_title -%}{{ page.title }} — {{ t.name[lang] }}{%- endcapture -%}
+{%- endif -%}
+{%- assign page_desc = page.summary | default: page.description | default: t.role[lang] | strip_html | strip_newlines | escape -%}
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page_title }}</title>
+  <meta name="description" content="{{ page_desc }}">
+  <meta name="author" content="{{ t.name[lang] }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="alternate" hreflang="en" href="{{ en_url | absolute_url }}">
+  <link rel="alternate" hreflang="ru" href="{{ ru_url | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ en_url | absolute_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page_title | escape }}">
+  <meta property="og:description" content="{{ page_desc }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:locale" content="{% if lang == 'ru' %}ru_RU{% else %}en_US{% endif %}">
+  {%- if page.cover %}
+  <meta property="og:image" content="{{ page.cover }}">
+  {%- endif %}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0c0e12">
+  <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+</head>
+<body class="page--{{ page.ref | default: 'other' }}">
+  <a class="skip-link" href="#content">{{ t.skip[lang] }}</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="{% if lang == 'ru' %}{{ '/ru/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">
+        <span class="brand__mark" aria-hidden="true">TK</span>
+        <span class="brand__text">
+          <span class="brand__name">{{ t.name[lang] }}</span>
+          <span class="brand__role">{{ t.role[lang] }}</span>
+        </span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          {%- for item in site.data.i18n.nav -%}
+            {%- assign item_url = "/" -%}
+            {%- for p in site.pages -%}
+              {%- if p.ref == item.ref and p.lang == lang -%}{%- assign item_url = p.url -%}{%- endif -%}
+            {%- endfor -%}
+            {%- assign is_active = false -%}
+            {%- if page.ref == item.ref or page.section == item.ref -%}{%- assign is_active = true -%}{%- endif %}
+          <li><a href="{{ item_url | relative_url }}"{% if is_active %} aria-current="page"{% endif %}>{{ item[lang] }}</a></li>
+          {%- endfor %}
+          <li class="site-nav__cv"><a class="btn btn--small btn--ghost" href="{{ me.cv | relative_url }}" download>{{ t.download_cv[lang] }}</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__tools">
+        <div class="lang-switch" role="group" aria-label="{{ t.lang_label[lang] }}">
+          <a href="{{ en_url | relative_url }}" hreflang="en" lang="en"{% if lang == 'en' %} aria-current="true"{% endif %}>EN</a>
+          <a href="{{ ru_url | relative_url }}" hreflang="ru" lang="ru"{% if lang == 'ru' %} aria-current="true"{% endif %}>RU</a>
+        </div>
+        <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+          <span class="visually-hidden">{{ t.menu[lang] }}</span>
+          <span class="nav-toggle__bar" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <div>
+        <p class="site-footer__name">{{ t.name[lang] }}</p>
+        <p class="site-footer__note">© {{ site.time | date: "%Y" }} · {{ t.footer_note[lang] }}</p>
+      </div>
+      {% include contact-links.html lang=lang compact=true %}
+    </div>
+  </footer>
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+# Contacts shown in the header, hero, contact block and footer.
+# Leave a value empty ("") to hide that contact everywhere.
+email: "tkhazirov@gmail.com"
+telegram: "Cyrpy"                 # username without @
+linkedin: "https://www.linkedin.com/in/timur-khazirov-6b13b2207/"
+github: "KhazirovTimur"           # username
+cv: "/assets/files/Timur_Khazirov_CV.pdf"

@@ -1,0 +1,45 @@
+# Interface strings. Every key has an `en` and a `ru` value.
+nav:
+  - ref: home
+    en: Home
+    ru: Главная
+  - ref: experience
+    en: Experience
+    ru: Опыт
+  - ref: projects
+    en: Projects
+    ru: Проекты
+  - ref: about
+    en: About
+    ru: Обо мне
+
+ui:
+  name:            { en: "Timur Khazirov", ru: "Тимур Хазиров" }
+  role:            { en: "Technical Game Designer", ru: "Технический геймдизайнер" }
+  download_cv:     { en: "Download CV", ru: "Скачать CV" }
+  cv_short:        { en: "CV", ru: "CV" }
+  contact:         { en: "Contact", ru: "Связаться" }
+  view_work:       { en: "View my work", ru: "Смотреть работы" }
+  read_case:       { en: "Read case", ru: "Подробнее" }
+  open_project:    { en: "Open project", ru: "Открыть проект" }
+  all_experience:  { en: "All experience", ru: "Весь опыт" }
+  all_projects:    { en: "All projects", ru: "Все проекты" }
+  back_experience: { en: "Back to experience", ru: "Назад к опыту" }
+  back_projects:   { en: "Back to projects", ru: "Назад к проектам" }
+  menu:            { en: "Menu", ru: "Меню" }
+  skip:            { en: "Skip to content", ru: "Перейти к содержимому" }
+  lang_label:      { en: "Language", ru: "Язык" }
+  role_label:      { en: "Role", ru: "Роль" }
+  company_label:   { en: "Studio", ru: "Студия" }
+  period_label:    { en: "Period", ru: "Период" }
+  engine_label:    { en: "Engine", ru: "Движок" }
+  platform_label:  { en: "Platform", ru: "Платформа" }
+  genre_label:     { en: "Genre", ru: "Жанр" }
+  status_label:    { en: "Status", ru: "Статус" }
+  links_label:     { en: "Links", ru: "Ссылки" }
+  stack_label:     { en: "Tools & tech", ru: "Инструменты и технологии" }
+  contacts_title:  { en: "Let’s talk", ru: "Давайте пообщаемся" }
+  contacts_text:
+    en: "I’m open to Technical / Gameplay Designer roles — on-site with relocation or remote. The fastest way to reach me is e-mail or Telegram."
+    ru: "Рассматриваю позиции Technical / Gameplay Designer — в офисе с релокацией или удалённо. Быстрее всего со мной связаться по почте или в Telegram."
+  footer_note:     { en: "Built with Jekyll · Hosted on GitHub Pages", ru: "Сделано на Jekyll · Размещено на GitHub Pages" }

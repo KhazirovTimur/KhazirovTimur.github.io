@@ -1,0 +1,37 @@
+---
+layout: default
+---
+{%- assign lang = page.lang | default: "en" -%}
+{%- assign t = site.data.i18n.ui -%}
+{%- assign more = t.read_case[lang] -%}
+{%- assign items = site.pages | where: "lang", lang | where: "section", page.ref | sort: "order" -%}
+<section class="page-head">
+  <div class="container">
+    {%- if page.eyebrow %}<p class="eyebrow">{{ page.eyebrow }}</p>{% endif %}
+    <h1 class="page-head__title">{{ page.title }}</h1>
+    {%- if page.intro %}<p class="page-head__intro">{{ page.intro }}</p>{% endif %}
+  </div>
+</section>
+
+{%- if page.show_timeline %}
+<section class="section section--tight">
+  <div class="container">
+    {%- if page.timeline_title %}<h2 class="section-title">{{ page.timeline_title }}</h2>{% endif %}
+    {% include timeline.html lang=lang %}
+  </div>
+</section>
+{%- endif %}
+
+<section class="section section--tight">
+  <div class="container">
+    {%- if page.cards_title %}<h2 class="section-title">{{ page.cards_title }}</h2>{% endif %}
+    <div class="cards">
+      {%- for p in items -%}
+        {% include card.html p=p more=more %}
+      {%- endfor %}
+    </div>
+    {{ content }}
+  </div>
+</section>
+
+{% include contact-band.html lang=lang %}

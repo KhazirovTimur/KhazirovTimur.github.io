@@ -1,0 +1,135 @@
+# Home page content. `en` and `ru` blocks mirror each other.
+# Featured cards on the home page (page refs). Prototypes are on the Projects page.
+featured: [pioner, the-braves, craft-of-survival]
+
+en:
+  eyebrow: "Technical Game Designer · Unreal Engine 5 · Unity"
+  headline: "I design gameplay — and implement it in the engine myself."
+  lead: "Technical game designer with 5+ years in the industry and three shipped commercial titles. I prototype and implement features in UE5 Blueprints and C++ or Unity C#, build tools that speed up production, balance progression and economy, and design the mechanics players interact with."
+  sheet:
+    title: "Character sheet"
+    rows:
+      - { k: "Class", v: "Technical Game Designer" }
+      - { k: "Engines", v: "Unreal Engine 5 · Unity" }
+      - { k: "Implementation", v: "Blueprints · C++ · C# · Python" }
+      - { k: "Focus", v: "Tech design · Balance · Economy · Gameplay" }
+      - { k: "Languages", v: "Russian (native) · English (B2–C1)" }
+      - { k: "Relocation", v: "Open · remote-capable" }
+    status: "Open to new opportunities"
+  stats:
+    - { value: "5+", label: "years in game development" }
+    - { value: "3", label: "shipped commercial titles" }
+    - { value: "20+", label: "mechanics designed and supported on commercial projects" }
+    - { value: "Tools", label: "built several internal tools that speed up the team’s work" }
+  work:
+    eyebrow: "Selected work"
+    title: "Shipped commercial games"
+  pillars:
+    eyebrow: "What I do"
+    title: "Where I bring the most value"
+    items:
+      - title: "Technical design & implementation"
+        text: "I prototype and ship features myself in UE5 Blueprints and C++ or Unity C#. I read production Blueprints, Behavior Trees and C++ code to understand how systems interact before changing them."
+      - title: "Tools & pipeline"
+        text: "When a task repeats, I automate it: a C++ loot parser that exports spawn data to CSV, a tool that moves content data from Google Sheets into a project’s admin panel instead of slow manual entry."
+      - title: "Balance & economy"
+        text: "Interconnected balance of progression, loot, crafting, vendor pricing and resource flow, driven by spreadsheets, playtests and player feedback."
+      - title: "Gameplay & combat mechanics"
+        text: "20+ mechanics across shipped games — weapon behaviour, hip-fire spread and crosshair, reload and perk systems, hero skills, boss variations and gamepad controls."
+      - title: "Documentation"
+        text: "Clear feature specs and balance tables that engineers, artists and QA can actually work from."
+      - title: "Mentoring"
+        text: "Reviewing design docs of junior designers, helping them own features and sharing hands-on Unreal Engine experience."
+  career:
+    eyebrow: "Career"
+    title: "From QA to Technical Game Designer"
+  toolkit:
+    eyebrow: "Toolkit"
+    title: "Technical skills"
+    groups:
+      - name: "Unreal Engine 5"
+        items: [Blueprints, "C++", Gameplay Tags, Enhanced Input, Animation Blueprints, Behavior Trees, AI Controllers, State Machines, Data Tables, Primary Data Assets, NavMesh, Gameplay Debugging]
+      - name: "Unity"
+        items: ["C#", MonoBehaviour, ScriptableObjects, Gameplay prototyping]
+      - name: "Programming"
+        items: ["C++", "C#", Python]
+      - name: "Production"
+        items: [Git, Bitbucket, Jira, Confluence, Miro, Rider, Visual Studio, Excel / Google Sheets]
+  approach:
+    eyebrow: "Approach"
+    title: "How I work"
+    quote: "A good mechanic isn’t just interesting — it fits the project’s goals, plays well with existing systems, is feasible to build and stays maintainable through production."
+    points:
+      - "Prototype early — playable beats documented."
+      - "Understand how existing systems interact before changing them."
+      - "Balance against measurable goals, not gut feeling."
+      - "Automate repetitive work so the team can focus on the game."
+  exploring:
+    title: "Currently exploring"
+    items: ["Gameplay Ability System", "Advanced Unreal Engine architecture", "REDkit workflows", "Gameplay tooling & automation", "AI-driven gameplay systems"]
+
+ru:
+  eyebrow: "Технический геймдизайнер · Unreal Engine 5 · Unity"
+  headline: "Проектирую геймплей — и сам реализую его в движке."
+  lead: "Технический геймдизайнер: 5+ лет в индустрии и три выпущенных коммерческих проекта. Прототипирую и реализую фичи на Blueprints и C++ в UE5 или на C# в Unity, делаю инструменты, ускоряющие производство, балансирую прогрессию и экономику и проектирую механики, с которыми взаимодействует игрок."
+  sheet:
+    title: "Карточка персонажа"
+    rows:
+      - { k: "Класс", v: "Технический геймдизайнер" }
+      - { k: "Движки", v: "Unreal Engine 5 · Unity" }
+      - { k: "Реализация", v: "Blueprints · C++ · C# · Python" }
+      - { k: "Фокус", v: "Техдизайн · Баланс · Экономика · Геймплей" }
+      - { k: "Языки", v: "Русский (родной) · Английский (B2–C1)" }
+      - { k: "Релокация", v: "Готов · возможна удалёнка" }
+    status: "Открыт к предложениям"
+  stats:
+    - { value: "5+", label: "лет в геймдеве" }
+    - { value: "3", label: "выпущенных коммерческих проекта" }
+    - { value: "20+", label: "механик спроектировано и сопровождено на коммерческих проектах" }
+    - { value: "Тулинг", label: "несколько внутренних инструментов, ускоривших работу команды" }
+  work:
+    eyebrow: "Избранное"
+    title: "Выпущенные коммерческие проекты"
+  pillars:
+    eyebrow: "Чем занимаюсь"
+    title: "Где я полезнее всего"
+    items:
+      - title: "Технический дизайн и реализация"
+        text: "Сам прототипирую и довожу фичи до релиза на Blueprints и C++ в UE5 или на C# в Unity. Читаю продакшн-Blueprints, Behavior Trees и C++-код, чтобы понять взаимодействие систем до внесения изменений."
+      - title: "Инструменты и пайплайн"
+        text: "Если задача повторяется, я её автоматизирую: C++-парсер лута с экспортом точек спавна в CSV, инструмент переноса данных контента из Google-таблиц в админ-панель проекта вместо медленного ручного ввода."
+      - title: "Баланс и экономика"
+        text: "Взаимосвязанный баланс прогрессии, лута, крафта, цен торговцев и потока ресурсов на основе таблиц, плейтестов и отзывов игроков."
+      - title: "Геймплейные и боевые механики"
+        text: "20+ механик в выпущенных играх — поведение оружия, разброс от бедра и прицел, перезарядка и перки, скиллы героев, вариации боссов, управление с геймпада."
+      - title: "Документация"
+        text: "Понятные ТЗ на фичи и балансные таблицы, по которым программисты, художники и QA действительно могут работать."
+      - title: "Менторство"
+        text: "Ревью диздоков младших дизайнеров, помощь в ведении фич и передача практического опыта работы с Unreal Engine."
+  career:
+    eyebrow: "Карьера"
+    title: "Из QA в технические геймдизайнеры"
+  toolkit:
+    eyebrow: "Инструменты"
+    title: "Технические навыки"
+    groups:
+      - name: "Unreal Engine 5"
+        items: [Blueprints, "C++", Gameplay Tags, Enhanced Input, Animation Blueprints, Behavior Trees, AI Controllers, State Machines, Data Tables, Primary Data Assets, NavMesh, Gameplay Debugging]
+      - name: "Unity"
+        items: ["C#", MonoBehaviour, ScriptableObjects, Прототипирование геймплея]
+      - name: "Программирование"
+        items: ["C++", "C#", Python]
+      - name: "Продакшн"
+        items: [Git, Bitbucket, Jira, Confluence, Miro, Rider, Visual Studio, Excel / Google Sheets]
+  approach:
+    eyebrow: "Подход"
+    title: "Как я работаю"
+    quote: "Хорошая механика — не просто интересная идея. Она отвечает целям проекта, встраивается в существующие системы, реализуема и остаётся поддерживаемой на всём протяжении разработки."
+    points:
+      - "Прототип как можно раньше — играбельное лучше задокументированного."
+      - "Сначала разобраться, как взаимодействуют существующие системы, потом менять."
+      - "Балансировать под измеримые цели, а не по ощущениям."
+      - "Автоматизировать рутину, чтобы команда занималась игрой."
+  exploring:
+    title: "Сейчас изучаю"
+    items: ["Gameplay Ability System", "Продвинутая архитектура Unreal Engine", "Работа в REDkit", "Геймплейный тулинг и автоматизация", "Системы геймплея на основе AI"]

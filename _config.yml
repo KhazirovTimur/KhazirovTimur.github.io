@@ -1,3 +1,34 @@
-theme: jekyll-theme-cayman
-title: Octocat's homepage
-description: Bookmark this to keep an eye on my project updates!
+# Site settings
+title: Timur Khazirov
+url: "https://khazirovtimur.github.io"
+baseurl: ""
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Plugins supported by GitHub Pages
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .jekyll-cache
+
+# Language: English is default, everything under /ru/ is Russian.
+# `ref` links a page to its translation (same ref = same page in another language).
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+      lang: en
+  - scope:
+      path: "ru"
+    values:
+      lang: ru
