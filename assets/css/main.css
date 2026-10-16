@@ -418,3 +418,23 @@ a { color: inherit; }
   .site-header, .contact-band, .video, .site-footer { display: none; }
   body { background: #fff; color: #000; }
 }
+
+/* ---------- Commercial / personal separation ---------- */
+.section--tight-top { padding-top: 0; }
+.section-lead { margin: 10px 0 0; color: var(--muted); max-width: 60ch; }
+.badge {
+  position: absolute; top: 12px; left: 12px; z-index: 2;
+  padding: 4px 10px; border-radius: 999px;
+  font: 600 11px/1.4 var(--font-mono); letter-spacing: .08em; text-transform: uppercase;
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+}
+.badge--commercial { background: var(--accent); color: var(--accent-ink); }
+.badge--personal { background: rgba(12,14,18,.75); color: var(--text); border: 1px solid var(--border-strong); }
+.cards--compact .card__cover { aspect-ratio: 460 / 160; }
+.cards--compact .card__cover-label { font-size: clamp(24px, 3vw, 32px); }
+@media (max-width: 1100px) {
+  .site-nav a:not(.btn) { padding: 8px 9px; font-size: 14px; }
+}
+@media (max-width: 1100px) and (min-width: 901px) {
+  .brand__role { display: none; }
+}

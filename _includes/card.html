@@ -2,6 +2,12 @@
 <article class="card">
   <a class="card__link" href="{{ p.url | relative_url }}">
     <div class="card__cover card__cover--{{ p.accent | default: 'orange' }}">
+      {%- assign card_lang = p.lang | default: "en" %}
+      {%- if p.section == "experience" %}
+      <span class="badge badge--commercial">{{ site.data.i18n.ui.badge_commercial[card_lang] }}</span>
+      {%- else %}
+      <span class="badge badge--personal">{{ site.data.i18n.ui.badge_personal[card_lang] }}</span>
+      {%- endif %}
       <span class="card__cover-label" aria-hidden="true">{{ p.cover_label | default: p.engine }}</span>
       {%- if p.cover %}
       <img src="{{ p.cover }}" alt="" loading="lazy" onerror="this.remove()">

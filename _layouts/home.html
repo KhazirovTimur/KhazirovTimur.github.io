@@ -59,10 +59,32 @@ layout: default
         <p class="eyebrow">{{ h.work.eyebrow }}</p>
         <h2 class="section-title">{{ h.work.title }}</h2>
       </div>
-      <a class="text-link" href="{{ projects_url | relative_url }}">{{ t.all_projects[lang] }} <span aria-hidden="true">→</span></a>
+      <a class="text-link" href="{{ experience_url | relative_url }}">{{ t.all_commercial[lang] }} <span aria-hidden="true">→</span></a>
     </div>
     <div class="cards">
       {%- for ref in site.data.home.featured -%}
+        {%- for p in site.pages -%}
+          {%- if p.ref == ref and p.lang == lang -%}
+            {% include card.html p=p more=more %}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section--tight-top" id="personal">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">{{ h.personal.eyebrow }}</p>
+        <h2 class="section-title">{{ h.personal.title }}</h2>
+        <p class="section-lead">{{ h.personal.lead }}</p>
+      </div>
+      <a class="text-link" href="{{ projects_url | relative_url }}">{{ t.all_personal[lang] }} <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="cards cards--compact">
+      {%- for ref in site.data.home.featured_personal -%}
         {%- for p in site.pages -%}
           {%- if p.ref == ref and p.lang == lang -%}
             {% include card.html p=p more=more %}

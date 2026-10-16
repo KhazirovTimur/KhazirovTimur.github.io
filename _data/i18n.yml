@@ -4,11 +4,11 @@ nav:
     en: Home
     ru: Главная
   - ref: experience
-    en: Experience
-    ru: Опыт
+    en: Commercial work
+    ru: Коммерческие проекты
   - ref: projects
-    en: Projects
-    ru: Проекты
+    en: Personal projects
+    ru: Личные проекты
   - ref: about
     en: About
     ru: Обо мне
@@ -22,10 +22,14 @@ ui:
   view_work:       { en: "View my work", ru: "Смотреть работы" }
   read_case:       { en: "Read case", ru: "Подробнее" }
   open_project:    { en: "Open project", ru: "Открыть проект" }
-  all_experience:  { en: "All experience", ru: "Весь опыт" }
+  all_experience:  { en: "All commercial work", ru: "Все коммерческие проекты" }
+  all_commercial:  { en: "All commercial work", ru: "Все коммерческие проекты" }
+  all_personal:    { en: "All personal projects", ru: "Все личные проекты" }
+  badge_commercial: { en: "Commercial", ru: "Коммерческий" }
+  badge_personal:  { en: "Personal", ru: "Личный" }
   all_projects:    { en: "All projects", ru: "Все проекты" }
-  back_experience: { en: "Back to experience", ru: "Назад к опыту" }
-  back_projects:   { en: "Back to projects", ru: "Назад к проектам" }
+  back_experience: { en: "Back to commercial work", ru: "К коммерческим проектам" }
+  back_projects:   { en: "Back to personal projects", ru: "К личным проектам" }
   menu:            { en: "Menu", ru: "Меню" }
   skip:            { en: "Skip to content", ru: "Перейти к содержимому" }
   lang_label:      { en: "Language", ru: "Язык" }

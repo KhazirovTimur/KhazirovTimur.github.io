@@ -1,6 +1,7 @@
 # Home page content. `en` and `ru` blocks mirror each other.
 # Featured cards on the home page (page refs). Prototypes are on the Projects page.
 featured: [pioner, the-braves, craft-of-survival]
+featured_personal: [helicopter, bot-arena, tiny-dozzer]
 
 en:
   eyebrow: "Technical Game Designer · Unreal Engine 5 · Unity"
@@ -22,8 +23,12 @@ en:
     - { value: "20+", label: "mechanics designed and supported on commercial projects" }
     - { value: "Tools", label: "built several internal tools that speed up the team’s work" }
   work:
-    eyebrow: "Selected work"
-    title: "Shipped commercial games"
+    eyebrow: "Commercial work"
+    title: "Shipped games I worked on in studios"
+  personal:
+    eyebrow: "Personal projects"
+    title: "Prototypes I build on my own"
+    lead: "Side projects made outside of work to explore mechanics and sharpen technical skills."
   pillars:
     eyebrow: "What I do"
     title: "Where I bring the most value"
@@ -88,8 +93,12 @@ ru:
     - { value: "20+", label: "механик спроектировано и сопровождено на коммерческих проектах" }
     - { value: "Тулинг", label: "несколько внутренних инструментов, ускоривших работу команды" }
   work:
-    eyebrow: "Избранное"
-    title: "Выпущенные коммерческие проекты"
+    eyebrow: "Коммерческие проекты"
+    title: "Выпущенные игры, над которыми я работал в студиях"
+  personal:
+    eyebrow: "Личные проекты"
+    title: "Прототипы, которые я делаю сам"
+    lead: "Проекты вне работы, на которых я исследую механики и прокачиваю технические навыки."
   pillars:
     eyebrow: "Чем занимаюсь"
     title: "Где я полезнее всего"
