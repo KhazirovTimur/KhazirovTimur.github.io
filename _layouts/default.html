@@ -59,7 +59,7 @@
 <aside class="card side">
   <div class="me"><div class="ava" aria-hidden="true">{% if lang == "ru" %}ТХ{% else %}TK{% endif %}</div>
     <div class="soc"><a href="mailto:{{ me.email }}" aria-label="Email">{% include icon.html n="mail" %}</a><a href="https://t.me/{{ me.telegram }}" aria-label="Telegram">{% include icon.html n="tg" %}</a><a href="https://github.com/{{ me.github }}" aria-label="GitHub">{% include icon.html n="gh" %}</a>{% if me.linkedin %}<a href="{{ me.linkedin }}" aria-label="LinkedIn">{% include icon.html n="in" %}</a>{% endif %}</div></div>
-  <div class="btns"><a class="btn pri" href="#contact">{{ u.hire }}</a><a class="btn" href="{{ cv_url | relative_url }}">{% include icon.html n="down" sw="2" %}{{ u.cv }}</a></div>
+  <div class="btns"><a class="btn pri" href="#contact">{{ u.hire }}</a><a class="btn" href="{{ cv_url | relative_url }}" download>{% include icon.html n="down" sw="2" %}{{ u.cv }}</a></div>
   <div class="lang" role="group" aria-label="{{ u.lang }}"><a href="{{ en_url | relative_url }}" lang="en" hreflang="en"{% if lang == "en" %} class="on" aria-current="true"{% endif %}>EN</a><a href="{{ ru_url | relative_url }}" lang="ru" hreflang="ru"{% if lang == "ru" %} class="on" aria-current="true"{% endif %}>RU</a></div>
   <nav class="nav" aria-label="Site">
     <p class="lab">{{ u.home }}</p>
