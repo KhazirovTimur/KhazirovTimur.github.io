@@ -2,36 +2,17 @@
 layout: default
 ---
 {%- assign lang = page.lang | default: "en" -%}
-{%- assign t = site.data.i18n.ui -%}
-{%- assign more = t.read_case[lang] -%}
+{%- assign u = site.data.ui[lang] -%}
 {%- assign items = site.pages | where: "lang", lang | where: "section", page.ref | sort: "order" -%}
-<section class="page-head">
-  <div class="container">
-    {%- if page.eyebrow %}<p class="eyebrow">{{ page.eyebrow }}</p>{% endif %}
-    <h1 class="page-head__title">{{ page.title }}</h1>
-    {%- if page.intro %}<p class="page-head__intro">{{ page.intro }}</p>{% endif %}
-  </div>
-</section>
-
-{%- if page.show_timeline %}
-<section class="section section--tight">
-  <div class="container">
-    {%- if page.timeline_title %}<h2 class="section-title">{{ page.timeline_title }}</h2>{% endif %}
-    {% include timeline.html lang=lang %}
-  </div>
-</section>
+{%- if page.ref == "experience" %}{% assign label = u.exp %}{% else %}{% assign label = u.protos %}{% endif -%}
+{% include crumbs.html cur=label %}
+<section class="card page-h" id="overview"><h1>{{ page.title }}</h1><p>{{ page.intro }}</p></section>
+{%- if page.ref == "experience" %}
+<section class="card sec" id="shipped" data-nav="shipped|{{ u.shipped }}"><h2 class="vh">{{ u.shipped }}</h2><div class="games">{% for p in items %}{% include game-card.html p=p %}{% endfor %}</div></section>
+<section class="card sec" id="career" data-nav="career|{{ u.career }}"><div class="sec-h"><h2>{{ u.career }}</h2></div><div class="tl">
+{%- for c in site.data.career %}<div><small>{{ c.period[lang] }}</small><div><h3>{{ c.role[lang] }} · {{ c.company }}</h3><p>{{ c.text[lang] }}</p></div></div>{% endfor -%}
+</div></section>
+{%- else %}
+<section class="card sec" id="list"><div class="pcards">{% for p in items %}<article class="pc">{% assign ic = site.data.ui.icons[p.ref] %}{% include icon.html n=ic %}<h2><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h2><small>{{ p.engine }} · {{ p.status }}</small><p>{{ p.summary }}</p><span class="more">{{ u.open }} {% include icon.html n="arrow" %}</span></article>{% endfor %}</div></section>
 {%- endif %}
-
-<section class="section section--tight">
-  <div class="container">
-    {%- if page.cards_title %}<h2 class="section-title">{{ page.cards_title }}</h2>{% endif %}
-    <div class="cards">
-      {%- for p in items -%}
-        {% include card.html p=p more=more %}
-      {%- endfor %}
-    </div>
-    {{ content }}
-  </div>
-</section>
-
-{% include contact-band.html lang=lang %}
+{{ content }}

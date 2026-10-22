@@ -1,0 +1,11 @@
+{%- comment -%} Split rendered markdown on <h2> into cards; each card gets an id and a sidebar entry. {%- endcomment -%}
+{%- assign parts = include.html | split: "<h2" -%}
+{%- for part in parts -%}
+  {%- if forloop.first -%}{%- assign pre = part | strip -%}{%- if pre != "" %}<section class="card sec prose case-sec">{{ part }}</section>{% endif -%}{%- continue -%}{%- endif -%}
+  {%- assign head = part | split: "</h2>" | first -%}
+  {%- assign sid = head | split: 'id="' | last | split: '"' | first -%}
+  {%- unless head contains 'id="' -%}{%- assign sid = "s" | append: forloop.index -%}{%- endunless -%}
+  {%- assign label = head | split: ">" | last -%}
+  {%- assign rest = part | remove_first: head | remove_first: "</h2>" -%}
+  <section class="card sec prose case-sec" id="{{ sid }}" data-nav="{{ sid }}|{{ label | strip_html | strip }}"><h2>{{ label }}</h2>{{ rest }}</section>
+{%- endfor -%}

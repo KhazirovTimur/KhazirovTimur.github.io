@@ -1,0 +1,9 @@
+{%- assign p = include.p -%}
+{%- assign u = site.data.ui[p.lang] -%}
+{%- assign st = p.links[0].url -%}
+{%- if st contains "steam" %}{% assign store = "Steam" %}{% elsif st contains "google" %}{% assign store = "Google Play" %}{% elsif st contains "github" %}{% assign store = "GitHub" %}{% elsif st contains "youtu" %}{% assign store = "YouTube" %}{% else %}{% assign store = "Link" %}{% endif -%}
+<article class="g">{% include media.html p=p %}<div class="b"><h3><a href="{{ p.url | relative_url }}">{{ p.title }}</a></h3>
+<div class="ln"><b>{{ p.role }}</b> · {{ p.company }}<span class="dt">{{ p.period }}</span></div>
+<p class="did">{{ p.summary }}</p>
+<div class="ft"><span class="badge{% if p.ref == 'pioner' %} live{% endif %}">{% if p.ref == 'pioner' %}{{ u.live }}{% else %}{{ u.released }}{% endif %} · {{ p.platform | split: " (" | first }} · {{ p.engine }}</span><a class="store" href="{{ st }}" target="_blank" rel="noopener">{{ store }} {% include icon.html n="arrow" %}</a></div>
+<span class="more">{{ u.read }} {% include icon.html n="arrow" %}</span></div></article>

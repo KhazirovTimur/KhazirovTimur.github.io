@@ -7,6 +7,8 @@ order: 3
 title: Craft of Survival
 eyebrow: "101XP · Unity · Mobile · 2022 — 2023"
 summary: "Одиночная survival-RPG на live-service модели. Когда большая часть команды ушла, мы вдвоём с коллегой довыпустили крупное обновление — локации в Unity я чинил сам."
+cover: "/assets/img/craft-of-survival/cover.jpg"
+cover_pos: "center 30%"
 cover_label: "Mobile"
 accent: green
 tags: [Релиз, Unity, Локации, Live-service]

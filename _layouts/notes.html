@@ -1,0 +1,13 @@
+---
+layout: default
+---
+{%- assign lang = page.lang | default: "en" -%}
+{%- assign u = site.data.ui[lang] -%}
+{% include crumbs.html cur=u.notes %}
+<section class="card page-h" id="overview"><h1>{{ u.notes }}</h1><p>{{ u.notes_intro }}</p></section>
+<section class="card sec" id="notes" data-nav="notes|{{ u.notes_h }}"><div class="sec-h"><h2>{{ u.notes_h }}</h2><p>{{ u.notes_sub }}</p></div><div class="notes">
+<div class="note-row"><span class="ic">{% include icon.html n="book" %}</span><div><h3>{{ u.notes_h }}</h3><p>{{ u.notes_soon }}</p></div><span class="soon">{{ u.soon }}</span></div></div></section>
+<section class="card sec" id="side" data-nav="side|{{ u.side_h }}"><div class="sec-h"><h2>{{ u.side_h }}</h2><p>{{ u.side_sub }}</p></div><div class="side3">
+{%- for s in u.side_works %}<div>{% include icon.html n=s.icon %}<h3>{{ s.h }} <small>· {{ s.tool }}</small></h3><p>{{ s.text }}</p>{% if s.links.size > 0 %}<div class="lk">{% for l in s.links %}<a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }} {% include icon.html n="arrow" %}</a>{% endfor %}</div>{% endif %}</div>{% endfor -%}
+</div></section>
+{{ content }}

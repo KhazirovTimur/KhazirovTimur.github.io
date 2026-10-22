@@ -13,8 +13,8 @@
   role:   { en: "Technical Game Designer · The Braves", ru: "Технический геймдизайнер · The Braves" }
   period: { en: "Mar 2023 — Nov 2024", ru: "Март 2023 — ноябрь 2024" }
   text:
-    en: "Built a tool that moved content data from Google Sheets into the admin panel ~5× faster than by hand. Wrote specs for and supported many mechanics — hero skills, weapon mechanics, gamepad controls — designed boss variations, set up content and balanced live updates and events."
-    ru: "Сделал инструмент, который переносит данные из Google-таблиц в админку примерно в 5 раз быстрее, чем руками. Писал ТЗ и сопровождал много механик — скиллы героев, оружие, управление с геймпада, — проектировал вариации боссов, заводил контент и балансировал обновления и ивенты."
+    en: "Built a tool that moved content data from Google Sheets into the admin panel 10× faster than by hand. Wrote specs for and supported many mechanics — hero skills, weapon mechanics, gamepad controls — designed boss variations, set up content and balanced live updates and events."
+    ru: "Сделал инструмент, который переносит данные из Google-таблиц в админку в 10 раз быстрее, чем руками. Писал ТЗ и сопровождал много механик — скиллы героев, оружие, управление с геймпада, — проектировал вариации боссов, заводил контент и балансировал обновления и ивенты."
 
 - company: 101XP
   projects: [craft-of-survival]

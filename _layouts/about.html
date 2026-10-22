@@ -1,0 +1,28 @@
+---
+layout: default
+---
+{%- comment -%} The page's markdown sections, in order: background, looking for, samples, education, certificates, languages, additional skills.
+They are regrouped into three cards; "additional skills" becomes a link to the side work page. {%- endcomment -%}
+{%- assign lang = page.lang | default: "en" -%}
+{%- assign u = site.data.ui[lang] -%}
+{%- assign hm = site.data.home[lang] -%}
+{%- assign me = site.data.profile -%}
+{%- assign parts = content | split: "<h2" -%}
+{%- assign notes_url = "/" -%}{%- for p in site.pages -%}{%- if p.ref == "notes" and p.lang == lang -%}{%- assign notes_url = p.url -%}{%- endif -%}{%- endfor -%}
+{% assign p1 = parts[1] %}{% assign p2 = parts[2] %}{% assign p3 = parts[3] %}{% assign p4 = parts[4] %}{% assign p5 = parts[5] %}{% assign p6 = parts[6] %}
+{% include crumbs.html cur=u.about %}
+<section class="card page-h" id="overview"><h1>{{ page.title }}</h1><p>{{ page.intro }}</p>
+<div class="links"><a class="btn pri" href="{{ me.cv[lang] | relative_url }}">{% include icon.html n="down" sw="2" %}{{ u.dl_cv }} (PDF)</a><a class="btn" href="mailto:{{ me.email }}">{% include icon.html n="mail" sw="2" %}{{ me.email }}</a></div></section>
+
+<section class="card sec prose grp" id="who" data-nav="who|{{ u.g_who }}"><h2>{{ u.g_who }}</h2>
+{% include gsub-md.html part=p1 id="background" %}{% include gsub-md.html part=p2 id="looking" %}</section>
+
+<section class="card sec prose grp" id="skills" data-nav="skills|{{ u.g_skills }}"><h2>{{ u.g_skills }}</h2>
+<div class="gsub" id="expertise"><h3>{{ u.expertise_h }}</h3><div class="areas">{% for p in hm.pillars.items %}<div><h4>{{ p.title }}</h4><p>{{ p.text }}</p></div>{% endfor %}</div></div>
+<div class="gsub" id="toolkit"><h3>{{ u.toolkit_h }}</h3><div class="toolkit">{% for g in hm.toolkit.groups %}<div><h4>{{ g.name }}</h4><div class="tags">{% for x in g.items %}<span>{{ x }}</span>{% endfor %}</div></div>{% endfor %}</div></div>
+<div class="gsub" id="approach"><h3>{{ u.approach_h }}</h3><p class="quote">{{ hm.approach.quote }}</p><ul>{% for p in hm.approach.points %}<li>{{ p }}</li>{% endfor %}</ul>
+<h4>{{ u.exploring_h }}</h4><div class="tags">{% for x in hm.exploring.items %}<span>{{ x }}</span>{% endfor %}</div></div></section>
+
+<section class="card sec prose grp" id="facts" data-nav="facts|{{ u.g_facts }}"><h2>{{ u.g_facts }}</h2>
+{% include gsub-md.html part=p3 id="samples" %}{% include gsub-md.html part=p4 id="education" %}{% include gsub-md.html part=p5 id="certificates" %}{% include gsub-md.html part=p6 id="languages" %}
+<p class="side-ln">{{ u.side_note }} <a href="{{ notes_url | relative_url }}#side">{{ u.side_link }} →</a></p></section>

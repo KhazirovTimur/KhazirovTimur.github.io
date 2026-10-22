@@ -20,7 +20,7 @@ en:
   stats:
     - { value: "5+", label: "years in game development" }
     - { value: "3", label: "shipped commercial titles" }
-    - { value: "20+", label: "mechanics designed and supported on commercial projects" }
+    - { value: "50+", label: "mechanics built in shipped games and personal projects" }
     - { value: "2+", label: "internal tools built to speed up the team’s work" }
   work:
     eyebrow: "Commercial work"
@@ -36,11 +36,11 @@ en:
       - title: "Technical design & implementation"
         text: "I prototype and ship features myself in UE5 Blueprints and C++ or Unity C#. I read production Blueprints, Behavior Trees and C++ code to understand how systems interact before changing them."
       - title: "Tools & pipeline"
-        text: "When a task repeats, I automate it: a C++ parser that exports ~3,000 loot spawners of an open-world map to CSV, a tool that moves content data from Google Sheets into an admin panel ~5× faster than by hand."
+        text: "When a task repeats, I automate it: a C++ parser that exports ~3,000 loot spawners of an open-world map to CSV, a tool that moves content data from Google Sheets into an admin panel 10× faster than by hand."
       - title: "Balance & economy"
         text: "Interconnected balance of progression, loot, crafting, vendor pricing and resource flow, driven by spreadsheets, playtests and player feedback."
       - title: "Gameplay & combat mechanics"
-        text: "20+ mechanics across shipped games — weapon behaviour, hip-fire spread and crosshair, reload and perk systems, hero skills, boss variations and gamepad controls."
+        text: "50+ mechanics across shipped games and personal projects — weapon behaviour, hip-fire spread and crosshair, reload and perk systems, hero skills, boss variations and gamepad controls."
       - title: "Team & documentation"
         text: "Feature specs and balance tables engineers, artists and QA can work from. I mentor junior designers — reviewing their docs and helping them own features."
   career:
@@ -88,7 +88,7 @@ ru:
   stats:
     - { value: "5+", label: "лет в геймдеве" }
     - { value: "3", label: "вышедших коммерческих проекта" }
-    - { value: "20+", label: "механик спроектировал и сопровождал в коммерческих проектах" }
+    - { value: "50+", label: "механик в вышедших играх и личных проектах" }
     - { value: "2+", label: "внутренних инструмента, которые ускорили работу команды" }
   work:
     eyebrow: "Коммерческие проекты"
@@ -104,11 +104,11 @@ ru:
       - title: "Техдизайн и реализация"
         text: "Сам прототипирую фичи и довожу их до релиза — на Blueprints и C++ в UE5 или на C# в Unity. Читаю рабочие Blueprints, Behavior Trees и C++-код, чтобы понять, как связаны системы, прежде чем что-то менять."
       - title: "Инструменты и пайплайн"
-        text: "Если задача повторяется — автоматизирую. C++-парсер, который выгружает в CSV около 3 000 спавнеров лута с карты открытого мира. Инструмент, который переносит данные из Google-таблиц в админку примерно в 5 раз быстрее, чем руками."
+        text: "Если задача повторяется — автоматизирую. C++-парсер, который выгружает в CSV около 3 000 спавнеров лута с карты открытого мира. Инструмент, который переносит данные из Google-таблиц в админку в 10 раз быстрее, чем руками."
       - title: "Баланс и экономика"
         text: "Прогрессия, лут, крафт, цены у торговцев и поток ресурсов — всё это связано, и балансирую я это вместе: по таблицам, плейтестам и отзывам игроков."
       - title: "Геймплей и боевые механики"
-        text: "20+ механик в вышедших играх: поведение оружия, разброс от бедра и прицел, перезарядка и перки, скиллы героев, вариации боссов, управление с геймпада."
+        text: "50+ механик в вышедших играх и личных проектах: поведение оружия, разброс от бедра и прицел, перезарядка и перки, скиллы героев, вариации боссов, управление с геймпада."
       - title: "Команда и документация"
         text: "Пишу ТЗ и балансные таблицы, по которым реально работают программисты, художники и QA. Менторю младших дизайнеров: ревьюю доки, помогаю вести фичи."
   career:
