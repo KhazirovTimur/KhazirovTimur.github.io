@@ -12,7 +12,7 @@ They are regrouped into three cards; "additional skills" becomes a link to the s
 {% assign p1 = parts[1] %}{% assign p2 = parts[2] %}{% assign p3 = parts[3] %}{% assign p4 = parts[4] %}{% assign p5 = parts[5] %}{% assign p6 = parts[6] %}
 {% include crumbs.html cur=u.about %}
 <section class="card page-h" id="overview"><h1>{{ page.title }}</h1><p>{{ page.intro }}</p>
-<div class="links"><a class="btn pri" href="{{ me.cv[lang] | relative_url }}">{% include icon.html n="down" sw="2" %}{{ u.dl_cv }} (PDF)</a><a class="btn" href="mailto:{{ me.email }}">{% include icon.html n="mail" sw="2" %}{{ me.email }}</a></div></section>
+<div class="links"><a class="btn pri" href="{{ me.cv[lang] | relative_url }}" download>{% include icon.html n="down" sw="2" %}{{ u.dl_cv }} (PDF)</a><a class="btn" href="mailto:{{ me.email }}">{% include icon.html n="mail" sw="2" %}{{ me.email }}</a></div></section>
 
 <section class="card sec prose grp" id="who" data-nav="who|{{ u.g_who }}"><h2>{{ u.g_who }}</h2>
 {% include gsub-md.html part=p1 id="background" %}{% include gsub-md.html part=p2 id="looking" %}</section>

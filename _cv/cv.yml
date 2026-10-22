@@ -4,8 +4,8 @@
 # Build: python3 tools/build_cv.py   (writes assets/files/Timur_Khazirov_CV*.pdf)
 
 title:
-  en: "Technical Game Designer"
-  ru: "Технический геймдизайнер"
+  en: "Senior Technical / Balance Game Designer"
+  ru: "Senior-геймдизайнер: техдизайн и баланс"
 
 note:
   en: "Open to relocation · Remote-capable"
@@ -28,11 +28,13 @@ profile:
     - "Technical game designer with 5+ years of professional experience on multiplayer and live-service games in Unreal Engine and Unity, and three shipped commercial titles."
     - "I own features from design through release, prototype gameplay in Blueprints and C++, balance combat, progression and economy systems, and work closely with engineering teams."
     - "A strong technical background lets me iterate on gameplay quickly, build prototypes myself and create internal production tools."
+    - "Built 50+ mechanics across shipped games and personal projects in C#, C++ and Blueprints."
     - "Mentored junior designers; contributed to commercial PC and mobile titles."
   ru:
     - "Технический геймдизайнер: 5+ лет в коммерческой разработке multiplayer и live-service игр на Unreal Engine и Unity, три вышедших проекта."
     - "Веду фичи от идеи до релиза, сам прототипирую геймплей на Blueprints и C++, балансирую бой, прогрессию и экономику и плотно работаю с программистами."
     - "Технический бэкграунд позволяет быстро итерировать геймплей, собирать прототипы и делать внутренние инструменты для команды."
+    - "Собрал 50+ механик в вышедших играх и личных проектах на C#, C++ и Blueprints."
     - "Менторил младших дизайнеров, участвовал в выпуске коммерческих проектов на PC и мобильных платформах."
 
 competencies:
@@ -89,14 +91,14 @@ jobs:
       ru: "The Braves (Steam, вышел) — live-service экшен в духе Vampire Survivors, Unity"
     bullets:
       en:
-        - "Built an internal tool that moves content data from Google Sheets into the project’s admin panel — content integration became roughly 5× faster."
-        - "Wrote specs for and supported many mechanics — hero skills, weapon mechanics, boss variations — from concept through implementation and balance."
+        - "Built an internal tool that moves content data from Google Sheets into the project’s admin panel — content integration became 10× faster."
+        - "Wrote 20+ specs for artists and programmers and supported many mechanics — hero skills, weapon mechanics, boss variations — from concept through implementation and balance."
         - "Owned gamepad support and player-facing UI/UX flows, including a redesign of the achievement interface."
         - "Set up content for live updates, calculated part of an in-game event’s balance, tuned enemy difficulty, rewards and the gacha economy."
         - "Worked daily with programmers, artists and UI artists to ship ongoing live-service content."
       ru:
-        - "Сделал внутренний инструмент, который переносит данные контента из Google-таблиц в админку проекта, — контент стал заводиться примерно в 5 раз быстрее."
-        - "Писал ТЗ и сопровождал много механик — скиллы героев, механики оружия, вариации боссов — от идеи до реализации и баланса."
+        - "Сделал внутренний инструмент, который переносит данные контента из Google-таблиц в админку проекта, — контент стал заводиться в 10 раз быстрее."
+        - "Написал 20+ ТЗ для художников и программистов и сопровождал много механик — скиллы героев, механики оружия, вариации боссов — от идеи до реализации и баланса."
         - "Вёл поддержку геймпада и сценарии UI/UX, в том числе переделанный экран достижений."
         - "Заводил контент для live-обновлений, считал часть баланса внутриигрового ивента, настраивал сложность врагов, награды и гача-экономику."
         - "Каждый день работал с программистами, художниками и UI-художниками над регулярными live-обновлениями."

@@ -1,6 +1,10 @@
 # Notes for Claude working on this site
 
 ## CV must always match the site
+Standing rule from the site owner: every change to the site updates BOTH CVs (EN and RU)
+in the same commit, without being asked. Never push a site change with a stale CV
+or a red `build_cv.py --check`.
+
 Both CVs (`assets/files/Timur_Khazirov_CV.pdf`, `assets/files/Timur_Khazirov_CV_RU.pdf`)
 are generated — never edit the PDFs by hand.
 
@@ -17,6 +21,13 @@ After ANY change to site content (pages, `_data/*`), before committing:
    Add new cross-checked facts to `FACTS` in `tools/build_cv.py` when a key number appears.
 
 The GitHub Action `.github/workflows/cv-check.yml` runs the same check on every push.
+
+The CV download buttons (sidebar and About page) use `profile.cv[lang]`, so the
+English site serves the English CV and `/ru/` serves the Russian one.
+
+If Playwright's Chromium is not installed but another Chromium binary is, run the build
+with that binary by patching `BrowserType.launch` to pass `executable_path` (do not
+change `build_cv.py` for a local environment).
 
 ## Languages
 Every page exists in EN (root) and RU (`ru/`), linked by the same `ref`.
