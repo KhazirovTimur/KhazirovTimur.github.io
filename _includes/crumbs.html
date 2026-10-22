@@ -1,0 +1,4 @@
+{%- assign u = site.data.ui[page.lang] -%}
+<nav class="crumbs" aria-label="Breadcrumbs"><a href="{% if page.lang == 'ru' %}{{ '/ru/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">{{ u.home }}</a>
+{%- if include.sec_url %}<span>/</span><a href="{{ include.sec_url | relative_url }}">{{ include.sec_label }}</a>{% endif -%}
+<span>/</span><span class="cur">{{ include.cur }}</span></nav>

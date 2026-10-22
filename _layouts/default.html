@@ -1,5 +1,6 @@
 {%- assign lang = page.lang | default: "en" -%}
 {%- assign t = site.data.i18n.ui -%}
+{%- assign u = site.data.ui[lang] -%}
 {%- assign me = site.data.profile -%}
 {%- comment -%} Find this page's translation (same `ref`, other `lang`). {%- endcomment -%}
 {%- assign en_url = "/" -%}
@@ -10,9 +11,9 @@
   {%- endif -%}
 {%- endfor -%}
 {%- if page.ref == "home" -%}
-  {%- capture page_title -%}{{ t.name[lang] }} — {{ t.role[lang] }}{%- endcapture -%}
+  {%- capture page_title -%}{{ u.name }} — {{ u.role }}{%- endcapture -%}
 {%- else -%}
-  {%- capture page_title -%}{{ page.title }} — {{ t.name[lang] }}{%- endcapture -%}
+  {%- capture page_title -%}{{ page.title | replace: "&amp;", "&" }} — {{ u.name }}{%- endcapture -%}
 {%- endif -%}
 {%- assign page_desc = page.summary | default: page.description | default: t.role[lang] | strip_html | strip_newlines | escape -%}
 <!doctype html>
@@ -42,64 +43,44 @@
   <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Manrope:wght@400;500;600;700&family=Unbounded:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 </head>
 <body class="page--{{ page.ref | default: 'other' }}">
-  <a class="skip-link" href="#content">{{ t.skip[lang] }}</a>
-
-  <header class="site-header">
-    <div class="container site-header__inner">
-      <a class="brand" href="{% if lang == 'ru' %}{{ '/ru/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">
-        <span class="brand__mark" aria-hidden="true">TK</span>
-        <span class="brand__text">
-          <span class="brand__name">{{ t.name[lang] }}</span>
-          <span class="brand__role">{{ t.role[lang] }}</span>
-        </span>
-      </a>
-
-      <nav class="site-nav" id="site-nav" aria-label="Main">
-        <ul>
-          {%- for item in site.data.i18n.nav -%}
-            {%- assign item_url = "/" -%}
-            {%- for p in site.pages -%}
-              {%- if p.ref == item.ref and p.lang == lang -%}{%- assign item_url = p.url -%}{%- endif -%}
-            {%- endfor -%}
-            {%- assign is_active = false -%}
-            {%- if page.ref == item.ref or page.section == item.ref -%}{%- assign is_active = true -%}{%- endif %}
-          <li><a href="{{ item_url | relative_url }}"{% if is_active %} aria-current="page"{% endif %}>{{ item[lang] }}</a></li>
-          {%- endfor %}
-          <li class="site-nav__cv"><a class="btn btn--small btn--ghost" href="{{ me.cv[lang] | default: me.cv.en | relative_url }}" download>{{ t.download_cv[lang] }}</a></li>
-        </ul>
-      </nav>
-
-      <div class="site-header__tools">
-        <div class="lang-switch" role="group" aria-label="{{ t.lang_label[lang] }}">
-          <a href="{{ en_url | relative_url }}" hreflang="en" lang="en"{% if lang == 'en' %} aria-current="true"{% endif %}>EN</a>
-          <a href="{{ ru_url | relative_url }}" hreflang="ru" lang="ru"{% if lang == 'ru' %} aria-current="true"{% endif %}>RU</a>
-        </div>
-        <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
-          <span class="visually-hidden">{{ t.menu[lang] }}</span>
-          <span class="nav-toggle__bar" aria-hidden="true"></span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <main id="content">
-    {{ content }}
-  </main>
-
-  <footer class="site-footer">
-    <div class="container site-footer__inner">
-      <div>
-        <p class="site-footer__name">{{ t.name[lang] }}</p>
-        <p class="site-footer__note">© {{ site.time | date: "%Y" }} · {{ t.footer_note[lang] }}</p>
-      </div>
-      {% include contact-links.html lang=lang compact=true %}
-    </div>
-  </footer>
-
-  <script src="{{ '/assets/js/main.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
+{%- assign me = site.data.profile -%}
+{%- assign cv_url = me.cv[lang] | default: me.cv.en -%}
+{%- assign navparts = content | split: 'data-nav="' -%}
+{%- capture subnav -%}
+  {%- for np in navparts offset: 1 -%}{%- assign nv = np | split: '"' | first | split: '|' -%}<a href="#{{ nv[0] }}">{{ nv[1] }}</a>{%- endfor -%}
+  {%- if page.ref == "home" -%}<a href="#contact">{{ u.contact }}</a>{%- endif -%}
+{%- endcapture -%}
+{%- assign items = "home:home:overview,experience:brief:exp,projects:cube:protos,notes:book:notes,about:user:about" | split: "," -%}
+<div class="shell">
+<aside class="card side">
+  <div class="me"><div class="ava" aria-hidden="true">{% if lang == "ru" %}ТХ{% else %}TK{% endif %}</div>
+    <div class="soc"><a href="mailto:{{ me.email }}" aria-label="Email">{% include icon.html n="mail" %}</a><a href="https://t.me/{{ me.telegram }}" aria-label="Telegram">{% include icon.html n="tg" %}</a><a href="https://github.com/{{ me.github }}" aria-label="GitHub">{% include icon.html n="gh" %}</a>{% if me.linkedin %}<a href="{{ me.linkedin }}" aria-label="LinkedIn">{% include icon.html n="in" %}</a>{% endif %}</div></div>
+  <div class="btns"><a class="btn pri" href="#contact">{{ u.hire }}</a><a class="btn" href="{{ cv_url | relative_url }}">{% include icon.html n="down" sw="2" %}{{ u.cv }}</a></div>
+  <div class="lang" role="group" aria-label="{{ u.lang }}"><a href="{{ en_url | relative_url }}" lang="en" hreflang="en"{% if lang == "en" %} class="on" aria-current="true"{% endif %}>EN</a><a href="{{ ru_url | relative_url }}" lang="ru" hreflang="ru"{% if lang == "ru" %} class="on" aria-current="true"{% endif %}>RU</a></div>
+  <nav class="nav" aria-label="Site">
+    <p class="lab">{{ u.home }}</p>
+    {%- for it in items -%}
+      {%- assign f = it | split: ":" -%}
+      {%- assign item_url = "/" -%}
+      {%- for p in site.pages -%}{%- if p.ref == f[0] and p.lang == lang -%}{%- assign item_url = p.url -%}{%- endif -%}{%- endfor -%}
+      {%- assign on = false -%}{%- if page.ref == f[0] or page.section == f[0] -%}{%- assign on = true -%}{%- endif -%}
+      {%- if forloop.index == 2 %}<div class="sep"></div><p class="lab">{{ u.portfolio }}</p>{% endif -%}
+      <a href="{{ item_url | relative_url }}"{% if on %} class="on" aria-current="page"{% endif %}>{% assign ic = f[1] %}{% include icon.html n=ic %}{% assign key = f[2] %}{{ u[key] }}</a>
+      {%- if on and subnav != "" %}<div class="sub">{{ subnav }}</div>{% endif -%}
+    {%- endfor %}
+  </nav>
+  <div class="avail"><i></i><span>{{ u.avail }}</span></div>
+</aside>
+<main id="top">
+{{ content }}
+<section class="card cta" id="contact"><div><h2>{{ u.cta_t }}</h2><p>{{ u.cta_p }}</p></div>
+  <div class="btns"><a class="btn pri" href="mailto:{{ me.email }}">{% include icon.html n="mail" sw="2" %}{{ me.email }}</a><a class="btn" href="https://t.me/{{ me.telegram }}">{% include icon.html n="tg" sw="2" %}Telegram @{{ me.telegram }}</a></div></section>
+</main>
+</div>
+<script src="{{ '/assets/js/main.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 </body>
 </html>

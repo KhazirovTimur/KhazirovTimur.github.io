@@ -1,0 +1,2 @@
+{%- assign p = include.p -%}
+<div class="media{% unless p.cover %} noimg{% endunless %}">{% if p.cover %}<img src="{{ p.cover | relative_url }}" alt="{{ p.title }}" loading="lazy"{% if include.banner and p.cover_pos %} style="object-position:{{ p.cover_pos }}"{% endif %}>{% endif %}<div class="fb">{% assign ic = site.data.ui.icons[p.ref] %}{% include icon.html n=ic sw="1.2" %}</div></div>

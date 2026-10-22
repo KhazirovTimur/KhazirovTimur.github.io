@@ -15,7 +15,7 @@ nav:
 
 ui:
   name:            { en: "Timur Khazirov", ru: "Тимур Хазиров" }
-  role:            { en: "Technical Game Designer", ru: "Технический геймдизайнер" }
+  role:            { en: "Senior Technical / Balance Game Designer", ru: "Senior-геймдизайнер: техдизайн и баланс" }
   download_cv:     { en: "Download CV", ru: "Скачать CV" }
   cv_short:        { en: "CV", ru: "CV" }
   contact:         { en: "Contact", ru: "Связаться" }

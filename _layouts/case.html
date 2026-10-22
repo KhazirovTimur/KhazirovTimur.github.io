@@ -2,70 +2,27 @@
 layout: default
 ---
 {%- assign lang = page.lang | default: "en" -%}
-{%- assign t = site.data.i18n.ui -%}
+{%- assign u = site.data.ui[lang] -%}
+{%- assign lb = u.labels -%}
+{%- assign sib = site.pages | where: "lang", lang | where: "section", page.section | sort: "order" -%}
 {%- assign back_url = "/" -%}
-{%- for p in site.pages -%}
-  {%- if p.ref == page.section and p.lang == lang -%}{%- assign back_url = p.url -%}{%- endif -%}
-{%- endfor -%}
-<section class="case-head">
-  <div class="container case-head__grid">
-    <div>
-      <a class="back-link" href="{{ back_url | relative_url }}"><span aria-hidden="true">←</span> {% if page.section == 'projects' %}{{ t.back_projects[lang] }}{% else %}{{ t.back_experience[lang] }}{% endif %}</a>
-      <p class="eyebrow">{{ page.eyebrow }}</p>
-      <h1 class="case-head__title">{{ page.title }}</h1>
-      <p class="case-head__summary">{{ page.summary }}</p>
-      {%- if page.links %}
-      <div class="btn-row">
-        {%- for l in page.links %}
-        <a class="btn{% if forloop.first %} btn--primary{% else %} btn--ghost{% endif %}" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }} <span aria-hidden="true">↗</span></a>
-        {%- endfor %}
-      </div>
-      {%- endif %}
-    </div>
-
-    <dl class="facts">
-      {%- if page.role %}<div><dt>{{ t.role_label[lang] }}</dt><dd>{{ page.role }}</dd></div>{% endif %}
-      {%- if page.company %}<div><dt>{{ t.company_label[lang] }}</dt><dd>{{ page.company }}</dd></div>{% endif %}
-      {%- if page.period %}<div><dt>{{ t.period_label[lang] }}</dt><dd>{{ page.period }}</dd></div>{% endif %}
-      {%- if page.engine %}<div><dt>{{ t.engine_label[lang] }}</dt><dd>{{ page.engine }}</dd></div>{% endif %}
-      {%- if page.platform %}<div><dt>{{ t.platform_label[lang] }}</dt><dd>{{ page.platform }}</dd></div>{% endif %}
-      {%- if page.genre %}<div><dt>{{ t.genre_label[lang] }}</dt><dd>{{ page.genre }}</dd></div>{% endif %}
-      {%- if page.status %}<div><dt>{{ t.status_label[lang] }}</dt><dd>{{ page.status }}</dd></div>{% endif %}
-    </dl>
-  </div>
-
-  {%- if page.highlights %}
-  <div class="container">
-    <ul class="highlights">
-      {%- for h in page.highlights %}
-      <li><strong>{{ h.value }}</strong><span>{{ h.label }}</span></li>
-      {%- endfor %}
-    </ul>
-  </div>
-  {%- endif %}
-</section>
-
-{%- if page.youtube %}
-<div class="container">
-  <div class="video">
-    <iframe src="https://www.youtube-nocookie.com/embed/{{ page.youtube }}" title="{{ page.title }} — gameplay" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
-  </div>
-</div>
+{%- for p in site.pages -%}{%- if p.ref == page.section and p.lang == lang -%}{%- assign back_url = p.url -%}{%- endif -%}{%- endfor -%}
+{%- if page.section == "experience" %}{% assign label = u.exp %}{% else %}{% assign label = u.protos %}{% endif -%}
+{% include crumbs.html sec_url=back_url sec_label=label cur=page.title %}
+<section class="card banner" id="overview">{% include media.html p=page banner=true %}<div class="head"><div><p class="eyebrow">{{ page.eyebrow }}</p><h1>{{ page.title }}</h1>
+<p class="lead">{{ page.summary }}</p><div class="links">{% for l in page.links %}<a class="btn{% if forloop.first %} pri{% endif %}" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }} {% include icon.html n="arrow" %}</a>{% endfor %}</div></div>
+<dl class="kv">{% assign keys = "role,company,period,engine,platform,genre,status" | split: "," %}{% for k in keys %}{% if page[k] %}<dt>{{ lb[k] }}</dt><dd>{{ page[k] }}</dd>{% endif %}{% endfor %}</dl></div></section>
+{%- if page.highlights %}
+<section class="hl">{% for h in page.highlights %}<div class="card stat"><b>{{ h.value }}</b><span>{{ h.label }}</span></div>{% endfor %}</section>
 {%- endif %}
-
-<div class="container section case-body">
-  <article class="prose">
-    {{ content }}
-  </article>
-
-  {%- if page.stack %}
-  <aside class="case-aside">
-    <h2 class="aside-title">{{ t.stack_label[lang] }}</h2>
-    <ul class="tags tags--stack">
-      {%- for s in page.stack %}<li>{{ s }}</li>{% endfor %}
-    </ul>
-  </aside>
-  {%- endif %}
-</div>
-
-{% include contact-band.html lang=lang %}
+{%- if page.youtube %}
+<section class="card sec" id="video"><div class="sec-h"><h2>{{ u.gameplay }}</h2></div><a class="video" href="https://www.youtube.com/watch?v={{ page.youtube }}" target="_blank" rel="noopener" aria-label="{{ u.video }}"><img src="https://i.ytimg.com/vi/{{ page.youtube }}/maxresdefault.jpg" alt="" loading="lazy" onerror="this.remove()"><span class="play">{% include icon.html n="play" %}</span><span class="cap">{{ u.video }}</span></a></section>
+{%- endif %}
+{% include sections.html html=content %}
+{%- if page.stack %}
+<section class="card sec" id="stack" data-nav="stack|{{ u.stack }}"><div class="sec-h"><h2>{{ u.stack }}</h2></div><div class="tags">{% for s in page.stack %}<span>{{ s }}</span>{% endfor %}</div></section>
+{%- endif %}
+{%- for p in sib -%}{%- if p.ref == page.ref -%}{%- assign i = forloop.index0 -%}{%- endif -%}{%- endfor -%}
+{%- assign n = sib | size -%}
+{%- assign pi = i | minus: 1 | plus: n | modulo: n -%}{%- assign ni = i | plus: 1 | modulo: n -%}
+<nav class="pn"><a class="card" href="{{ sib[pi].url | relative_url }}"><small>{{ u.prev }}</small><b>{{ sib[pi].title }}</b></a><a class="card r" href="{{ sib[ni].url | relative_url }}"><small>{{ u.next }}</small><b>{{ sib[ni].title }}</b></a></nav>

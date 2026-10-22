@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: about
 ref: about
 lang: ru
 title: Обо мне

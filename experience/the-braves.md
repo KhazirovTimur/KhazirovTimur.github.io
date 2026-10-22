@@ -21,7 +21,8 @@ status: "Released"
 links:
   - { label: "Steam page", url: "https://store.steampowered.com/app/2479830/The_Braves/" }
 highlights:
-  - { value: "~5×", label: "faster content integration with my tool" }
+  - { value: "×10", label: "faster content integration with my tool" }
+  - { value: "20+", label: "specs written for artists and programmers" }
 stack: [Unity, "C#", ScriptableObjects, Google Sheets, Jira, Confluence, Git]
 permalink: /experience/the-braves/
 ---
@@ -38,7 +39,7 @@ I joined the project after Craft of Survival and stayed on it until I left 101XP
 
 **Solution.** I built an internal tool that moves the data from Google Sheets into the admin panel automatically.
 
-**Result.** Content integration became **roughly 5× faster**, and designers spent their time on design and balance instead of manual data entry.
+**Result.** Content integration became **10× faster**, and designers spent their time on design and balance instead of manual data entry.
 
 ## Mechanics
 

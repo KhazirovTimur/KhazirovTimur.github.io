@@ -1,0 +1,408 @@
+# Sidebar design: interface strings and home-page blocks, per language.
+en:
+  name: Timur Khazirov
+  role: Senior Technical / Balance Game Designer
+  hire: Hire me
+  cv: CV
+  overview: Overview
+  home: Home
+  portfolio: Portfolio
+  exp: Commercial projects
+  protos: Prototypes
+  notes: Notes &amp; side work
+  about: About &amp; CV
+  avail: Looking for a new role. Open to relocation and remote.
+  lang: Language
+  pitch: Gameplay designer who implements, not only documents. I own features from design to release, balance combat, economy and progression, and prototype in UE5 Blueprints and C++ myself.
+  chips:
+  - Blueprints &amp; C++
+  - PC &amp; mobile
+  facts:
+  - k: Now
+    v: PIONER · GFAGAMES
+  - k: Engines
+    v: UE5 · Unity
+  - k: Languages
+    v: RU native · EN C1
+  - k: Work format
+    v: Relocation or remote
+  stats:
+  - n: 5<em>+</em>
+    label: years in commercial game development
+  - n: '3'
+    label: shipped commercial titles
+  - n: ×10
+    label: faster work with tools I built myself
+  - n: 50<em>+</em>
+    label: mechanics built in C#, C++ and Blueprints
+  shipped: Shipped titles
+  all_proj: View all projects
+  read: Read the case
+  open: Open project
+  skills: Skills
+  skills_sub: 'Core skills: self-assessment, out of 10'
+  expertise: Full expertise
+  beyond: Beyond design
+  beyond_why: Side skills I picked up to understand how every part of a game is made.
+  works: View works
+  side:
+  - icon: cube
+    h: 3D
+    tool: Blender
+    text: A model of my own and a guided study piece.
+    link: true
+  - icon: wave
+    h: Sound design
+    tool: Reaper · Ableton
+    text: Re-voiced a film clip and made game sounds from my own everyday recordings.
+    link: true
+  - icon: note
+    h: Music
+    tool: ''
+    text: Some experience writing music of my own.
+    link: false
+  ach: Achievements
+  gold: gold
+  silver: silver
+  bronze: bronze
+  show_all: Show all 8 achievements
+  show_less: Show less
+  achs:
+  - icon: crosshair
+    tier: gold
+    name: Feature Owner
+    text: Owned four combat features on PIONER from design to release
+    where: PIONER · 2024 – now
+  - icon: tool
+    tier: gold
+    name: Toolsmith
+    text: 'Built content integration tools: work goes ×10 faster'
+    where: The Braves · 101XP
+  - icon: star
+    tier: gold
+    name: Mentor
+    text: 'Mentors junior designers: reviews docs, helps with UE'
+    where: GFAGAMES
+  - icon: users
+    tier: silver
+    name: Two-Person Crew
+    text: One of two designers who shipped a major Craft of Survival update
+    where: Craft of Survival · 2023
+  - icon: grid
+    tier: silver
+    name: Data Miner
+    text: Wrote a C++ loot parser that exports ~3,000 spawners to CSV
+    where: PIONER
+  - icon: chart
+    tier: silver
+    name: Balancer
+    text: Combat, bosses, loot, crafting, vendors, economy, progression
+    where: PIONER
+  - icon: shield
+    tier: bronze
+    name: Controller Ready
+    text: Owned gamepad support and hero skills
+    where: The Braves
+  - icon: bug
+    tier: bronze
+    name: Class Change
+    text: Moved from QA into game design
+    where: 101XP · Dec 2022
+  all_protos: All prototypes
+  cta_t: Let's talk about your project
+  cta_p: Looking for a Technical or Senior Gameplay Designer role. I reply within a day.
+  career: Career
+  dl_cv: Download CV
+  stack: Tools &amp; tech
+  prev: Previous
+  next: Next
+  video: Watch on YouTube
+  gameplay: Gameplay
+  labels:
+    role: Role
+    company: Studio
+    period: Period
+    engine: Engine
+    platform: Platform
+    genre: Genre
+    status: Status
+  notes_intro: Breakdowns of mechanics and games, plus side skills I picked up to understand how every part of a game is made.
+  notes_h: Notes
+  notes_sub: Breakdowns of mechanics, balance and games
+  notes_soon: Breakdowns of mechanics and games are on the way. Work-related case studies live on the project pages.
+  soon: Coming soon
+  side_h: Side work
+  side_sub: Smaller skills outside game design
+  expertise_h: Expertise
+  toolkit_h: Technical skills
+  approach_h: How I work
+  exploring_h: Currently exploring
+  certs_h: Certificates
+  side_link: See 3D and sound work
+  side_note: 'Also: 3D in Blender, sound design, music, video editing.'
+  g_who: Who I am
+  g_skills: What I do
+  g_facts: Facts
+  skills_list:
+  - name: Unreal Engine
+    v: 8
+  - name: Balancing
+    v: 8
+  - name: Systems design
+    v: 8
+  - name: Prototyping
+    v: 8
+  - name: Economy
+    v: 7
+  - name: C++
+    v: 6
+  - name: Unity
+    v: 6
+  - name: Gameplay UI
+    v: 6
+  counts:
+    gold: 3
+    silver: 3
+    bronze: 2
+  side_works:
+  - icon: cube
+    h: 3D
+    tool: Blender
+    text: A model of my own, shown from two angles, and a guided study piece I made first.
+    links:
+    - label: Own model · angle 1
+      url: https://drive.google.com/file/d/1FTt78sgQhWqJXcUxa4nwu-G33pJxiZsw/view
+    - label: Own model · angle 2
+      url: https://drive.google.com/file/d/1gqyyF131Hm3LIybJK4GL3rKW1DYD-_SM/view
+    - label: Guided study
+      url: https://drive.google.com/file/d/1BXRM50WZ-G4urJv5bzSCLC_g4w-4Vn-6/view
+  - icon: wave
+    h: Sound design
+    tool: Reaper · Ableton
+    text: Re-voiced a film clip, and made three game sounds from my own everyday recordings.
+    links:
+    - label: Film re-sound
+      url: https://youtu.be/EJERrAkv53A
+    - label: 3 game sounds
+      url: https://youtu.be/LuC8yxbvpfI
+  - icon: note
+    h: Music
+    tool: Ableton
+    text: Some experience writing music of my own.
+    links: []
+  - icon: play
+    h: Video &amp; image editing
+    tool: Photoshop · Premiere
+    text: Basic editing for my own videos, previews and documents.
+    links: []
+  summary: Summary
+  contact: Contact
+  live: Live
+  released: Released
+ru:
+  name: Тимур Хазиров
+  role: 'Senior-геймдизайнер: техдизайн и баланс'
+  hire: Написать
+  cv: CV
+  overview: Обзор
+  home: Главная
+  portfolio: Портфолио
+  exp: Коммерческие проекты
+  protos: Прототипы
+  notes: Заметки и сайд-работы
+  about: Обо мне и CV
+  avail: Ищу работу. Готов к релокации и удалёнке.
+  lang: Язык
+  pitch: Геймдизайнер, который не только пишет документы, но и сам собирает. Веду фичи от дизайна до релиза, балансирую бой, экономику и прогрессию, прототипирую на Blueprints и C++ в UE5.
+  chips:
+  - Blueprints и C++
+  - PC и мобильные
+  facts:
+  - k: Сейчас
+    v: PIONER · GFAGAMES
+  - k: Движки
+    v: UE5 · Unity
+  - k: Языки
+    v: русский родной · английский C1
+  - k: Формат работы
+    v: Релокация или удалёнка
+  stats:
+  - n: 5<em>+</em>
+    label: лет в коммерческой разработке игр
+  - n: '3'
+    label: вышедших коммерческих проекта
+  - n: ×10
+    label: быстрее работа с инструментами, которые я сделал
+  - n: 50<em>+</em>
+    label: механик собрал на C#, C++ и Blueprints
+  shipped: Вышедшие проекты
+  all_proj: Все проекты
+  read: Подробнее
+  open: Открыть проект
+  skills: Навыки
+  skills_sub: 'Основные навыки: самооценка по шкале из 10'
+  expertise: Подробнее о навыках
+  beyond: Кроме дизайна
+  beyond_why: 'Смежные навыки: хочу понимать, как делается каждая часть игры.'
+  works: Смотреть работы
+  side:
+  - icon: cube
+    h: 3D
+    tool: Blender
+    text: Своя модель и учебная работа по гайду.
+    link: true
+  - icon: wave
+    h: Саунд-дизайн
+    tool: Reaper · Ableton
+    text: Переозвучил фрагмент фильма и сделал игровые звуки из своих бытовых записей.
+    link: true
+  - icon: note
+    h: Музыка
+    tool: ''
+    text: Есть опыт написания своей музыки.
+    link: false
+  ach: Достижения
+  gold: золото
+  silver: серебро
+  bronze: бронза
+  show_all: Показать все 8
+  show_less: Свернуть
+  achs:
+  - icon: crosshair
+    tier: gold
+    name: Владелец фич
+    text: Довёл четыре боевые фичи PIONER от дизайна до релиза
+    where: PIONER · с 2024
+  - icon: tool
+    tier: gold
+    name: Инструментальщик
+    text: 'Сделал инструменты для заведения контента: работа идёт в 10 раз быстрее'
+    where: The Braves · 101XP
+  - icon: star
+    tier: gold
+    name: Наставник
+    text: 'Менторю младших дизайнеров: ревьюю доки, помогаю с UE'
+    where: GFAGAMES
+  - icon: users
+    tier: silver
+    name: Команда из двух
+    text: Вдвоём с коллегой довыпустили крупное обновление Craft of Survival
+    where: Craft of Survival · 2023
+  - icon: grid
+    tier: silver
+    name: Дата-майнер
+    text: Написал C++-парсер, который выгружает в CSV около 3 000 спавнеров лута
+    where: PIONER
+  - icon: chart
+    tier: silver
+    name: Балансер
+    text: Бой, боссы, лут, крафт, торговцы, экономика, прогрессия
+    where: PIONER
+  - icon: shield
+    tier: bronze
+    name: Геймпад в деле
+    text: Вёл поддержку геймпада и скиллы героев
+    where: The Braves
+  - icon: bug
+    tier: bronze
+    name: Смена класса
+    text: Перешёл из QA в геймдизайн
+    where: 101XP · декабрь 2022
+  all_protos: Все прототипы
+  cta_t: Давайте обсудим ваш проект
+  cta_p: Ищу работу технического или senior-геймдизайнера. Отвечаю в течение дня.
+  career: Карьера
+  dl_cv: Скачать CV
+  stack: Инструменты и технологии
+  prev: Назад
+  next: Дальше
+  video: Смотреть на YouTube
+  gameplay: Геймплей
+  labels:
+    role: Роль
+    company: Студия
+    period: Период
+    engine: Движок
+    platform: Платформа
+    genre: Жанр
+    status: Статус
+  notes_intro: Разборы механик и игр, а ещё смежные навыки, которые я подтянул, чтобы понимать, как делается каждая часть игры.
+  notes_h: Заметки
+  notes_sub: Разборы механик, баланса и игр
+  notes_soon: Разборы механик и игр скоро появятся. Кейсы с работы лежат на страницах проектов.
+  soon: Скоро
+  side_h: Сайд-работы
+  side_sub: Небольшие навыки за пределами геймдизайна
+  expertise_h: Экспертиза
+  toolkit_h: Технические навыки
+  approach_h: Как я работаю
+  exploring_h: Сейчас изучаю
+  certs_h: Сертификаты
+  side_link: Посмотреть работы по 3D и звуку
+  side_note: 'Ещё: 3D в Blender, саунд-дизайн, музыка, монтаж.'
+  g_who: Кто я
+  g_skills: Что умею
+  g_facts: Факты
+  skills_list:
+  - name: Unreal Engine
+    v: 8
+  - name: Баланс
+    v: 8
+  - name: Системный дизайн
+    v: 8
+  - name: Прототипы
+    v: 8
+  - name: Экономика
+    v: 7
+  - name: C++
+    v: 6
+  - name: Unity
+    v: 6
+  - name: Геймплейный UI
+    v: 6
+  counts:
+    gold: 3
+    silver: 3
+    bronze: 2
+  side_works:
+  - icon: cube
+    h: 3D
+    tool: Blender
+    text: Своя модель с двух ракурсов и учебная работа по гайду, с которой я начинал.
+    links:
+    - label: Своя модель · ракурс 1
+      url: https://drive.google.com/file/d/1FTt78sgQhWqJXcUxa4nwu-G33pJxiZsw/view
+    - label: Своя модель · ракурс 2
+      url: https://drive.google.com/file/d/1gqyyF131Hm3LIybJK4GL3rKW1DYD-_SM/view
+    - label: Учебная работа
+      url: https://drive.google.com/file/d/1BXRM50WZ-G4urJv5bzSCLC_g4w-4Vn-6/view
+  - icon: wave
+    h: Саунд-дизайн
+    tool: Reaper · Ableton
+    text: Переозвучил фрагмент фильма и сделал три игровых звука из своих бытовых записей.
+    links:
+    - label: Переозвучка фильма
+      url: https://youtu.be/EJERrAkv53A
+    - label: 3 игровых звука
+      url: https://youtu.be/LuC8yxbvpfI
+  - icon: note
+    h: Музыка
+    tool: Ableton
+    text: Есть опыт написания своей музыки.
+    links: []
+  - icon: play
+    h: Видео и графика
+    tool: Photoshop · Premiere
+    text: Базовый монтаж и обработка для своих видео, превью и документов.
+    links: []
+  summary: Обзор
+  contact: Контакты
+  live: Live
+  released: Вышла
+icons:
+  pioner: crosshair
+  the-braves: shield
+  craft-of-survival: axe
+  helicopter: heli
+  bot-arena: bot
+  tiny-dozzer: cube

@@ -1,0 +1,4 @@
+{%- assign head = include.part | split: "</h2>" | first -%}
+{%- assign label = head | split: ">" | last -%}
+{%- assign rest = include.part | remove_first: head | remove_first: "</h2>" | replace: "<h3", "<h4" | replace: "</h3>", "</h4>" -%}
+<div class="gsub" id="{{ include.id }}"><h3>{{ label }}</h3>{{ rest }}</div>
