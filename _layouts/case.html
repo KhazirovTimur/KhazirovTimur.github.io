@@ -9,7 +9,7 @@ layout: default
 {%- for p in site.pages -%}{%- if p.ref == page.section and p.lang == lang -%}{%- assign back_url = p.url -%}{%- endif -%}{%- endfor -%}
 {%- if page.section == "experience" %}{% assign label = u.exp %}{% else %}{% assign label = u.protos %}{% endif -%}
 {% include crumbs.html sec_url=back_url sec_label=label cur=page.title %}
-<section class="card banner" id="overview">{% include media.html p=page banner=true %}<div class="head"><div><p class="eyebrow">{{ page.eyebrow }}</p><h1>{{ page.title }}</h1>
+<section class="card banner" id="overview">{% if page.section == "experience" %}{% include media.html p=page banner=true %}{% endif %}<div class="head"><div><p class="eyebrow">{{ page.eyebrow }}</p><h1>{{ page.title }}</h1>
 <p class="lead">{{ page.summary }}</p><div class="links">{% for l in page.links %}<a class="btn{% if forloop.first %} pri{% endif %}" href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }} {% include icon.html n="arrow" %}</a>{% endfor %}</div></div>
 <dl class="kv">{% assign keys = "role,company,period,engine,platform,genre,status" | split: "," %}{% for k in keys %}{% if page[k] %}<dt>{{ lb[k] }}</dt><dd>{{ page[k] }}</dd>{% endif %}{% endfor %}</dl></div></section>
 {%- if page.highlights %}
