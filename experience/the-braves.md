@@ -31,15 +31,15 @@ permalink: /experience/the-braves/
 
 **The Braves** is a live-service action game heavily inspired by *Vampire Survivors*, built around hero collection, progression systems and a steady flow of new content.
 
-I joined the project after Craft of Survival and stayed on it until I left 101XP. As a technical game designer I worked both on the game itself and on the way content got into it. Since the game was continuously updated, most features were shaped through iteration — internal feedback, playtests and production priorities — rather than designed once and left alone.
+I joined the project after Craft of Survival and stayed until I left 101XP. The team had about 30 people, five of them game designers: tasks came from the project owner, and we split them among ourselves. As a technical game designer I worked both on the game itself and on the way content got into it. Since the game was continuously updated, most features were shaped through iteration — internal feedback, playtests and production priorities — rather than designed once and left alone.
 
 ## Content pipeline tool
 
 **Problem.** Every piece of new content was designed in Google Sheets and then had to be transferred into the project’s admin panel by hand. With regular updates this was slow, repetitive and error-prone.
 
-**Solution.** I built an internal tool that moves the data from Google Sheets into the admin panel automatically.
+**Solution.** The admin panel had no usable API — it only ran in a browser. So I wrote a script for a screen automation tool (Clickerman, in BASIC) that moves the data from Google Sheets into the admin panel by itself. A typical job: 5 armor sets × 4 pieces × 5 rarities — 100 near-identical entries.
 
-**Result.** Content integration became **10× faster**, and designers spent their time on design and balance instead of manual data entry.
+**Result.** The script keeps a steady pace and never tires, while manual entry slows down after a few items. Content integration became **10× faster**, and designers spent their time on design and balance instead of data entry.
 
 ## Mechanics
 
@@ -47,14 +47,14 @@ I wrote design specs for and supported a large number of mechanics — most of t
 
 - **Hero skills** — individual abilities designed from concept through implementation and balance.
 - **Weapon mechanics** — new weapon behaviours added as part of content updates.
-- **Gamepad controls** — I owned controller support: how every gameplay action and every screen works with a gamepad, from input and navigation design to implementation with programmers and UI artists. A mobile version of the game was also planned.
-- **Boss variations** — elite versions with additional attack patterns, tuned so they stay challenging across updates.
-- **Gameplay UI** — player-facing UI flows, including a redesign of the achievement interface.
+- **Gamepad controls** — the UI was built for a mouse, so controller support had to fit into existing screens full of tabs and sub-menus. I followed familiar conventions: bumpers switch main tabs, triggers switch nested ones, holding the upgrade button upgrades to max. The spec had a single layout table for Sony, Xbox and Nintendo built on abstract actions (“Action 1” = Square / X), and the rest of the document referred only to actions — so a layout could change in one place without rewriting the spec.
+- **Boss variations** — for example, an elite version of a boss that fires a wave and advances inside a ring of spinning discs. Mine first spawns a ring wide enough to trap the player, then adds tighter and tighter rings that herd the player toward the boss — and only then fires the wave, which the player has to dodge.
+- **Achievement showcase** — designed the achievement showcase, frames and avatars from scratch — groundwork for future social features. The first iteration followed Steam (click a slot, then pick from a list) and didn’t convince the project owner. In the second, the list is open from the start and each click adds an achievement to the showcase in order. That version was approved.
 
 ## Content and live operations
 
 - Set up new content in the game for regular updates.
-- Calculated part of the balance for an in-game event.
+- For seasonal events — Halloween and New Year — new heroes and skins were added to the gacha. I calculated the drop rates and set them up in the game.
 - Tuned enemy difficulty, rewards and the gacha economy across live updates, making sure new content didn’t disrupt the player’s progression.
 
 ## Challenges
