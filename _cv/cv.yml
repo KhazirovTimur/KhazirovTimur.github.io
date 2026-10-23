@@ -125,16 +125,16 @@ jobs:
 personal_projects:
   - name: { en: "UE5 Helicopter Prototype", ru: "Прототип вертолёта на UE5" }
     text:
-      en: "Flight model based on real lift, torque and drag formulas, plus a gimbal-mounted turret; Blueprints and C++. (In progress, since 2025)"
-      ru: "Модель полёта на реальных формулах подъёмной силы, крутящего момента и сопротивления и турель на гимбале; Blueprints и C++. (В работе, с 2025)"
+      en: "Flight model based on real thrust, lift and drag formulas with tunable mass and drag coefficients, plus a nose turret with realistic aim limits and physical projectiles; C++ base classes, Blueprint content. (2025)"
+      ru: "Модель полёта на реальных формулах тяги, подъёмной силы и сопротивления с настраиваемой массой и коэффициентами, носовая турель с реалистичными углами наведения и физическими снарядами; базовые классы на C++, контент на Blueprints. (2025)"
   - name: { en: "Bot Arena (Unity)", ru: "Bot Arena (Unity)" }
     text:
-      en: "Wave shooter inspired by COD: Zombies — enemy AI, wave spawning, three arenas, in-game shop, grenade rocket jump. github.com/KhazirovTimur/BotArena (2023)"
-      ru: "Волновой шутер в духе COD: Zombies — AI врагов, волны, три арены, магазин, рокет-джамп на гранате. github.com/KhazirovTimur/BotArena (2023)"
+      en: "Wave shooter inspired by COD: Zombies — enemy AI with an attack-token queue, state machine and target leading; parameter-driven wave difficulty, three arenas with shops, grenade rocket jump. github.com/KhazirovTimur/BotArena (2023)"
+      ru: "Волновой шутер в духе COD: Zombies — ИИ врагов с очередью атакующих, машиной состояний и упреждением; сложность волн на параметрах, три арены с магазинами, рокет-джамп на гранате. github.com/KhazirovTimur/BotArena (2023)"
   - name: { en: "Tiny Dozzer (Mobile)", ru: "Tiny Dozzer (Mobile)" }
     text:
-      en: "Arcade game about a bulldozer pushing a cube structure into a moat, built in Unity; previously released on Google Play. (2021)"
-      ru: "Аркада про бульдозер, который сталкивает постройку из кубов в ров, на Unity; выходила в Google Play. (2021)"
+      en: "Physics arcade game about a bulldozer pushing cube structures into a moat against the clock: 15 levels in three seasons, icy low-friction levels, explosive barrels; Unity, previously released on Google Play. (2021)"
+      ru: "Физическая аркада про бульдозер, который на время сталкивает постройки из кубов в ров: 15 уровней в трёх сезонах, скользкие зимние уровни, взрывные бочки; Unity, выходила в Google Play. (2021)"
 
 education:
   en:

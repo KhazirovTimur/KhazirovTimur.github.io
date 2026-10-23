@@ -6,23 +6,37 @@ section: projects
 order: 3
 title: Tiny Dozzer
 eyebrow: "Personal project · Unity · Mobile · 2021"
-summary: "A small mobile arcade game about a bulldozer pushing a cube structure into a moat, taken all the way to a store release."
+summary: "A mobile arcade game about a little bulldozer that has to push an entire cube building into the moat before time runs out. 15 levels, physics-driven destruction, released on Google Play."
 cover_label: "Mobile"
 accent: green
-tags: [Mobile, Arcade, Release]
+tags: [Mobile, Arcade, Physics, Level design, Release]
 role: "Solo developer"
 engine: "Unity"
 platform: "Android"
 genre: "Arcade"
 status: "Was released on Google Play (now unpublished)"
 stack: [Unity, "C#"]
+youtube: "wesQp9rPrP0"
+links: 
+  - { label: "Full playthrough", url: "https://www.youtube.com/watch?v=wesQp9rPrP0" }
 permalink: /projects/tiny-dozzer/
 ---
 
 ## About
+The player drives a bulldozer with an on-screen joystick across a platform surrounded by a moat. Each level is a structure built from cubes, and every last cube has to go over the edge before the countdown ends. The HUD shows how much of the structure is already cleared and how many seconds are left. The run ends if time runs out, if the bulldozer falls into the moat, or if it is caught in a barrel explosion.
 
-The player drives a little bulldozer on a platform surrounded by a moat. A structure made of cubes stands on the platform, and the goal is to push every cube into the moat — the structure collapses as you go. Built in Unity and released on Google Play; it was later unpublished after the store changed its requirements for developer accounts.
+## Levels and progression
+- 15 levels in three seasons of five: summer, autumn and winter.
+- The seasons are mostly cosmetic, with one gameplay change: in winter the platform is icy, friction is lower, and pushed cubes slide further — which helps and hurts at the same time.
+- Structures grow from small piles to a castle with walls, a maze and a multi-storey building; bigger levels get more time, from about a minute to two and a half.
+- A few joke levels break the pattern: a single cube with red barrels set up like bowling pins, or a structure built as a copy of the player's own bulldozer.
+
+## Red barrels
+Touching a red barrel lights a short fuse. The explosion throws every cube in its radius — a way to clear a big chunk at once, as long as you are not standing next to it. If the blast reaches the bulldozer, it is game over.
+
+## Technical side
+- **Accurate progress.** The level only counts as cleared at 100%, so the percentage has to be exact: every cube that leaves the platform is counted once, no matter how it got there — pushed, knocked off by other cubes or thrown by an explosion.
+- **Physics tuning.** Mass, friction and the blade's push were tuned so that structures collapse believably but stay controllable; winter levels reuse the same setup with lower friction.
 
 ## Why it matters
-
-A small scope, but the full cycle: idea, implementation, polishing, store page and release, about a month from start to store — the experience of shipping something on my own.
+A small scope, but the full cycle on my own: idea, physics-based gameplay, 15 handmade levels, models and UI, polish, store page and release — in about a month.
