@@ -16,9 +16,9 @@ platform: "Android"
 genre: "Аркада"
 status: "Выходила в Google Play (сейчас снята)"
 stack: [Unity, "C#"]
-youtube: "wesQp9rPrP0"
+youtube: "KzpIsz8lYrI"
 links: 
-  - { label: "Полное прохождение", url: "https://www.youtube.com/watch?v=wesQp9rPrP0" }
+  - { label: "Полное прохождение", url: "https://www.youtube.com/watch?v=KzpIsz8lYrI" }
 permalink: /ru/projects/tiny-dozzer/
 ---
 

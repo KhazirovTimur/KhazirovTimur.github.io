@@ -16,9 +16,9 @@ platform: "PC"
 genre: "Прототип техники / полёта"
 status: "Завершён"
 stack: [Unreal Engine 5, "C++", Blueprints, Enhanced Input]
-youtube: "v6Ev6Fbli_8"
+youtube: "_W8JCll1D7o"
 links: 
-  - { label: "Видео полёта", url: "https://www.youtube.com/watch?v=v6Ev6Fbli_8" }
+  - { label: "Видео полёта", url: "https://www.youtube.com/watch?v=_W8JCll1D7o" }
 permalink: /ru/projects/helicopter/
 ---
 
