@@ -75,7 +75,7 @@ jobs:
         - "Spotted and drove, through a junior designer, a fix for grenade readability: smoke and damage-zone edges."
         - "Built a C++ tool that walks a level and exports every loot spawner (~3,000 on the largest map) with its loot tables and expected item counts to CSV, so loot can be balanced across the whole map in spreadsheets; now used by designers in my department and by level designers."
         - "Prototype and iterate on weapons, armor, consumables and enemies for live updates, based on internal testing and player feedback."
-        - "Work hands-on inside existing Behavior Trees and C++ systems to understand how mechanics interact before changing them; fix gameplay issues via Blueprints."
+        - "Before changing mechanics, dig into the project’s Behavior Trees and C++ systems to see how they connect; fix gameplay bugs in Blueprints."
         - "Write and maintain balance tables and feature specs. Lead two junior designers: set tasks and review design docs; redesigned the friends, chat and clan UX with one of them."
         - "Work closely with engineers and artists to take new weapons and systems from concept to live content."
       ru:
@@ -94,8 +94,8 @@ jobs:
     bullets:
       en:
         - "Built a UI-automation script that moves data from Google Sheets into a browser-only admin panel with no API — content integration became 10× faster."
-        - "Wrote 20+ specs for artists and programmers and supported many mechanics — hero skills, weapon mechanics, boss variations — from concept through implementation and balance."
-        - "Owned gamepad support across every screen, including a single Sony / Xbox / Nintendo layout table in the spec; designed the achievement showcase, frames and avatars over two iterations."
+        - "Wrote 20+ specs for artists and programmers and owned many mechanics — hero skills, weapon mechanics, boss variations — from concept through implementation and balance."
+        - "Designed gamepad controls for every screen, including a single Sony / Xbox / Nintendo layout table in the spec; designed the achievement showcase, frames and avatars over two iterations."
         - "Set up content for live updates, tuned enemy difficulty, rewards and the gacha economy; calculated gacha drop rates for seasonal events."
         - "Worked daily with programmers, artists and UI artists to ship ongoing live-service content."
       ru:
@@ -129,7 +129,7 @@ personal_projects:
       ru: "Модель полёта на реальных формулах тяги, подъёмной силы и сопротивления с настраиваемой массой и коэффициентами, носовая турель с реалистичными углами наведения и физическими снарядами; базовые классы на C++, контент на Blueprints. (2025)"
   - name: { en: "Bot Arena (Unity)", ru: "Bot Arena (Unity)" }
     text:
-      en: "Wave shooter inspired by COD: Zombies — enemy AI with an attack-token queue, state machine and target leading; parameter-driven wave difficulty, three arenas with shops, grenade rocket jump. github.com/KhazirovTimur/BotArena (2023)"
+      en: "Arena shooter against endless waves, inspired by COD: Zombies — enemy AI with an attack-token queue, state machine and target leading; parameter-driven wave difficulty, three arenas with shops, grenade rocket jump. github.com/KhazirovTimur/BotArena (2023)"
       ru: "Арена-шутер против бесконечных волн врагов в духе COD: Zombies — ИИ врагов с очередью атакующих, машиной состояний и упреждением; сложность волн на параметрах, три арены с магазинами, рокет-джамп на гранате. github.com/KhazirovTimur/BotArena (2023)"
   - name: { en: "Tiny Dozzer (Mobile)", ru: "Tiny Dozzer (Mobile)" }
     text:

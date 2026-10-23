@@ -14,7 +14,7 @@ role: "Solo developer"
 engine: "Unity"
 platform: "Android"
 genre: "Arcade"
-status: "Was released on Google Play (now unpublished)"
+status: "Released on Google Play (since unpublished)"
 stack: [Unity, "C#"]
 youtube: "wesQp9rPrP0"
 links: 
@@ -29,14 +29,14 @@ The player drives a bulldozer with an on-screen joystick across a platform surro
 - 15 levels in three seasons of five: summer, autumn and winter.
 - The seasons are mostly cosmetic, with one gameplay change: in winter the platform is icy, friction is lower, and pushed cubes slide further — which helps and hurts at the same time.
 - Structures grow from small piles to a castle with walls, a maze and a multi-storey building; bigger levels get more time, from about a minute to two and a half.
-- A few joke levels break the pattern: a single cube with red barrels set up like bowling pins, or a structure built as a copy of the player's own bulldozer.
+- A few joke levels break the pattern: a single cube with red barrels set up like bowling pins, or a structure built as a copy of the player’s own bulldozer.
 
 ## Red barrels
 Touching a red barrel lights a short fuse. The explosion throws every cube in its radius — a way to clear a big chunk at once, as long as you are not standing next to it. If the blast reaches the bulldozer, it is game over.
 
 ## Technical side
 - **Accurate progress.** The level only counts as cleared at 100%, so the percentage has to be exact: every cube that leaves the platform is counted once, no matter how it got there — pushed, knocked off by other cubes or thrown by an explosion.
-- **Physics tuning.** Mass, friction and the blade's push were tuned so that structures collapse believably but stay controllable; winter levels reuse the same setup with lower friction.
+- **Physics tuning.** Mass, friction and the blade’s push were tuned so that structures collapse believably but stay controllable; winter levels reuse the same setup with lower friction.
 
 ## Why it matters
 A small scope, but the full cycle on my own: idea, physics-based gameplay, 15 handmade levels, models and UI, polish, store page and release — in about a month.

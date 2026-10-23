@@ -22,8 +22,8 @@ status: "Released"
 links:
   - { label: "Google Play", url: "https://play.google.com/store/apps/details?id=com.action.survival.craft.rpg" }
 highlights:
-  - { value: "2", label: "designers left to finish a major update" }
-  - { value: "Shipped", label: "the update was released successfully" }
+  - { value: "2", label: "designers stayed to finish a major update" }
+  - { value: "Shipped", label: "the update went live" }
 stack: [Unity, "C#", NavMesh, Studio internal tools, Excel / Google Sheets, Jira, Git]
 redirect_from:
   - /experience/craft_of_survival/
@@ -51,5 +51,5 @@ It was my first project as a game designer at 101XP, right after moving over fro
 ## What it gave me
 
 - Hands-on Unity level work under real release pressure: collisions, navigation and spawning.
-- Confidence picking up unfamiliar internal tools quickly, without onboarding.
+- Confidence in picking up unfamiliar internal tools quickly, without onboarding.
 - Experience with the content side of a live mobile game, where updates ship on a steady cadence.

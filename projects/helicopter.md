@@ -23,10 +23,10 @@ permalink: /projects/helicopter/
 ---
 
 ## Goal
-Build a believable helicopter flight model and a nose gun turret for it. The prototype is deliberately narrow: no sound, interface or level art — only flight and shooting. The goal is reached, so the prototype is complete.
+Build a believable helicopter flight model and a nose gun turret for it. The prototype is deliberately narrow: no sound, interface or level art — only flight and shooting. The goal was reached, so the prototype is complete.
 
 ## Flight model
-A simplified simulation of real helicopter physics rather than an arcade "floating camera". Rotor thrust, lift and drag are computed from real formulas; atmospheric values such as temperature and air pressure are constants, which keeps the model stable and tunable. The rotor's reactive torque is deliberately left out to keep the controls readable.
+A simplified simulation of real helicopter physics rather than an arcade “floating camera”. Rotor thrust, lift and drag are computed from real formulas; atmospheric values such as temperature and air pressure are constants, which keeps the model stable and tunable. The rotor’s reactive torque is deliberately left out to keep the controls readable.
 
 Tunable parameters: mass, rotor thrust, rotor drag, and separate drag coefficients for the front, side and vertical axes.
 
@@ -40,7 +40,7 @@ Hold the right mouse button to free the camera; the turret tries to aim at the p
 Base classes are in C++: the helicopter with its flight model and the turret. A specific machine is a Blueprint on top: the AH-64 and its turret only set their own characteristics. A new helicopter or turret is a data change, not new code.
 
 ## Credits
-The AH-64 model comes from the Vigilante asset pack, the map is Unreal's default landscape. Flight model, turret, controls and code are mine.
+The AH-64 model comes from the Vigilante asset pack, the map is Unreal’s default landscape. Flight model, turret, controls and code are mine.
 
 ## What it demonstrates
 - Translating real-world physics into tunable gameplay parameters.

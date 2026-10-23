@@ -8,12 +8,12 @@ en:
   home: Home
   portfolio: Portfolio
   exp: Commercial projects
-  protos: Prototypes
-  notes: Notes &amp; side work
+  protos: Personal projects
+  notes: Notes &amp; side skills
   about: About &amp; CV
-  avail: Open to work, available immediately. Based in Moscow, open to relocation or remote.
+  avail: Open to new roles, available immediately. Based in Moscow, open to relocation or remote.
   lang: Language
-  pitch: Gameplay designer who implements, not only documents. I own features from design to release, balance combat, economy and progression, and prototype in UE5 Blueprints and C++ myself.
+  pitch: A game designer who builds, not just documents. I take features from idea to release, balance combat, economy and progression, and prototype in UE5 with Blueprints and C++.
   chips:
   - Blueprints &amp; C++
   - PC &amp; mobile
@@ -23,7 +23,7 @@ en:
   - k: Engines
     v: UE5 · Unity
   - k: Languages
-    v: RU native · EN C1
+    v: Russian (native) · English (C1)
   - k: Location
     v: Moscow · relocation or remote
   - k: Start
@@ -34,34 +34,34 @@ en:
   - n: '3'
     label: shipped commercial titles
   - n: ×10
-    label: faster work with tools I built myself
+    label: faster workflows with tools I built
   - n: 50<em>+</em>
-    label: mechanics built in shipped games and personal projects
+    label: mechanics built across shipped games and personal projects
   shipped: Shipped titles
   all_proj: View all projects
   read: Read the case
   open: Open project
   skills: Skills
-  skills_sub: 'Core skills: self-assessment, out of 10'
+  skills_sub: Core skills, self-rated out of 10
   expertise: Full expertise
-  beyond: Beyond design
+  beyond: Beyond game design
   beyond_why: Side skills I picked up to understand how every part of a game is made.
   works: View works
   side:
   - icon: cube
     h: 3D
     tool: Blender
-    text: A model of my own and a guided study piece.
+    text: An original model and a tutorial-based study piece.
     link: true
   - icon: wave
     h: Sound design
     tool: Reaper · Ableton
-    text: Re-voiced a film clip and made game sounds from my own everyday recordings.
+    text: 'Redid the sound for a film clip and made game sounds from home recordings: I hunted for sound sources around the house, recorded and processed them.'
     link: true
   - icon: note
     h: Music
     tool: ''
-    text: Some experience writing music of my own.
+    text: Tried writing a few tracks of my own.
     link: false
   ach: Achievements
   gold: gold
@@ -78,17 +78,17 @@ en:
   - icon: tool
     tier: gold
     name: Toolsmith
-    text: 'Built content integration tools: work goes ×10 faster'
+    text: Built content tools that made integration 10× faster
     where: The Braves · 101XP
   - icon: star
     tier: gold
     name: Mentor
-    text: 'Lead two junior designers: set their tasks, review their docs'
+    text: 'Lead two junior designers: set their tasks and review their design docs'
     where: GFAGAMES
   - icon: users
     tier: silver
     name: Army of Two
-    text: One of two designers who shipped a major Craft of Survival update
+    text: When the team left, one of two designers who shipped a major Craft of Survival update
     where: Craft of Survival · 2023
   - icon: grid
     tier: silver
@@ -103,16 +103,16 @@ en:
   - icon: shield
     tier: bronze
     name: Controller Ready
-    text: Owned gamepad support across every screen of the game
+    text: Designed gamepad controls for every screen of the game
     where: The Braves
   - icon: bug
     tier: bronze
     name: Class Change
     text: Moved from QA into game design
     where: 101XP · Dec 2022
-  all_protos: All prototypes
-  cta_t: Let's talk about your project
-  cta_p: Looking for a Senior Technical / Balance Game Designer role. Available immediately, I reply within a day.
+  all_protos: All personal projects
+  cta_t: Let’s talk
+  cta_p: Open to Senior Technical / Balance Game Designer roles. Available immediately; I reply within a day.
   career: Career
   dl_cv: Download CV
   stack: Tools &amp; tech
@@ -131,10 +131,10 @@ en:
   notes_intro: Breakdowns of mechanics and games, plus side skills I picked up to understand how every part of a game is made.
   notes_h: Notes
   notes_sub: Breakdowns of mechanics, balance and games
-  notes_soon: Breakdowns of mechanics and games are on the way. Work-related case studies live on the project pages.
+  notes_soon: Breakdowns of mechanics and games are on the way. Case studies from my work are on the project pages.
   soon: Coming soon
-  side_h: Side work
-  side_sub: Smaller skills outside game design
+  side_h: Side skills
+  side_sub: What I do outside game design
   expertise_h: Expertise
   toolkit_h: Technical skills
   approach_h: How I work
@@ -172,32 +172,32 @@ en:
   - icon: cube
     h: 3D
     tool: Blender
-    text: A model of my own, shown from two angles, and a guided study piece I made first.
+    text: An original model (two angles) and the tutorial-based study piece I started with.
     links:
-    - label: Own model · angle 1
+    - label: My model · angle 1
       url: https://drive.google.com/file/d/1FTt78sgQhWqJXcUxa4nwu-G33pJxiZsw/view
-    - label: Own model · angle 2
+    - label: My model · angle 2
       url: https://drive.google.com/file/d/1gqyyF131Hm3LIybJK4GL3rKW1DYD-_SM/view
-    - label: Guided study
+    - label: Tutorial study
       url: https://drive.google.com/file/d/1BXRM50WZ-G4urJv5bzSCLC_g4w-4Vn-6/view
   - icon: wave
     h: Sound design
     tool: Reaper · Ableton
-    text: Re-voiced a film clip, and made three game sounds from my own everyday recordings.
+    text: 'Redid the sound for a film clip and made three game sounds: I hunted for sound sources around the house, recorded and processed them.'
     links:
-    - label: Film re-sound
+    - label: Film clip sound redesign
       url: https://youtu.be/EJERrAkv53A
     - label: 3 game sounds
       url: https://youtu.be/LuC8yxbvpfI
   - icon: note
     h: Music
     tool: Ableton
-    text: Some experience writing music of my own.
+    text: Tried writing a few tracks of my own.
     links: []
   - icon: play
     h: Video &amp; image editing
     tool: Photoshop · Premiere
-    text: Basic editing for my own videos, previews and documents.
+    text: I edit my own videos and make thumbnails and images for documents.
     links: []
   summary: Summary
   contact: Contact
@@ -212,7 +212,7 @@ ru:
   home: Главная
   portfolio: Портфолио
   exp: Коммерческие проекты
-  protos: Прототипы
+  protos: Личные проекты
   notes: Заметки и смежные навыки
   about: Обо мне и резюме
   avail: Открыт к предложениям, могу выйти сразу. Москва, готов к релокации или удалёнке.
@@ -314,7 +314,7 @@ ru:
     name: Смена класса
     text: Перешёл из QA в геймдизайн
     where: 101XP · декабрь 2022
-  all_protos: Все прототипы
+  all_protos: Все личные проекты
   cta_t: Давайте поговорим
   cta_p: Рассматриваю позиции Senior-геймдизайнера в техдизайне и балансе. Могу выйти сразу, отвечаю в течение дня.
   career: Карьера

@@ -6,7 +6,7 @@ section: experience
 order: 2
 title: The Braves
 eyebrow: "101XP · Unity · 2023 — 2024"
-summary: "Live-service action game in the spirit of Vampire Survivors. I built a content pipeline tool, wrote specs for and supported many mechanics — hero skills, weapon mechanics, gamepad controls — and balanced live content and events."
+summary: "Live-service action game in the spirit of Vampire Survivors. I built a content pipeline tool, wrote specs for and owned many mechanics — hero skills, weapon mechanics, gamepad controls — and balanced live content and events."
 cover: "https://cdn.cloudflare.steamstatic.com/steam/apps/2479830/header.jpg"
 cover_label: "Unity"
 accent: teal
@@ -43,13 +43,13 @@ I joined the project after Craft of Survival and stayed until I left 101XP. The 
 
 ## Mechanics
 
-I wrote design specs for and supported a large number of mechanics — most of them small, but together they make up a big part of the game:
+I wrote design specs for and owned a large number of mechanics — most of them small, but together they make up a big part of the game:
 
 - **Hero skills** — individual abilities designed from concept through implementation and balance.
 - **Weapon mechanics** — new weapon behaviours added as part of content updates.
 - **Gamepad controls** — the UI was built for a mouse, so controller support had to fit into existing screens full of tabs and sub-menus. I followed familiar conventions: bumpers switch main tabs, triggers switch nested ones, holding the upgrade button upgrades to max. The spec had a single layout table for Sony, Xbox and Nintendo built on abstract actions (“Action 1” = Square / X), and the rest of the document referred only to actions — so a layout could change in one place without rewriting the spec.
 - **Boss variations** — for example, an elite version of a boss that fires a wave and advances inside a ring of spinning discs. Mine first spawns a ring wide enough to trap the player, then adds tighter and tighter rings that herd the player toward the boss — and only then fires the wave, which the player has to dodge.
-- **Achievement showcase** — designed the achievement showcase, frames and avatars from scratch — groundwork for future social features. The first iteration followed Steam (click a slot, then pick from a list) and didn’t convince the project owner. In the second, the list is open from the start and each click adds an achievement to the showcase in order. That version was approved.
+- **Achievement showcase** — designed the showcase, frames and avatars from scratch — groundwork for future social features. The first iteration followed Steam (click a slot, then pick from a list) and didn’t convince the project owner. In the second, the list is open from the start and each click adds an achievement to the showcase in order. That version was approved.
 
 ## Content and live operations
 

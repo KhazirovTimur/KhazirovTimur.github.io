@@ -7,15 +7,15 @@ en:
     title: "Where I bring the most value"
     items:
       - title: "Technical design & implementation"
-        text: "I prototype and ship features myself in UE5 Blueprints and C++ or Unity C#. I read production Blueprints, Behavior Trees and C++ code to understand how systems interact before changing them."
+        text: "I prototype and ship features myself in UE5 Blueprints and C++ or Unity C#. Before changing anything, I dig into the project’s Blueprints, Behavior Trees and C++ code to see how its systems connect."
       - title: "Tools & pipeline"
         text: "When a task repeats, I automate it: a C++ parser that exports ~3,000 loot spawners of an open-world map to CSV, a tool that moves content data from Google Sheets into an admin panel 10× faster than by hand."
       - title: "Balance & economy"
-        text: "Interconnected balance of progression, loot, crafting, vendor pricing and resource flow, driven by spreadsheets, playtests and player feedback."
+        text: "Progression, loot, crafting, vendor prices and resource flow are all connected, so I balance them together, using spreadsheets, playtests and player feedback."
       - title: "Gameplay & combat mechanics"
         text: "50+ mechanics across shipped games and personal projects — weapon behaviour, hip-fire spread and crosshair, reload and perk systems, hero skills, boss variations and gamepad controls."
       - title: "Team & documentation"
-        text: "Feature specs and balance tables engineers, artists and QA can work from. I lead junior designers: reviewing their docs and helping them own features."
+        text: "I write specs and balance tables that engineers, artists and QA actually work from, and lead junior designers: reviewing their docs and helping them run their tasks."
   toolkit:
     eyebrow: "Toolkit"
     title: "Technical skills"

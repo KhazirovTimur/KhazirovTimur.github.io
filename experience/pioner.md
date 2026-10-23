@@ -17,7 +17,7 @@ period: "Nov 2024 — Present"
 engine: "Unreal Engine 5"
 platform: "PC (Steam)"
 genre: "Open-world MMO shooter"
-status: "Released December 2025, live"
+status: "Released December 2025, live service"
 links:
   - { label: "Steam page", url: "https://store.steampowered.com/app/3105890/PIONER/" }
 highlights:
@@ -44,10 +44,10 @@ I joined the team in November 2024. The studio has about 70 people and 10 game d
 
 ## Content and technical work
 
-- Created and tuned weapons, armor, consumables and enemies using Data Tables and Primary Data Assets.
+- Create and tune weapons, armor, consumables and enemies using Data Tables and Primary Data Assets.
 - Calculated stats for dozens of enemies, from regular mobs to bosses: damage, health, resistances and movement speed.
-- Prototyped and iterated on new mechanics in Blueprints as ongoing live content.
-- Worked inside existing Behavior Trees and C++ systems to understand how mechanics interact before changing them, and fixed gameplay issues via Blueprints.
+- Prototype new mechanics in Blueprints and iterate on them from update to update.
+- Before changing anything, dig into the project’s Behavior Trees and C++ systems to see how mechanics connect; fix gameplay bugs in Blueprints.
 
 ## Tooling: loot parser {#loot-parser}
 
@@ -81,7 +81,7 @@ The first thing the export gave was a picture of the whole map at once. Loot is 
 
 ## Balancing an open-world economy
 
-In PIONER the core activities are exploring, completing quests and collecting loot. The player periodically breaks this out to repair and upgrade gear, sell loot and store it — and then heads back out. Every number in the game feeds this loop.
+In PIONER the core activities are exploring, completing quests and collecting loot. Every so often the player returns to base to repair and upgrade gear, sell loot and store it — and then heads back out. Every number in the game feeds this loop.
 
 {% include loop.html %}
 
@@ -99,7 +99,7 @@ Outside of production work, I also put together a sample sheet that balances one
 
 **Problem.** The crosshair grew and shrank as the character moved, but hip-fire spread didn’t depend on movement at all: the player always fired with the same spread. The crosshair was a visual gimmick that told the player nothing.
 
-**Solution.** I spotted this myself and took on the rework. Spread now depends on stance, movement speed and sustained fire, tuned per weapon — the standard of arcade shooters. The crosshair reads the current spread and shows the actual area a bullet can land in.
+**Solution.** I spotted this myself and took on the rework. Spread now depends on stance, movement speed and sustained fire, tuned per weapon, as is standard in arcade shooters. The crosshair reads the current spread and shows the actual area a bullet can land in.
 
 **Result.** Hip-fire became a real decision: players see how accurate they are right now, and weapon classes handle differently. The change slotted into the game without issues.
 
@@ -109,7 +109,7 @@ Outside of production work, I also put together a sample sheet that balances one
 
 **Solution.** I proposed fixing the effects to my lead and got the go-ahead. I set the requirements: lingering damage zones need clearly visible edges; effects must be bright enough not to get lost, without cluttering the screen. A junior designer turned them into a spec for the artists, and I oversaw how the finished effects were accepted and integrated.
 
-**Result.** Smoke hides again, and hazard zones read at a glance, even in grass. For me it’s an example of a task led through a junior: find the problem, agree it, delegate it and check the result.
+**Result.** Smoke hides again, and hazard zones read at a glance, even in grass. For me it’s an example of a task I ran through a junior designer: find the problem, get sign-off, delegate it and check the result.
 
 ## Features I owned end-to-end
 
@@ -121,5 +121,5 @@ Each of these went the full path — design spec, implementation directly in Blu
 ## Team and mentoring
 
 - Lead two junior designers: set their tasks, review their design documents, help them own features and share hands-on Unreal Engine experience.
-- Wrote and maintained balance tables and feature specs for engineers, artists and QA.
-- Redesigned the UX of the friends, chat and clan screens together with a junior designer — the original ones were hard to use.
+- Write and maintain balance tables and feature specs for engineers, artists and QA.
+- Together with a junior designer, reworked the clunky UX of the friends, chat and clan screens.

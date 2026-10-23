@@ -5,7 +5,7 @@
   role:   { en: "Game Designer (Balance / Technical)", ru: "Геймдизайнер (баланс / техдизайн)" }
   period: { en: "Nov 2024 — Present", ru: "Ноябрь 2024 — сейчас" }
   text:
-    en: "Implement features directly in Blueprints, built a C++ loot parser for the team, balance progression, economy, loot and crafting of an open-world multiplayer shooter, own weapon mechanics from spec to release, and mentor junior designers."
+    en: "Implement features directly in Blueprints, built a C++ loot parser for the team, balance progression, economy, loot and crafting in an open-world multiplayer shooter, own weapon mechanics from spec to release, and mentor junior designers."
     ru: "Реализую механики на Blueprints, написал для команды парсер лута на C++, отвечаю за баланс прогрессии, экономики, лута и крафта в мультиплеерном шутере с открытым миром, веду механики оружия от ТЗ до релиза и наставляю младших дизайнеров."
 
 - company: 101XP
@@ -13,7 +13,7 @@
   role:   { en: "Technical Game Designer · The Braves", ru: "Технический геймдизайнер · The Braves" }
   period: { en: "Mar 2023 — Nov 2024", ru: "Март 2023 — ноябрь 2024" }
   text:
-    en: "Built a tool that moved content data from Google Sheets into the admin panel 10× faster than by hand. Wrote specs for and supported many mechanics — hero skills, weapon mechanics, gamepad controls — designed boss variations, set up content and balanced live updates and events."
+    en: "Built a tool that moved content data from Google Sheets into the admin panel 10× faster than by hand. Wrote specs for and owned many mechanics: hero skills, weapon mechanics, gamepad controls. Designed boss variations, set up content and balanced live updates and events."
     ru: "Написал инструмент, который переносит данные из Google Таблиц в админку в 10 раз быстрее ручного ввода. Писал ТЗ и вёл механики: скиллы героев, оружие, управление с геймпада. Проектировал вариации боссов, заводил контент, балансировал обновления и ивенты."
 
 - company: 101XP
