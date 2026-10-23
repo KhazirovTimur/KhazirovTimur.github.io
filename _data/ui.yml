@@ -11,7 +11,7 @@ en:
   protos: Prototypes
   notes: Notes &amp; side work
   about: About &amp; CV
-  avail: Looking for a new role. Open to relocation and remote.
+  avail: Open to work, available immediately. Based in Moscow, open to relocation or remote.
   lang: Language
   pitch: Gameplay designer who implements, not only documents. I own features from design to release, balance combat, economy and progression, and prototype in UE5 Blueprints and C++ myself.
   chips:
@@ -24,8 +24,10 @@ en:
     v: UE5 · Unity
   - k: Languages
     v: RU native · EN C1
-  - k: Work format
-    v: Relocation or remote
+  - k: Location
+    v: Moscow · relocation or remote
+  - k: Start
+    v: Immediately
   stats:
   - n: 5<em>+</em>
     label: years in commercial game development
@@ -34,7 +36,7 @@ en:
   - n: ×10
     label: faster work with tools I built myself
   - n: 50<em>+</em>
-    label: mechanics built in C#, C++ and Blueprints
+    label: mechanics built in shipped games and personal projects
   shipped: Shipped titles
   all_proj: View all projects
   read: Read the case
@@ -71,8 +73,8 @@ en:
   - icon: crosshair
     tier: gold
     name: Feature Owner
-    text: Owned four combat features on PIONER from design to release
-    where: PIONER · 2024 – now
+    text: Took 20+ features from design to release across PIONER and The Braves
+    where: PIONER · The Braves
   - icon: tool
     tier: gold
     name: Toolsmith
@@ -81,7 +83,7 @@ en:
   - icon: star
     tier: gold
     name: Mentor
-    text: 'Mentors junior designers: reviews docs, helps with UE'
+    text: 'Lead two junior designers: set their tasks, review their docs'
     where: GFAGAMES
   - icon: users
     tier: silver
@@ -101,7 +103,7 @@ en:
   - icon: shield
     tier: bronze
     name: Controller Ready
-    text: Owned gamepad support and hero skills
+    text: Owned gamepad support across every screen of the game
     where: The Braves
   - icon: bug
     tier: bronze
@@ -110,7 +112,7 @@ en:
     where: 101XP · Dec 2022
   all_protos: All prototypes
   cta_t: Let's talk about your project
-  cta_p: Looking for a Technical or Senior Gameplay Designer role. I reply within a day.
+  cta_p: Looking for a Senior Technical / Balance Game Designer role. Available immediately, I reply within a day.
   career: Career
   dl_cv: Download CV
   stack: Tools &amp; tech
@@ -136,7 +138,7 @@ en:
   expertise_h: Expertise
   toolkit_h: Technical skills
   approach_h: How I work
-  exploring_h: Currently exploring
+  benchmarks_h: Games I hold up as benchmarks
   certs_h: Certificates
   side_link: See 3D and sound work
   side_note: 'Also: 3D in Blender, sound design, music, video editing.'
@@ -144,22 +146,24 @@ en:
   g_skills: What I do
   g_facts: Facts
   skills_list:
-  - name: Unreal Engine
-    v: 8
   - name: Balancing
+    v: 9
+  - name: Design documentation
+    v: 9
+  - name: Unreal Engine
     v: 8
   - name: Systems design
     v: 8
   - name: Prototyping
     v: 8
   - name: Economy
+    v: 8
+  - name: Unity
     v: 7
   - name: C++
-    v: 6
-  - name: Unity
-    v: 6
-  - name: Gameplay UI
-    v: 6
+    v: 7
+  - name: Gameplay UI/UX
+    v: 7
   counts:
     gold: 3
     silver: 3
@@ -211,7 +215,7 @@ ru:
   protos: Прототипы
   notes: Заметки и сайд-работы
   about: Обо мне и CV
-  avail: Ищу работу. Готов к релокации и удалёнке.
+  avail: Ищу работу, готов выйти сразу. Москва, релокация или удалёнка.
   lang: Язык
   pitch: Геймдизайнер, который не только пишет документы, но и сам собирает. Веду фичи от дизайна до релиза, балансирую бой, экономику и прогрессию, прототипирую на Blueprints и C++ в UE5.
   chips:
@@ -224,8 +228,10 @@ ru:
     v: UE5 · Unity
   - k: Языки
     v: русский родной · английский C1
-  - k: Формат работы
-    v: Релокация или удалёнка
+  - k: Локация
+    v: Москва · релокация или удалёнка
+  - k: Выход
+    v: Сразу
   stats:
   - n: 5<em>+</em>
     label: лет в коммерческой разработке игр
@@ -234,7 +240,7 @@ ru:
   - n: ×10
     label: быстрее работа с инструментами, которые я сделал
   - n: 50<em>+</em>
-    label: механик собрал на C#, C++ и Blueprints
+    label: механик в вышедших играх и личных проектах
   shipped: Вышедшие проекты
   all_proj: Все проекты
   read: Подробнее
@@ -271,8 +277,8 @@ ru:
   - icon: crosshair
     tier: gold
     name: Владелец фич
-    text: Довёл четыре боевые фичи PIONER от дизайна до релиза
-    where: PIONER · с 2024
+    text: Довёл 20+ фич от дизайна до релиза в PIONER и The Braves
+    where: PIONER · The Braves
   - icon: tool
     tier: gold
     name: Инструментальщик
@@ -281,7 +287,7 @@ ru:
   - icon: star
     tier: gold
     name: Наставник
-    text: 'Менторю младших дизайнеров: ревьюю доки, помогаю с UE'
+    text: 'Руковожу двумя младшими дизайнерами: ставлю задачи, провожу ревью доков'
     where: GFAGAMES
   - icon: users
     tier: silver
@@ -301,7 +307,7 @@ ru:
   - icon: shield
     tier: bronze
     name: Геймпад в деле
-    text: Вёл поддержку геймпада и скиллы героев
+    text: Вёл поддержку геймпада во всех экранах игры
     where: The Braves
   - icon: bug
     tier: bronze
@@ -310,7 +316,7 @@ ru:
     where: 101XP · декабрь 2022
   all_protos: Все прототипы
   cta_t: Давайте обсудим ваш проект
-  cta_p: Ищу работу технического или senior-геймдизайнера. Отвечаю в течение дня.
+  cta_p: 'Ищу работу Senior-геймдизайнера: техдизайн и баланс. Готов выйти сразу, отвечаю в течение дня.'
   career: Карьера
   dl_cv: Скачать CV
   stack: Инструменты и технологии
@@ -336,7 +342,7 @@ ru:
   expertise_h: Экспертиза
   toolkit_h: Технические навыки
   approach_h: Как я работаю
-  exploring_h: Сейчас изучаю
+  benchmarks_h: Игры, которые я считаю эталоном
   certs_h: Сертификаты
   side_link: Посмотреть работы по 3D и звуку
   side_note: 'Ещё: 3D в Blender, саунд-дизайн, музыка, монтаж.'
@@ -344,22 +350,24 @@ ru:
   g_skills: Что умею
   g_facts: Факты
   skills_list:
-  - name: Unreal Engine
-    v: 8
   - name: Баланс
+    v: 9
+  - name: Документация и ТЗ
+    v: 9
+  - name: Unreal Engine
     v: 8
   - name: Системный дизайн
     v: 8
   - name: Прототипы
     v: 8
   - name: Экономика
+    v: 8
+  - name: Unity
     v: 7
   - name: C++
-    v: 6
-  - name: Unity
-    v: 6
-  - name: Геймплейный UI
-    v: 6
+    v: 7
+  - name: Геймплейный UI/UX
+    v: 7
   counts:
     gold: 3
     silver: 3

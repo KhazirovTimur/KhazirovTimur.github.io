@@ -38,11 +38,11 @@ It was my first project as a game designer at 101XP, right after moving over fro
 
 ## Shipping a major update with a team of two
 
-**Situation.** After the decision to pause support for the project, most of the team left. A fairly large update was still unfinished, and it had to be released anyway. Two game designers remained — me and one colleague.
+**Situation.** After the decision to pause support for the project, most of the team left. A fairly large update with a new location and a teleport mechanic was still unfinished, and it had to ship anyway. Two game designers remained — a colleague and me; the colleague took the teleports, I took the location.
 
 **What I did.** Much of the remaining work was outside a designer’s usual scope, so I took it on myself in Unity:
 
-- fixed location bugs — collisions, NavMesh, enemy spawners and other level issues;
+- fixed location bugs — collisions, NavMesh, enemy spawners, the minimap and other level issues;
 - worked through the studio’s internal tools that nobody had time to teach me, figuring them out on the fly;
 - kept testing and fixing until the content was stable enough to ship.
 

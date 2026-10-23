@@ -8,7 +8,9 @@ Built with plain Jekyll — no custom plugins — so GitHub Pages builds it as i
 | Что | Где |
 |---|---|
 | Контакты, ссылка на CV | `_data/profile.yml` |
-| Тексты главной (EN и RU) | `_data/home.yml` |
+| Тексты главной, сайдбара, навыки и ачивки (EN и RU) | `_data/ui.yml` |
+| Блоки About: экспертиза, инструменты, подход, игры-эталоны | `_data/home.yml` |
+| Радар навыков | генерируется из `_data/ui.yml`: `python3 tools/build_radar.py` |
 | Карьера / таймлайн | `_data/career.yml` |
 | Подписи интерфейса, меню | `_data/i18n.yml` |
 | Страницы проектов (EN) | `experience/*.md`, `projects/*.md` |

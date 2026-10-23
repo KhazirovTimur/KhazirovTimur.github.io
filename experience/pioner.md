@@ -6,7 +6,7 @@ section: experience
 order: 1
 title: PIONER
 eyebrow: "GFAGAMES · Unreal Engine 5 · 2024 — now"
-summary: "Open-world multiplayer survival shooter. I implement features directly in Blueprints, build tools for the team, balance the game’s interconnected systems and own weapon mechanics from spec to release."
+summary: "Open-world MMO shooter. I implement features directly in Blueprints, build tools for the team, balance the game’s interconnected systems and own weapon mechanics from spec to release."
 cover: "https://cdn.cloudflare.steamstatic.com/steam/apps/3105890/header.jpg"
 cover_label: "UE5"
 accent: orange
@@ -17,7 +17,7 @@ period: "Nov 2024 — Present"
 engine: "Unreal Engine 5"
 platform: "PC (Steam)"
 genre: "Open-world MMO shooter"
-status: "Released, live"
+status: "Released December 2025, live"
 links:
   - { label: "Steam page", url: "https://store.steampowered.com/app/3105890/PIONER/" }
 highlights:
@@ -38,13 +38,14 @@ permalink: /experience/pioner/
 
 ## Overview
 
-**PIONER** is a multiplayer first-person shooter set in an open post-apocalyptic world, with a single-player storyline, PvE and PvP activities, raids and survival elements.
+**PIONER** is an MMO first-person shooter set in an open post-apocalyptic world, with a single-player storyline, PvE and PvP activities, raids and survival elements.
 
-I joined the team in November 2024 as a game designer focused on balance and technical design. My work combines hands-on implementation in the engine, tools that speed up production, balancing the game’s interconnected systems and owning new gameplay mechanics.
+I joined the team in November 2024. The studio has about 70 people and 10 game designers, split roughly evenly between quest design and balance / technical design. I’m in the second group, report to the lead game designer and lead two junior designers. I implement features directly in the engine, build tools for the team, keep interconnected systems in balance and own new mechanics.
 
 ## Content and technical work
 
 - Created and tuned weapons, armor, consumables and enemies using Data Tables and Primary Data Assets.
+- Calculated stats for dozens of enemies, from regular mobs to bosses: damage, health, resistances and movement speed.
 - Prototyped and iterated on new mechanics in Blueprints as ongoing live content.
 - Worked inside existing Behavior Trees and C++ systems to understand how mechanics interact before changing them, and fixed gameplay issues via Blueprints.
 
@@ -72,6 +73,8 @@ I joined the team in November 2024 as a game designer focused on balance and tec
 
 **Result.** The loot of the game’s largest map became a spreadsheet: **about 3,000 spawners, 300+ zones and 160+ loot tables** in a single export. Loot can now be filtered, summed and compared by zone, tier or item category — and checked again after every change.
 
+The first version took me a couple of evenings in my own time. Other designers in my department now use the export too, and level designers rely on it when they move loot around and clean up broken spawn points. It surfaced plenty of placement errors that would otherwise have to be found by hand, one spawner at a time.
+
 The first thing the export gave was a picture of the whole map at once. Loot is meant to be uneven: it gathers around points of interest, and the most valuable loot sits in a large PvPvE zone. The heatmap makes it easy to check that the map actually works that way — and to spot areas that are empty or overloaded by mistake:
 
 {% include figure.html src="/assets/img/pioner/loot-heatmap-en.webp" alt="Heatmap of expected loot across the largest map of PIONER, built from the parser’s export" caption="Built from the parser’s export for the largest map: expected loot per map cell. Bright clusters are points of interest and the high-value PvPvE zone. Coordinates and values are left out." %}
@@ -92,17 +95,31 @@ A change in one place ripples through the others — for example, weapon damage 
 
 Outside of production work, I also put together a sample sheet that balances one weapon category and shows formula approaches I like to use — TTK by distance and a hit-probability model based on spread area versus target size: {% include sample-link.html key="balance_sheet" label="weapon balance sample" %}. It is a showcase of methods, not live game data.
 
+## Hip-fire spread and an honest crosshair
+
+**Problem.** The crosshair grew and shrank as the character moved, but hip-fire spread didn’t depend on movement at all: the player always fired with the same spread. The crosshair was a visual gimmick that told the player nothing.
+
+**Solution.** I spotted this myself and took on the rework. Spread now depends on stance, movement speed and sustained fire, tuned per weapon — the standard of arcade shooters. The crosshair reads the current spread and shows the actual area a bullet can land in.
+
+**Result.** Hip-fire became a real decision: players see how accurate they are right now, and weapon classes handle differently. The change slotted into the game without issues.
+
+## Readable grenade effects
+
+**Problem.** The game has many grenade types, but their effects got in the way of reading combat. A technical issue let enemy silhouettes show through smoke. Thermite, incendiary and toxic grenades had blurry damage-zone edges that disappeared in tall grass, so players couldn’t tell where not to step.
+
+**Solution.** I proposed fixing the effects to my lead and got the go-ahead. I set the requirements: lingering damage zones need clearly visible edges; effects must be bright enough not to get lost, without cluttering the screen. A junior designer turned them into a spec for the artists, and I oversaw how the finished effects were accepted and integrated.
+
+**Result.** Smoke hides again, and hazard zones read at a glance, even in grass. For me it’s an example of a task led through a junior: find the problem, agree it, delegate it and check the result.
+
 ## Features I owned end-to-end
 
 Each of these went the full path — design spec, implementation directly in Blueprints, tuning, and integration into the existing systems without breaking anything that already worked.
 
-- **Hip-fire spread system** — turned hip-fire accuracy into a per-weapon, tunable parameter, so every weapon class has its own handling and aiming down sights remains a meaningful choice.
-- **Dynamic crosshair** — a crosshair that reflects the current spread, so the player reads weapon accuracy at a glance.
-- **Automatic reload** — reload behaviour integrated into the existing weapon logic.
+- **Automatic reload** — players kept forgetting to reload, because other shooters had taught them to expect auto-reload. I added it to the existing weapon logic.
 - **Perk system rework** — a full redesign and re-implementation of the existing perk system, rolled out while keeping the rest of the game fully functional.
 
 ## Team and mentoring
 
-- Mentored junior designers: reviewed their design documents, helped them own features and shared hands-on Unreal Engine experience.
+- Lead two junior designers: set their tasks, review their design documents, help them own features and share hands-on Unreal Engine experience.
 - Wrote and maintained balance tables and feature specs for engineers, artists and QA.
-- Supported social systems and the social interface.
+- Redesigned the UX of the friends, chat and clan screens together with a junior designer — the original ones were hard to use.

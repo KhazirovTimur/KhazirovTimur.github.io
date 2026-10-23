@@ -8,8 +8,8 @@ title:
   ru: "Senior-геймдизайнер: техдизайн и баланс"
 
 note:
-  en: "Open to relocation · Remote-capable"
-  ru: "Готов к релокации · Возможна удалённая работа"
+  en: "Moscow · Open to relocation or remote · Available immediately"
+  ru: "Москва · Готов к релокации или удалёнке · Выход сразу"
 
 headings:
   profile:     { en: "Profile", ru: "О себе" }
@@ -29,13 +29,13 @@ profile:
     - "I own features from design through release, prototype gameplay in Blueprints and C++, balance combat, progression and economy systems, and work closely with engineering teams."
     - "A strong technical background lets me iterate on gameplay quickly, build prototypes myself and create internal production tools."
     - "Built 50+ mechanics across shipped games and personal projects in C#, C++ and Blueprints."
-    - "Mentored junior designers; contributed to commercial PC and mobile titles."
+    - "Lead two junior designers in a team of 10 game designers; contributed to commercial PC and mobile titles."
   ru:
     - "Технический геймдизайнер: 5+ лет в коммерческой разработке multiplayer и live-service игр на Unreal Engine и Unity, три вышедших проекта."
     - "Веду фичи от идеи до релиза, сам прототипирую геймплей на Blueprints и C++, балансирую бой, прогрессию и экономику и плотно работаю с программистами."
     - "Технический бэкграунд позволяет быстро итерировать геймплей, собирать прототипы и делать внутренние инструменты для команды."
     - "Собрал 50+ механик в вышедших играх и личных проектах на C#, C++ и Blueprints."
-    - "Менторил младших дизайнеров, участвовал в выпуске коммерческих проектов на PC и мобильных платформах."
+    - "Руковожу двумя младшими дизайнерами в команде из 10 геймдизайнеров; участвовал в выпуске коммерческих проектов на PC и мобильных платформах."
 
 competencies:
   en: ["Weapon & combat mechanics", "In-engine implementation (Blueprints / C++)", "Rapid prototyping & iteration", "Systems integration", "Vehicle & locomotion prototyping", "Design & technical documentation", "Cross-department collaboration", "Tools & workflow improvement", "Mentoring & feedback", "Balance & economy", "Systemic design"]
@@ -53,7 +53,7 @@ skills:
   - name: { en: "Unity", ru: "Unity" }
     text:
       en: "C#, MonoBehaviour, ScriptableObjects, NavMesh, gameplay implementation & prototyping"
-      ru: "C#, MonoBehaviour, ScriptableObjects, NavMesh, реализация и прототипирование геймплея"
+      ru: "C#, MonoBehaviour, ScriptableObjects, NavMesh, прототипирование геймплея"
   - name: { en: "Programming", ru: "Программирование" }
     text: { en: "C++, C#, Python", ru: "C++, C#, Python" }
   - name: { en: "Tools", ru: "Инструменты" }
@@ -66,42 +66,44 @@ skills:
 jobs:
   pioner:
     project:
-      en: "PIONER (Steam, released) — multiplayer open-world survival shooter, Unreal Engine 5"
-      ru: "PIONER (Steam, вышел) — multiplayer survival-шутер с открытым миром, Unreal Engine 5"
+      en: "PIONER (Steam, released December 2025) — open-world MMO shooter, Unreal Engine 5; team of ~70"
+      ru: "PIONER (Steam, релиз в декабре 2025) — MMO-шутер с открытым миром, Unreal Engine 5; команда ~70 человек"
     bullets:
       en:
-        - "Owned four features end-to-end, from spec to in-engine implementation in Blueprints: hip-fire spread, dynamic crosshair, automatic reload and a full rework of the perk system — all integrated into existing systems without breaking them."
-        - "Balance a set of interconnected systems: combat, economy, progression, loot, crafting, vendor pricing and boss parameters."
-        - "Built a C++ tool that walks a level and exports every loot spawner (~3,000 on the largest map) with its loot tables and expected item counts to CSV, so loot can be balanced across the whole map in spreadsheets."
+        - "Owned four features end-to-end, from spec to in-engine implementation in Blueprints: hip-fire spread and dynamic crosshair (spread now depends on stance, speed and sustained fire, with a crosshair that shows the actual spread), automatic reload and a full rework of the perk system — all integrated into existing systems without breaking them."
+        - "Balance a set of interconnected systems: combat, economy, progression, loot, crafting, vendor pricing and boss parameters; calculated stats for dozens of enemies, from regular mobs to bosses."
+        - "Spotted and drove, through a junior designer, a fix for grenade readability: smoke and damage-zone edges."
+        - "Built a C++ tool that walks a level and exports every loot spawner (~3,000 on the largest map) with its loot tables and expected item counts to CSV, so loot can be balanced across the whole map in spreadsheets; now used by designers in my department and by level designers."
         - "Prototype and iterate on weapons, armor, consumables and enemies for live updates, based on internal testing and player feedback."
         - "Work hands-on inside existing Behavior Trees and C++ systems to understand how mechanics interact before changing them; fix gameplay issues via Blueprints."
-        - "Write and maintain balance tables and feature specs; mentor junior designers and review their design documents."
+        - "Write and maintain balance tables and feature specs. Lead two junior designers: set tasks and review design docs; redesigned the friends, chat and clan UX with one of them."
         - "Work closely with engineers and artists to take new weapons and systems from concept to live content."
       ru:
-        - "Вёл от ТЗ до реализации на Blueprints четыре фичи: разброс при стрельбе от бедра, динамический прицел, автоматическую перезарядку и полную переработку системы перков — и встроил их в существующие системы, ничего не сломав."
-        - "Балансирую набор связанных систем: бой, экономику, прогрессию, лут, крафт, цены у торговцев и параметры боссов."
-        - "Написал на C++ инструмент, который проходит по уровню и выгружает в CSV все спавнеры лута (около 3 000 на самой большой карте) с лут-таблицами и ожидаемым количеством предметов — лут всей карты можно балансировать в таблицах."
-        - "Прототипирую и дорабатываю оружие, броню, расходники и врагов для live-обновлений по итогам внутренних тестов и отзывов игроков."
-        - "Разбираюсь в существующих Behavior Trees и C++-системах, чтобы понять, как связаны механики, прежде чем их менять; геймплейные баги чиню через Blueprints."
-        - "Пишу и поддерживаю балансные таблицы и ТЗ; менторю младших дизайнеров и ревьюю их диздоки."
+        - "Вёл от ТЗ до Blueprints четыре фичи: разброс от бедра (от стойки, скорости и стрельбы) с честным прицелом, автоперезарядку и переработку перков — и встроил их в игру, ничего не сломав."
+        - "Балансирую набор связанных систем: бой, экономику, прогрессию, лут, крафт, цены у торговцев и параметры боссов; рассчитал параметры десятков врагов, от обычных до боссов."
+        - "Нашёл и через младшего дизайнера довёл до исправления проблемы читаемости эффектов гранат: дым и границы зон поражения."
+        - "Написал на C++ инструмент, который проходит по уровню и выгружает в CSV все спавнеры лута (около 3 000 на самой большой карте) с лут-таблицами и ожидаемым количеством предметов — лут всей карты можно балансировать в таблицах; выгрузкой пользуются дизайнеры отдела и левел-дизайнеры."
+        - "Прототипирую и дорабатываю оружие, броню, расходники и врагов для live-обновлений."
+        - "Прежде чем менять механики, разбираюсь в Behavior Trees и C++-системах; геймплейные баги чиню через Blueprints."
+        - "Пишу и поддерживаю балансные таблицы и ТЗ. Руковожу двумя младшими дизайнерами: ставлю задачи и провожу ревью диздоков; с одним из них переделал UX друзей, чата и кланов."
         - "Вместе с программистами и художниками довожу новое оружие и системы от концепта до live-контента."
   the-braves:
     project:
-      en: "The Braves (Steam, released) — live-service action game in the spirit of Vampire Survivors, Unity"
-      ru: "The Braves (Steam, вышел) — live-service экшен в духе Vampire Survivors, Unity"
+      en: "The Braves (Steam, released) — live-service action game in the spirit of Vampire Survivors, Unity; team of ~30, 5 game designers"
+      ru: "The Braves (Steam, вышел) — live-service экшен в духе Vampire Survivors, Unity; команда ~30, 5 геймдизайнеров"
     bullets:
       en:
-        - "Built an internal tool that moves content data from Google Sheets into the project’s admin panel — content integration became 10× faster."
+        - "Built a UI-automation script that moves data from Google Sheets into a browser-only admin panel with no API — content integration became 10× faster."
         - "Wrote 20+ specs for artists and programmers and supported many mechanics — hero skills, weapon mechanics, boss variations — from concept through implementation and balance."
-        - "Owned gamepad support and player-facing UI/UX flows, including a redesign of the achievement interface."
-        - "Set up content for live updates, calculated part of an in-game event’s balance, tuned enemy difficulty, rewards and the gacha economy."
+        - "Owned gamepad support across every screen, including a single Sony / Xbox / Nintendo layout table in the spec; designed the achievement showcase, frames and avatars over two iterations."
+        - "Set up content for live updates, tuned enemy difficulty, rewards and the gacha economy; calculated gacha drop rates for seasonal events."
         - "Worked daily with programmers, artists and UI artists to ship ongoing live-service content."
       ru:
-        - "Сделал внутренний инструмент, который переносит данные контента из Google-таблиц в админку проекта, — контент стал заводиться в 10 раз быстрее."
+        - "Сделал скрипт UI-автоматизации, который переносит данные из Google-таблиц в браузерную админку без API, — контент стал заводиться в 10 раз быстрее."
         - "Написал 20+ ТЗ для художников и программистов и сопровождал много механик — скиллы героев, механики оружия, вариации боссов — от идеи до реализации и баланса."
-        - "Вёл поддержку геймпада и сценарии UI/UX, в том числе переделанный экран достижений."
-        - "Заводил контент для live-обновлений, считал часть баланса внутриигрового ивента, настраивал сложность врагов, награды и гача-экономику."
-        - "Каждый день работал с программистами, художниками и UI-художниками над регулярными live-обновлениями."
+        - "Вёл поддержку геймпада во всех экранах, включая единую таблицу раскладок Sony, Xbox и Nintendo в ТЗ; спроектировал витрину достижений, рамки и аватары в две итерации."
+        - "Заводил контент для live-обновлений, настраивал сложность врагов, награды и гача-экономику; рассчитывал шансы выпадения в гаче для сезонных ивентов."
+        - "Каждый день работал с программистами и художниками над live-обновлениями."
   craft-of-survival:
     project:
       en: "Craft of Survival (Google Play, released) — single-player survival RPG, Unity"
@@ -109,10 +111,10 @@ jobs:
     bullets:
       en:
         - "First project after moving from QA into design: set up new content for regular updates."
-        - "When support for the project was paused and most of the team left, I was one of two designers who shipped a major unfinished update: fixed collisions, NavMesh and enemy spawners in Unity myself, learning the studio’s internal tools on the fly."
+        - "When support for the project was paused and most of the team left, I was one of two designers who shipped a major unfinished update with a new location: fixed collisions, NavMesh, spawners and the minimap in Unity myself, learning the studio’s internal tools on the fly."
       ru:
-        - "Первый проект после перехода из QA в дизайн: заводил новый контент для регулярных обновлений."
-        - "Когда поддержку проекта приостановили и большая часть команды ушла, мы вдвоём с коллегой довыпустили крупное недоделанное обновление: сам чинил в Unity коллизии, NavMesh и спавнеры врагов, по ходу осваивая внутренние инструменты студии."
+        - "Первый проект после перехода из QA в дизайн: заводил контент для обновлений."
+        - "Когда поддержку приостановили и большая часть команды ушла, мы вдвоём с коллегой довыпустили крупное недоделанное обновление с новой локацией: сам чинил в Unity коллизии, NavMesh, спавнеры и миникарту, по ходу осваивая инструменты студии."
   qa:
     bullets:
       en:
@@ -123,16 +125,16 @@ jobs:
 personal_projects:
   - name: { en: "UE5 Helicopter Prototype", ru: "Прототип вертолёта на UE5" }
     text:
-      en: "Flight model based on real lift, torque and drag formulas, plus a gimbal-mounted turret; Blueprints and C++. (Completed)"
-      ru: "Модель полёта на реальных формулах подъёмной силы, крутящего момента и сопротивления и турель на гимбале; Blueprints и C++. (Завершён)"
+      en: "Flight model based on real lift, torque and drag formulas, plus a gimbal-mounted turret; Blueprints and C++. (In progress, since 2025)"
+      ru: "Модель полёта на реальных формулах подъёмной силы, крутящего момента и сопротивления и турель на гимбале; Blueprints и C++. (В работе, с 2025)"
   - name: { en: "Bot Arena (Unity)", ru: "Bot Arena (Unity)" }
     text:
-      en: "Wave shooter inspired by COD: Zombies — enemy AI, wave spawning, three arenas, in-game shop, grenade rocket jump. github.com/KhazirovTimur/BotArena (Completed)"
-      ru: "Волновой шутер в духе COD: Zombies — AI врагов, волны, три арены, магазин, рокет-джамп на гранате. github.com/KhazirovTimur/BotArena (Завершён)"
+      en: "Wave shooter inspired by COD: Zombies — enemy AI, wave spawning, three arenas, in-game shop, grenade rocket jump. github.com/KhazirovTimur/BotArena (2023)"
+      ru: "Волновой шутер в духе COD: Zombies — AI врагов, волны, три арены, магазин, рокет-джамп на гранате. github.com/KhazirovTimur/BotArena (2023)"
   - name: { en: "Tiny Dozzer (Mobile)", ru: "Tiny Dozzer (Mobile)" }
     text:
-      en: "Arcade game about a bulldozer clearing trash, built in Unity; previously released on Google Play."
-      ru: "Аркада про бульдозер, который убирает мусор, на Unity; выходила в Google Play."
+      en: "Arcade game about a bulldozer pushing a cube structure into a moat, built in Unity; previously released on Google Play. (2021)"
+      ru: "Аркада про бульдозер, который сталкивает постройку из кубов в ров, на Unity; выходила в Google Play. (2021)"
 
 education:
   en:
@@ -146,7 +148,7 @@ education:
 
 additional:
   en: ["Blender (basic)", "Adobe Photoshop, Premiere", "Basic SFX and music creation", "Ableton Live, Reaper"]
-  ru: ["Blender (базовый уровень)", "Adobe Photoshop, Premiere", "Создание SFX и музыки на базовом уровне", "Ableton Live, Reaper"]
+  ru: ["Blender (базовый уровень)", "Adobe Photoshop, Premiere", "SFX и музыка (базово)", "Ableton Live, Reaper"]
 
 languages:
   en: "Russian — Native   |   English — C1"

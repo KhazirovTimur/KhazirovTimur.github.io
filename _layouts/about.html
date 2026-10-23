@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-{%- comment -%} The page's markdown sections, in order: background, looking for, samples, education, certificates, languages, additional skills.
-They are regrouped into three cards; "additional skills" becomes a link to the side work page. {%- endcomment -%}
+{%- comment -%} The page's markdown sections, in order: background, looking for, samples, education, certificates, languages.
+They are regrouped into three cards. {%- endcomment -%}
 {%- assign lang = page.lang | default: "en" -%}
 {%- assign u = site.data.ui[lang] -%}
 {%- assign hm = site.data.home[lang] -%}
@@ -21,7 +21,7 @@ They are regrouped into three cards; "additional skills" becomes a link to the s
 <div class="gsub" id="expertise"><h3>{{ u.expertise_h }}</h3><div class="areas">{% for p in hm.pillars.items %}<div><h4>{{ p.title }}</h4><p>{{ p.text }}</p></div>{% endfor %}</div></div>
 <div class="gsub" id="toolkit"><h3>{{ u.toolkit_h }}</h3><div class="toolkit">{% for g in hm.toolkit.groups %}<div><h4>{{ g.name }}</h4><div class="tags">{% for x in g.items %}<span>{{ x }}</span>{% endfor %}</div></div>{% endfor %}</div></div>
 <div class="gsub" id="approach"><h3>{{ u.approach_h }}</h3><p class="quote">{{ hm.approach.quote }}</p><ul>{% for p in hm.approach.points %}<li>{{ p }}</li>{% endfor %}</ul>
-<h4>{{ u.exploring_h }}</h4><div class="tags">{% for x in hm.exploring.items %}<span>{{ x }}</span>{% endfor %}</div></div></section>
+<h4>{{ u.benchmarks_h }}</h4><ul class="bench">{% for g in hm.benchmarks %}<li><b>{{ g.game }}</b> — {{ g.text }}</li>{% endfor %}</ul></div></section>
 
 <section class="card sec prose grp" id="facts" data-nav="facts|{{ u.g_facts }}"><h2>{{ u.g_facts }}</h2>
 {% include gsub-md.html part=p3 id="samples" %}{% include gsub-md.html part=p4 id="education" %}{% include gsub-md.html part=p5 id="certificates" %}{% include gsub-md.html part=p6 id="languages" %}

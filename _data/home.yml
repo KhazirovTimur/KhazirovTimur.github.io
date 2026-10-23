@@ -1,34 +1,7 @@
-# Home page content. `en` and `ru` blocks mirror each other.
-# Featured cards on the home page (page refs). Prototypes are on the Projects page.
-featured: [pioner, the-braves, craft-of-survival]
-featured_personal: [helicopter, bot-arena, tiny-dozzer]
+# About page blocks: expertise, toolkit, approach and benchmark games. `en` and `ru` blocks mirror each other.
+# Home page texts live in _data/ui.yml.
 
 en:
-  eyebrow: "Technical Game Designer · Unreal Engine 5 · Unity"
-  headline: "I design gameplay — and implement it in the engine myself."
-  lead: "5+ years in shooters and live-service games, three shipped titles. I take features from spec to Blueprints and C++, balance economies, and automate the team’s routine work."
-  sheet:
-    title: "Character sheet"
-    rows:
-      - { k: "Class", v: "Technical Game Designer" }
-      - { k: "Engines", v: "Unreal Engine 5 · Unity" }
-      - { k: "Implementation", v: "Blueprints · C++ · C# · Python" }
-      - { k: "Focus", v: "Tech design · Balance · Economy · Gameplay" }
-      - { k: "Languages", v: "Russian (native) · English (C1)" }
-      - { k: "Relocation", v: "Open · remote-capable" }
-    status: "Open to new opportunities"
-  stats:
-    - { value: "5+", label: "years in game development" }
-    - { value: "3", label: "shipped commercial titles" }
-    - { value: "50+", label: "mechanics built in shipped games and personal projects" }
-    - { value: "2+", label: "internal tools built to speed up the team’s work" }
-  work:
-    eyebrow: "Commercial work"
-    title: "Shipped games I worked on in studios"
-  personal:
-    eyebrow: "Personal projects"
-    title: "Prototypes I build on my own"
-    lead: "Side projects made outside of work to explore mechanics and sharpen technical skills."
   pillars:
     eyebrow: "What I do"
     title: "Where I bring the most value"
@@ -42,10 +15,7 @@ en:
       - title: "Gameplay & combat mechanics"
         text: "50+ mechanics across shipped games and personal projects — weapon behaviour, hip-fire spread and crosshair, reload and perk systems, hero skills, boss variations and gamepad controls."
       - title: "Team & documentation"
-        text: "Feature specs and balance tables engineers, artists and QA can work from. I mentor junior designers — reviewing their docs and helping them own features."
-  career:
-    eyebrow: "Career"
-    title: "From QA to Technical Game Designer"
+        text: "Feature specs and balance tables engineers, artists and QA can work from. I lead junior designers: reviewing their docs and helping them own features."
   toolkit:
     eyebrow: "Toolkit"
     title: "Technical skills"
@@ -67,36 +37,19 @@ en:
       - "Understand how existing systems interact before changing them."
       - "Balance against measurable goals, not gut feeling."
       - "Automate repetitive work so the team can focus on the game."
-  exploring:
-    title: "Currently exploring"
-    items: ["Gameplay Ability System", "Advanced Unreal Engine architecture", "REDkit workflows", "Gameplay tooling & automation", "AI-driven gameplay systems"]
+  benchmarks:
+    - { game: "Titanfall series", text: "Pilot movement and combat pace nobody has matched since, with a clever take on titans on top" }
+    - { game: "Outer Wilds", text: "Exploration and puzzles woven into a time loop, and a world in motion: crumbling planets, a comet that thaws and freezes as it moves around the sun, and a sun going supernova" }
+    - { game: "Sekiro", text: "Superb tactile, rhythm-driven combat that comes alive in one-on-one boss fights" }
+    - { game: "Clair Obscur: Expedition 33", text: "Turn-based combat with action timing, story and music" }
+    - { game: "Baldur’s Gate 3", text: "The best party RPG today" }
+    - { game: "The Witcher 3", text: "Original quests, memorable characters and a unique fantasy world" }
+    - { game: "Red Dead Redemption 2", text: "An immersive Wild West world" }
+    - { game: "Kingdom Come: Deliverance II", text: "A faithfully recreated medieval Bohemia, almost an interactive museum, with enough systems to border on immersive sim" }
+    - { game: "Subnautica", text: "The survival benchmark: exploring a beautiful, unsettling world, sound and music" }
+    - { game: "ARC Raiders", text: "An extraction shooter with polished execution and the right level of accessibility next to its hardcore competitors" }
 
 ru:
-  eyebrow: "Технический геймдизайнер · Unreal Engine 5 · Unity"
-  headline: "Придумываю геймплей — и сам собираю его в движке."
-  lead: "5+ лет в шутерах и live-service играх, три вышедших проекта. Довожу фичи от ТЗ до Blueprints и C++, балансирую экономику и автоматизирую рутину команды."
-  sheet:
-    title: "Карточка персонажа"
-    rows:
-      - { k: "Класс", v: "Технический геймдизайнер" }
-      - { k: "Движки", v: "Unreal Engine 5 · Unity" }
-      - { k: "Реализация", v: "Blueprints · C++ · C# · Python" }
-      - { k: "Фокус", v: "Техдизайн · Баланс · Экономика · Геймплей" }
-      - { k: "Языки", v: "Русский (родной) · Английский (C1)" }
-      - { k: "Релокация", v: "Готов · можно удалённо" }
-    status: "Ищу работу"
-  stats:
-    - { value: "5+", label: "лет в геймдеве" }
-    - { value: "3", label: "вышедших коммерческих проекта" }
-    - { value: "50+", label: "механик в вышедших играх и личных проектах" }
-    - { value: "2+", label: "внутренних инструмента, которые ускорили работу команды" }
-  work:
-    eyebrow: "Коммерческие проекты"
-    title: "Вышедшие игры, над которыми я работал в студиях"
-  personal:
-    eyebrow: "Личные проекты"
-    title: "Прототипы, которые я делаю сам"
-    lead: "Проекты вне работы: на них я пробую механики и прокачиваю технические навыки."
   pillars:
     eyebrow: "Чем занимаюсь"
     title: "Где от меня больше всего пользы"
@@ -110,10 +63,7 @@ ru:
       - title: "Геймплей и боевые механики"
         text: "50+ механик в вышедших играх и личных проектах: поведение оружия, разброс от бедра и прицел, перезарядка и перки, скиллы героев, вариации боссов, управление с геймпада."
       - title: "Команда и документация"
-        text: "Пишу ТЗ и балансные таблицы, по которым реально работают программисты, художники и QA. Менторю младших дизайнеров: ревьюю доки, помогаю вести фичи."
-  career:
-    eyebrow: "Карьера"
-    title: "Из QA в технические геймдизайнеры"
+        text: "Пишу ТЗ и балансные таблицы, по которым реально работают программисты, художники и QA. Руковожу младшими дизайнерами: провожу ревью доков, помогаю вести фичи."
   toolkit:
     eyebrow: "Инструменты"
     title: "Технические навыки"
@@ -135,6 +85,14 @@ ru:
       - "Сначала понять, как устроены существующие системы, и только потом их менять."
       - "Балансировать под понятные цели, а не на глазок."
       - "Автоматизировать рутину, чтобы команда занималась игрой."
-  exploring:
-    title: "Сейчас изучаю"
-    items: ["Gameplay Ability System", "Архитектуру Unreal Engine глубже", "REDkit", "Геймплейный тулинг и автоматизацию", "Геймплейные системы на основе AI"]
+  benchmarks:
+    - { game: "Серия Titanfall", text: "Мувмент и динамика боя пилотов, которые так никто и не повторил, а сверху интересная реализация титанов" }
+    - { game: "Outer Wilds", text: "Исследование и загадки, вшитые во временную петлю, и динамичный мир: разрушающиеся планеты, комета, которая тает и замерзает по мере удаления от солнца, и солнце, превращающееся в сверхновую" }
+    - { game: "Sekiro", text: "Отличная тактильная ритм-боёвка, раскрывающаяся в битвах 1 на 1 с боссами" }
+    - { game: "Clair Obscur: Expedition 33", text: "Тактический бой с экшен-элементами, сюжет и музыка" }
+    - { game: "Baldur’s Gate 3", text: "Лучшая партийная RPG на сегодня" }
+    - { game: "Ведьмак 3", text: "Нешаблонные квесты, интересные персонажи, уникальный фэнтезийный мир" }
+    - { game: "Red Dead Redemption 2", text: "Иммерсивный мир Дикого Запада" }
+    - { game: "Kingdom Come: Deliverance II", text: "Достоверно воссозданная средневековая Богемия, почти интерактивный музей, и столько механик, что RPG близка к immersive sim" }
+    - { game: "Subnautica", text: "Эталон выживалки: исследование красивого и пугающего мира, звук и музыка" }
+    - { game: "ARC Raiders", text: "Extraction-шутер с образцовым исполнением и верно найденным балансом доступности на фоне хардкорных конкурентов" }
