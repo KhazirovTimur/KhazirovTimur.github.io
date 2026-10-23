@@ -5,6 +5,5 @@ document.querySelectorAll('.g[data-video]').forEach(card=>{const src=card.datase
 const sub=[...document.querySelectorAll('.sub a[href^="#"]')];
 if(sub.length){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)sub.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-35% 0px -60% 0px'});sub.forEach(a=>{const t=document.querySelector(a.getAttribute('href'));t&&io.observe(t)})}
 
-document.querySelectorAll('.showall').forEach(b=>b.addEventListener('click',()=>{const g=b.previousElementSibling;const o=g.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'Show less':'Show all '+g.children.length+' achievements'}));
 
 document.querySelectorAll('.showall').forEach(b=>b.addEventListener('click',()=>{const g=b.previousElementSibling;const o=g.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?b.dataset.less:b.dataset.more}));
