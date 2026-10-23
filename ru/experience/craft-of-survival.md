@@ -6,7 +6,7 @@ section: experience
 order: 3
 title: Craft of Survival
 eyebrow: "101XP · Unity · Mobile · 2022 — 2023"
-summary: "Одиночная survival-RPG на live-service модели. Когда большая часть команды ушла, мы вдвоём с коллегой довыпустили крупное обновление — локации в Unity я чинил сам."
+summary: "Одиночная survival-RPG на live-service модели. Когда большая часть команды ушла, мы с коллегой вдвоём доделали и выпустили крупное обновление, а баги на локациях в Unity я чинил сам."
 cover: "/assets/img/craft-of-survival/cover.jpg"
 cover_pos: "center 30%"
 cover_label: "Mobile"
@@ -22,7 +22,7 @@ status: "Вышла"
 links:
   - { label: "Google Play", url: "https://play.google.com/store/apps/details?id=com.action.survival.craft.rpg" }
 highlights:
-  - { value: "2", label: "дизайнера остались, чтобы довыпустить крупное обновление" }
+  - { value: "2", label: "дизайнера остались доделывать крупное обновление" }
   - { value: "Релиз", label: "обновление вышло" }
 stack: [Unity, "C#", NavMesh, Внутренние инструменты студии, Excel / Google Sheets, Jira, Git]
 permalink: /ru/experience/craft-of-survival/

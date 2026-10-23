@@ -16,7 +16,7 @@ nav:
 ui:
   name:            { en: "Timur Khazirov", ru: "Тимур Хазиров" }
   role:            { en: "Senior Technical / Balance Game Designer", ru: "Senior-геймдизайнер: техдизайн и баланс" }
-  download_cv:     { en: "Download CV", ru: "Скачать CV" }
+  download_cv:     { en: "Download CV", ru: "Скачать резюме" }
   cv_short:        { en: "CV", ru: "CV" }
   contact:         { en: "Contact", ru: "Связаться" }
   view_work:       { en: "View my work", ru: "Мои работы" }
@@ -45,5 +45,5 @@ ui:
   contacts_title:  { en: "Let’s talk", ru: "Давайте поговорим" }
   contacts_text:
     en: "I’m open to Technical / Gameplay Designer roles — on-site with relocation or remote. The fastest way to reach me is e-mail or Telegram."
-    ru: "Ищу работу Technical или Gameplay Designer — в офисе с релокацией или удалённо. Быстрее всего ответить смогу в почте или в Telegram."
-  footer_note:     { en: "Built with Jekyll · Hosted on GitHub Pages", ru: "Сделано на Jekyll · Живёт на GitHub Pages" }
+    ru: "Рассматриваю позиции технического или геймплейного дизайнера — в офисе с релокацией или удалённо. Быстрее всего отвечу в почте или Telegram."
+  footer_note:     { en: "Built with Jekyll · Hosted on GitHub Pages", ru: "Сделано на Jekyll · Работает на GitHub Pages" }

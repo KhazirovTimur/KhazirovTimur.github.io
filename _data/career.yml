@@ -6,7 +6,7 @@
   period: { en: "Nov 2024 — Present", ru: "Ноябрь 2024 — сейчас" }
   text:
     en: "Implement features directly in Blueprints, built a C++ loot parser for the team, balance progression, economy, loot and crafting of an open-world multiplayer shooter, own weapon mechanics from spec to release, and mentor junior designers."
-    ru: "Сам собираю фичи на Blueprints, написал для команды C++-парсер лута, балансирую прогрессию, экономику, лут и крафт multiplayer-шутера с открытым миром, веду механики оружия от ТЗ до релиза и менторю младших дизайнеров."
+    ru: "Реализую механики на Blueprints, написал для команды парсер лута на C++, отвечаю за баланс прогрессии, экономики, лута и крафта в мультиплеерном шутере с открытым миром, веду механики оружия от ТЗ до релиза и наставляю младших дизайнеров."
 
 - company: 101XP
   projects: [the-braves]
@@ -14,7 +14,7 @@
   period: { en: "Mar 2023 — Nov 2024", ru: "Март 2023 — ноябрь 2024" }
   text:
     en: "Built a tool that moved content data from Google Sheets into the admin panel 10× faster than by hand. Wrote specs for and supported many mechanics — hero skills, weapon mechanics, gamepad controls — designed boss variations, set up content and balanced live updates and events."
-    ru: "Сделал инструмент, который переносит данные из Google-таблиц в админку в 10 раз быстрее, чем руками. Писал ТЗ и сопровождал много механик — скиллы героев, оружие, управление с геймпада, — проектировал вариации боссов, заводил контент и балансировал обновления и ивенты."
+    ru: "Написал инструмент, который переносит данные из Google Таблиц в админку в 10 раз быстрее ручного ввода. Писал ТЗ и вёл механики: скиллы героев, оружие, управление с геймпада. Проектировал вариации боссов, заводил контент, балансировал обновления и ивенты."
 
 - company: 101XP
   projects: [craft-of-survival]
@@ -22,7 +22,7 @@
   period: { en: "Dec 2022 — Mar 2023", ru: "Декабрь 2022 — март 2023" }
   text:
     en: "First project after moving from QA into design: set up content for regular updates. When most of the team left, I was one of two designers who shipped a major update, fixing locations in Unity myself."
-    ru: "Первый проект после перехода из QA в дизайн: заводил контент для регулярных обновлений. Когда большая часть команды ушла, мы вдвоём с коллегой довыпустили крупное обновление — локации в Unity я чинил сам."
+    ru: "Первый проект после перехода из QA в дизайн: заводил контент для регулярных обновлений. Когда большая часть команды ушла, мы с коллегой вдвоём доделали и выпустили крупное обновление, а баги на локациях в Unity я чинил сам."
 
 - company: 101XP
   projects: []
