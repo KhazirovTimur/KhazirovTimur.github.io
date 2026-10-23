@@ -1,5 +1,10 @@
 # Notes for Claude working on this site
 
+## Push straight to main
+Owner's rule: commit and push changes directly to `main` — no feature branches or PRs.
+The site is a work in progress; roll back to an earlier commit if something breaks.
+GitHub Pages builds only from `main`.
+
 ## CV must always match the site
 Standing rule from the site owner: every change to the site updates BOTH CVs (EN and RU)
 in the same commit, without being asked. Never push a site change with a stale CV
