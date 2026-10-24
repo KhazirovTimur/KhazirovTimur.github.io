@@ -70,7 +70,7 @@ en:
   show_all: Show all 8 achievements
   show_less: Show less
   achs:
-  - icon: crosshair
+  - icon: key
     tier: gold
     name: Feature Owner
     text: Took 20+ features from design to release across PIONER and The Braves
@@ -80,7 +80,7 @@ en:
     name: Toolsmith
     text: Built content tools that made integration 10× faster
     where: The Braves · 101XP
-  - icon: star
+  - icon: cap
     tier: gold
     name: Mentor
     text: 'Lead two junior designers: set their tasks and review their design docs'
@@ -274,7 +274,7 @@ ru:
   show_all: Показать все 8
   show_less: Свернуть
   achs:
-  - icon: crosshair
+  - icon: key
     tier: gold
     name: Механики под ключ
     text: Довёл 20+ механик от идеи до релиза в PIONER и The Braves
@@ -284,7 +284,7 @@ ru:
     name: Инструментальщик
     text: Написал инструменты для заведения контента, и работа пошла в 10 раз быстрее
     where: The Braves · 101XP
-  - icon: star
+  - icon: cap
     tier: gold
     name: Наставник
     text: 'Руковожу двумя младшими дизайнерами: ставлю задачи, проверяю их документацию'
