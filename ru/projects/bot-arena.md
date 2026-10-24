@@ -6,7 +6,7 @@ section: projects
 order: 2
 title: Bot Arena
 eyebrow: "Личный проект · Unity · 2023"
-summary: "Арена-шутер против бесконечных волн врагов в духе Call of Duty: Zombies: волны дронов, которые атакуют по очереди, три арены с магазинами и система волн, настраиваемая несколькими параметрами."
+summary: "Арена-шутер против бесконечных волн дронов в духе Call of Duty: Zombies. Три арены с магазинами и оружием, настраиваемые агрессия врагов и система волн."
 cover: "https://i.ytimg.com/vi/DEvdwnNBFe0/hqdefault.jpg"
 cover_label: "Unity"
 accent: teal

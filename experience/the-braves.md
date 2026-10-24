@@ -22,7 +22,7 @@ links:
   - { label: "Steam page", url: "https://store.steampowered.com/app/2479830/The_Braves/" }
 highlights:
   - { value: "×10", label: "faster content integration with my tool" }
-  - { value: "20+", label: "specs written for artists and programmers" }
+  - { value: "25+", label: "specs written for artists and programmers" }
 stack: [Unity, "C#", ScriptableObjects, Google Sheets, Jira, Confluence, Git]
 permalink: /experience/the-braves/
 ---

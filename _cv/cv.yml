@@ -79,7 +79,7 @@ jobs:
         - "Write and maintain balance tables and feature specs. Lead two junior designers: set tasks and review design docs; redesigned the friends, chat and clan UX with one of them."
         - "Work closely with engineers and artists to take new weapons and systems from concept to live content."
       ru:
-        - "Вёл от ТЗ до Blueprints четыре механики: разброс от бедра (от стойки, скорости и стрельбы) с честным прицелом, автоперезарядку и переработку перков — и встроил их в игру, ничего не сломав."
+        - "Вёл от ТЗ до реализации на Blueprints разброс от бедра (от стойки, скорости и стрельбы) с честным прицелом и переработку системы перков — и встроил их в игру, ничего не сломав."
         - "Балансирую набор связанных систем: бой, экономику, прогрессию, лут, крафт, цены у торговцев и параметры боссов; рассчитал параметры десятков врагов, от обычных до боссов."
         - "Нашёл и через младшего дизайнера довёл до исправления проблемы читаемости эффектов гранат: дым и границы зон поражения."
         - "Написал на C++ инструмент, который проходит по уровню и выгружает в CSV все спавнеры лута (около 3 000 на самой большой карте) с лут-таблицами и ожидаемым количеством предметов — лут всей карты можно балансировать в таблицах; выгрузкой пользуются дизайнеры отдела и левел-дизайнеры."
@@ -94,13 +94,13 @@ jobs:
     bullets:
       en:
         - "Built a UI-automation script that moves data from Google Sheets into a browser-only admin panel with no API — content integration became 10× faster."
-        - "Wrote 20+ specs for artists and programmers and owned many mechanics — hero skills, weapon mechanics, boss variations — from concept through implementation and balance."
+        - "Wrote 25+ specs for artists and programmers and owned many mechanics — hero skills, weapon mechanics, boss variations — from concept through implementation and balance."
         - "Designed gamepad controls for every screen, including a single Sony / Xbox / Nintendo layout table in the spec; designed the achievement showcase, frames and avatars over two iterations."
         - "Set up content for live updates, tuned enemy difficulty, rewards and the gacha economy; calculated gacha drop rates for seasonal events."
         - "Worked daily with programmers, artists and UI artists to ship ongoing live-service content."
       ru:
-        - "Написал скрипт UI-автоматизации, который переносит данные из Google Таблиц в браузерную админку без API, — контент стал заводиться в 10 раз быстрее."
-        - "Написал 20+ ТЗ для художников и программистов и вёл множество механик — скиллы героев, механики оружия, вариации боссов — от идеи до реализации и баланса."
+        - "Написал 25+ ТЗ для художников и программистов и вёл множество механик — скиллы героев, механики оружия, вариации боссов — от идеи до реализации и баланса."
+        - "Чтобы ускорить заведение контента, написал скрипт UI-автоматизации, который переносит данные из Google Таблиц в браузерную админку без API, — контент стал заводиться в 10 раз быстрее."
         - "Спроектировал управление с геймпада для всех экранов, включая единую таблицу раскладок Sony, Xbox и Nintendo в ТЗ; спроектировал витрину достижений, рамки и аватары в две итерации."
         - "Заводил контент для live-обновлений, настраивал сложность врагов, награды и гача-экономику; рассчитывал шансы выпадения в гаче для сезонных ивентов."
         - "Каждый день работал с программистами и художниками над live-обновлениями."
@@ -120,7 +120,7 @@ jobs:
       en:
         - "Part-time role while finishing university and my entry point into the industry: learned production pipelines, bug triage and debugging workflows from the inside."
       ru:
-        - "Подработка, пока доучивался в университете, и вход в индустрию: изнутри разобрался в производственном пайплайне, триаже багов и отладке."
+        - "Подработка во время учёбы и вход в индустрию: PvP tower defense в духе Random Dice, работа в команде с коротким циклом выпуска обновлений. В команде из ~15 человек взял на себя первую проектную роль: собирал у программистов статус готовности задач, запускал сборки и публиковал билды."
 
 personal_projects:
   - name: { en: "UE5 Helicopter Prototype", ru: "Прототип вертолёта на UE5" }

@@ -95,17 +95,17 @@ en:
     name: Data Miner
     text: Wrote a C++ loot parser that exports ~3,000 spawners to CSV
     where: PIONER
-  - icon: chart
+  - icon: scales
     tier: silver
     name: Balancer
     text: Combat, bosses, loot, crafting, vendors, economy, progression
     where: PIONER
-  - icon: shield
+  - icon: gamepad
     tier: bronze
     name: Controller Ready
     text: Designed gamepad controls for every screen of the game
     where: The Braves
-  - icon: bug
+  - icon: rankup
     tier: bronze
     name: Class Change
     text: Moved from QA into game design
@@ -222,7 +222,7 @@ ru:
   - Blueprints и C++
   - PC и мобильные
   facts:
-  - k: Сейчас
+  - k: Место работы
     v: PIONER · GFAGAMES
   - k: Движки
     v: UE5 · Unity
@@ -299,17 +299,17 @@ ru:
     name: Дата-майнер
     text: Написал C++-парсер, который выгружает в CSV около 3 000 спавнеров лута
     where: PIONER
-  - icon: chart
+  - icon: scales
     tier: silver
     name: Балансер
     text: Бой, боссы, лут, крафт, торговцы, экономика, прогрессия
     where: PIONER
-  - icon: shield
+  - icon: gamepad
     tier: bronze
     name: Под геймпад
     text: Спроектировал управление с геймпада для всех экранов игры
     where: The Braves
-  - icon: bug
+  - icon: rankup
     tier: bronze
     name: Смена класса
     text: Перешёл из QA в геймдизайн
@@ -338,7 +338,7 @@ ru:
   notes_soon: Разборы механик и игр скоро появятся. Рабочие кейсы — на страницах проектов.
   soon: Скоро
   side_h: Смежные навыки
-  side_sub: Что я умею за пределами геймдизайна
+  side_sub: Мои интересы помимо геймдизайна
   expertise_h: Экспертиза
   toolkit_h: Технические навыки
   approach_h: Как я работаю

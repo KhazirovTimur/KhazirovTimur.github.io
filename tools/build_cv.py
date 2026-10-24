@@ -27,7 +27,7 @@ SITE = "https://khazirovtimur.github.io"
 FACTS = [
     {"en": "C1", "ru": "C1", "site": ["about/index.md", "ru/about/index.md"]},
     {"en": "10×", "ru": "10 раз", "site": ["experience/the-braves.md", "ru/experience/the-braves.md"]},
-    {"en": "20+", "ru": "20+", "site": ["experience/the-braves.md", "ru/experience/the-braves.md"]},
+    {"en": "25+", "ru": "25+", "site": ["experience/the-braves.md", "ru/experience/the-braves.md"]},
     {"en": "50+", "ru": "50+", "site": ["_data/home.yml"]},
     {"en": "Senior Technical / Balance Game Designer", "ru": "Senior-геймдизайнер: техдизайн и баланс", "site": ["_data/i18n.yml", "_data/ui.yml"]},
     {"en": "3,000", "ru": "3 000", "site": ["experience/pioner.md", "ru/experience/pioner.md"]},

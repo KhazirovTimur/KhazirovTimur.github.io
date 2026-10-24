@@ -6,7 +6,7 @@ section: experience
 order: 2
 title: The Braves
 eyebrow: "101XP · Unity · 2023 — 2024"
-summary: "Live-service экшен в духе Vampire Survivors. Создал инструмент для заведения контента, писал ТЗ и вёл множество механик — скиллы героев, оружие, управление с геймпада, — балансировал обновления и ивенты."
+summary: "Live-service аркада в духе Vampire Survivors. Заводил контент, писал ТЗ и вёл множество механик: скиллы героев, оружие, управление с геймпада. Балансировал обновления и ивенты, а заведение контента ускорил в 10 раз своим инструментом."
 cover: "https://cdn.cloudflare.steamstatic.com/steam/apps/2479830/header.jpg"
 cover_label: "Unity"
 accent: teal
@@ -16,20 +16,20 @@ company: 101XP
 period: "Март 2023 — ноябрь 2024"
 engine: "Unity"
 platform: "PC (Steam)"
-genre: "Survivors-like экшен, live-service"
+genre: "Survivors-like аркада, live-service"
 status: "Вышла"
 links:
   - { label: "Страница в Steam", url: "https://store.steampowered.com/app/2479830/The_Braves/" }
 highlights:
   - { value: "×10", label: "быстрее заводится контент с моим инструментом" }
-  - { value: "20+", label: "ТЗ для художников и программистов" }
+  - { value: "25+", label: "ТЗ для художников и программистов" }
 stack: [Unity, "C#", ScriptableObjects, Google Sheets, Jira, Confluence, Git]
 permalink: /ru/experience/the-braves/
 ---
 
 ## О проекте
 
-**The Braves** — live-service экшен по мотивам *Vampire Survivors*: коллекция героев, прогрессия и постоянный поток нового контента.
+**The Braves** — live-service аркада по мотивам *Vampire Survivors*: коллекция героев, прогрессия и постоянный поток нового контента.
 
 Я пришёл на проект после Craft of Survival и работал на нём до ухода из 101XP. В команде было около 30 человек, из них пять геймдизайнеров: задачи ставил project owner, а мы распределяли их между собой. Как технический геймдизайнер я занимался и самой игрой, и тем, как в неё попадает контент. Игра всё время обновлялась, поэтому механики редко проектировались раз и навсегда — их доводили итерациями по фидбеку команды, плейтестам и приоритетам продакшена.
 
