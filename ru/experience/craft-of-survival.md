@@ -21,9 +21,6 @@ genre: "Survival RPG, live-service"
 status: "Вышла"
 links:
   - { label: "Google Play", url: "https://play.google.com/store/apps/details?id=com.action.survival.craft.rpg" }
-highlights:
-  - { value: "2", label: "дизайнера остались доделывать крупное обновление" }
-  - { value: "Релиз", label: "обновление вышло" }
 stack: [Unity, "C#", NavMesh, Внутренние инструменты студии, Excel / Google Sheets, Jira, Git]
 permalink: /ru/experience/craft-of-survival/
 ---

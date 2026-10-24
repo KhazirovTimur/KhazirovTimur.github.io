@@ -21,9 +21,6 @@ genre: "Survival RPG, live-service"
 status: "Released"
 links:
   - { label: "Google Play", url: "https://play.google.com/store/apps/details?id=com.action.survival.craft.rpg" }
-highlights:
-  - { value: "2", label: "designers stayed to finish a major update" }
-  - { value: "Shipped", label: "the update went live" }
 stack: [Unity, "C#", NavMesh, Studio internal tools, Excel / Google Sheets, Jira, Git]
 redirect_from:
   - /experience/craft_of_survival/
