@@ -7,3 +7,4 @@ if(sub.length){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isInter
 
 
 document.querySelectorAll('.showall').forEach(b=>b.addEventListener('click',()=>{const g=b.previousElementSibling;const o=g.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?b.dataset.less:b.dataset.more}));
+{const tt=document.querySelector('.totop');if(tt){const t=()=>tt.classList.toggle('on',scrollY>innerHeight*1.2);addEventListener('scroll',t,{passive:true});t();tt.addEventListener('click',e=>{e.preventDefault();scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'})})}}

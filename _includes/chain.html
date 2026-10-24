@@ -1,0 +1,1 @@
+<ol class="loop chain" aria-label="{{ include.label | default: 'Chain' }}">{% for s in page.chain %}<li class="loop__step"><span class="loop__num">{{ forloop.index | prepend: "0" }}</span><strong>{{ s.title }}</strong><span>{{ s.text }}</span></li>{% endfor %}</ol>

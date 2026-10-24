@@ -81,6 +81,7 @@
   <div class="btns"><a class="btn pri" href="mailto:{{ me.email }}">{% include icon.html n="mail" sw="2" %}{{ me.email }}</a><a class="btn" href="https://t.me/{{ me.telegram }}">{% include icon.html n="tg" sw="2" %}Telegram @{{ me.telegram }}</a></div></section>
 </main>
 </div>
+<a href="#" class="totop" aria-label="{{ u.top }}" title="{{ u.top }}">{% include icon.html n="up" %}</a>
 <script src="{{ '/assets/js/main.js' | relative_url }}?v={{ site.time | date: '%s' }}" defer></script>
 </body>
 </html>

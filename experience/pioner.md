@@ -33,6 +33,11 @@ loop:
 redirect_from:
   - /experience/pioner_balance/
   - /experience/pioner_weapon_balance/
+chain:
+  - { title: "Enemy lives longer", text: "more shots fired, more return fire" }
+  - { title: "Wear", text: "weapons and armor lose durability; dying drains all gear" }
+  - { title: "Repairs", text: "fixing gear costs more resources" }
+  - { title: "Economy", text: "the player’s resource flow shifts" }
 permalink: /experience/pioner/
 ---
 
@@ -54,7 +59,9 @@ I balance a set of systems that all depend on each other:
 - **Progression** — experience curves and equipment progression.
 - **Economy** — loot distribution, vendor pricing, crafting and overall resource flow.
 
-A change in one place ripples through the others. If an enemy takes longer to kill, weapons wear out faster, and the enemy shoots back longer and damages armor more. On top of that, dying costs a share of durability on all gear. All of it goes into repairs, meaning resources: that is how enemy damage and health feed straight into the economy.
+A change in one place ripples through the others. For example, this is how enemy health and damage reach the economy:
+
+{% include chain.html label="Chain of effects" %}
 
 ### Open-world economy
 
@@ -62,17 +69,31 @@ The main goal is for this loop to feel good, with the player able to upgrade som
 
 ### Combat balance
 
-PIONER has both PvP and PvE, so every weapon has to work in both and still feel distinct. For that I introduced a weapon power score calculated from effective TTK and effective DPS. It is the main reference but not the only one: I look at TTK and DPS on their own as well. This gives weapons a character. A heavy machine gun is slow to aim down sights and reduces mobility, so it is weaker in PvP, but its high DPS makes it strong against bosses. SMGs with small magazines lean the other way and do better in PvP. These are tendencies, not hard rules: the machine gun is still viable in PvP.
+PIONER has both PvP and PvE, so every weapon has to work in both and still feel distinct. For that I introduced a weapon power score calculated from effective TTK and effective DPS. It is the main reference but not the only one: I look at TTK and DPS on their own as well. This gives weapons a character:
+
+<div class="power" markdown="0">
+<p class="power__f"><b>Effective TTK</b> + <b>Effective DPS</b> → <b class="res">Power score</b></p>
+<dl class="power__rows">
+<div><dt>Heavy machine gun</dt><dd><span class="up">▲ PvE and bosses</span> thanks to high DPS · <span class="down">▼ PvP</span>: slow to aim down sights, reduced mobility</dd></div>
+<div><dt>SMG with a small magazine</dt><dd><span class="up">▲ PvP</span></dd></div>
+</dl>
+</div>
+
+These are tendencies, not hard rules: the machine gun is still viable in PvP.
 
 After the math, every weapon goes through three checks: a PvE sandbox, the open world and internal PvP tests. If needed, I tune it afterwards.
 
 Enemy parameters are mine too: I calculated damage, health, resistances and movement speed for dozens of enemies, from regular mobs to bosses.
 
-I write and maintain the balance tables that engineers, artists and QA work from.
+### Balance tables
+
+I also maintain a large document with all the balance tables: many sheets for weapons, crafting, armor and resources, cross-linked throughout to keep manual work to a minimum and track every dependency and change. It is a key part of the team’s work: almost every game and level designer relies on it to some degree.
+
+For this portfolio I put together a sample sheet that balances one weapon category with formulas I like to use — TTK by distance and hit probability from the ratio of spread area to target size. It shows the approach, not live game data.
+
+{% include sample-link.html key="balance_sheet" label="Open the weapon balance sample" cls="btn" %}
 
 **Result.** The target loop is in place: players progress steadily and keep upgrading their gear. When players reported a shortage or surplus of a resource, we fixed it quickly by adding new sources or new sinks, for example by rebalancing recipes. Opinions on weapons vary: some players call one gun the strongest, others another. For a shooter that is a good sign: there is no obvious best gun, and the balance works.
-
-Outside of production work, I also put together a sample sheet that balances one weapon category and shows formula approaches I like to use — TTK by distance and a hit-probability model based on spread area versus target size: {% include sample-link.html key="balance_sheet" label="weapon balance sample" %}. It is a showcase of methods, not live game data.
 
 ## Tooling: loot parser {#loot-parser}
 

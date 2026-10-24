@@ -69,6 +69,7 @@ en:
   bronze: bronze
   show_all: Show all 8 achievements
   show_less: Show less
+  top: Back to top
   achs:
   - icon: key
     tier: gold
@@ -273,6 +274,7 @@ ru:
   bronze: бронза
   show_all: Показать все 8
   show_less: Свернуть
+  top: Наверх
   achs:
   - icon: key
     tier: gold
