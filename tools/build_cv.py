@@ -82,14 +82,14 @@ def render(lang, cv, career, prof):
 
     return f'''<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><title>{e(NAME[lang])} — CV</title>
 <style>
-@page {{ size: A4; margin: 15mm 16mm 14mm 16mm; }}
+@page {{ size: A4; margin: 13mm 16mm 12mm 16mm; }}
 * {{ box-sizing: border-box; }}
 body {{ margin: 0; font-family: "Liberation Serif", "Times New Roman", serif; font-size: 10.6pt; line-height: 1.36; color: #1a1a1a; }}
 h1 {{ margin: 0; font-size: 22pt; letter-spacing: .03em; color: #0f1f3d; }}
 .role {{ margin: 2px 0 6px; font-size: 13pt; font-weight: bold; color: #2f5496; }}
 .contacts {{ font-size: 9.6pt; color: #555; }} .contacts a {{ color: #2f5496; }}
 .note {{ font-size: 9.6pt; font-style: italic; color: #666; margin-top: 2px; }}
-h2 {{ margin: 14px 0 6px; padding-bottom: 3px; border-bottom: 1.2px solid #2f5496; font-size: 11.5pt; letter-spacing: .08em; text-transform: uppercase; color: #2f5496; break-after: avoid-page; }}
+h2 {{ margin: 12px 0 5px; padding-bottom: 3px; border-bottom: 1.2px solid #2f5496; font-size: 11.5pt; letter-spacing: .08em; text-transform: uppercase; color: #2f5496; break-after: avoid-page; }}
 p {{ margin: 0 0 5px; }}
 .skills {{ display: grid; grid-template-columns: 136px 1fr; gap: 1px 12px; margin: 0; }}
 .skills dt {{ font-weight: bold; color: #0f1f3d; }} .skills dd {{ margin: 0; }}

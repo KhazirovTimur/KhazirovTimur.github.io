@@ -6,7 +6,7 @@ section: experience
 order: 1
 title: PIONER
 eyebrow: "GFAGAMES · Unreal Engine 5 · 2024 — now"
-summary: "Open-world MMO shooter. I implement features directly in Blueprints, build tools for the team, balance the game’s interconnected systems and own weapon mechanics from spec to release."
+summary: "Open-world MMO shooter. I implement features directly in Blueprints, build tools for the team, balance the game’s interconnected systems and own new mechanics from spec to release."
 cover: "https://cdn.cloudflare.steamstatic.com/steam/apps/3105890/header.jpg"
 cover_label: "UE5"
 accent: orange
@@ -38,25 +38,50 @@ permalink: /experience/pioner/
 
 ## Overview
 
-**PIONER** is an MMO first-person shooter set in an open post-apocalyptic world, with a single-player storyline, PvE and PvP activities, raids and survival elements.
+**PIONER** is an MMO first-person shooter set in an open post-apocalyptic world, with a full single-player campaign and a wide range of PvP and co-op PvE activities.
 
 I joined the team in November 2024. The studio has about 70 people and 10 game designers, split roughly evenly between quest design and balance / technical design. I’m in the second group, report to the lead game designer and lead two junior designers. I implement features directly in the engine, build tools for the team, keep interconnected systems in balance and own new mechanics.
 
-## Content and technical work
+## Balance and economy
 
-- Create and tune weapons, armor, consumables and enemies using Data Tables and Primary Data Assets.
-- Calculated stats for dozens of enemies, from regular mobs to bosses: damage, health, resistances and movement speed.
-- Prototype new mechanics in Blueprints and iterate on them from update to update.
-- Before changing anything, dig into the project’s Behavior Trees and C++ systems to see how mechanics connect; fix gameplay bugs in Blueprints.
+In PIONER the core activities are exploring, completing quests and collecting loot. Every so often the player returns to base to repair and upgrade gear, sell loot and store it, then sets out on the next run. Every number in the game feeds this loop.
+
+{% include loop.html %}
+
+I balance a set of systems that all depend on each other:
+
+- **Combat** — weapons, armor and enemy parameters, including bosses.
+- **Progression** — experience curves and equipment progression.
+- **Economy** — loot distribution, vendor pricing, crafting and overall resource flow.
+
+A change in one place ripples through the others. If an enemy takes longer to kill, weapons wear out faster, and the enemy shoots back longer and damages armor more. On top of that, dying costs a share of durability on all gear. All of it goes into repairs, meaning resources: that is how enemy damage and health feed straight into the economy.
+
+### Open-world economy
+
+The main goal is for this loop to feel good, with the player able to upgrade something in their gear after every run. We got there through iterations: adjust the numbers, playtest, adjust again. After updates we also watch player feedback: if players run short of a resource, such as rags, we tune it. Crafting is a big part of the economy on its own: the game has a huge number of recipes, every weapon and armor piece can be upgraded twice, from T1 to T3, plus countless consumables.
+
+### Combat balance
+
+PIONER has both PvP and PvE, so every weapon has to work in both and still feel distinct. For that I introduced a weapon power score calculated from effective TTK and effective DPS. It is the main reference but not the only one: I look at TTK and DPS on their own as well. This gives weapons a character. A heavy machine gun is slow to aim down sights and reduces mobility, so it is weaker in PvP, but its high DPS makes it strong against bosses. SMGs with small magazines lean the other way and do better in PvP. These are tendencies, not hard rules: the machine gun is still viable in PvP.
+
+After the math, every weapon goes through three checks: a PvE sandbox, the open world and internal PvP tests. If needed, I tune it afterwards.
+
+Enemy parameters are mine too: I calculated damage, health, resistances and movement speed for dozens of enemies, from regular mobs to bosses.
+
+I write and maintain the balance tables that engineers, artists and QA work from.
+
+**Result.** The target loop is in place: players progress steadily and keep upgrading their gear. When players reported a shortage or surplus of a resource, we fixed it quickly by adding new sources or new sinks, for example by rebalancing recipes. Opinions on weapons vary: some players call one gun the strongest, others another. For a shooter that is a good sign: there is no obvious best gun, and the balance works.
+
+Outside of production work, I also put together a sample sheet that balances one weapon category and shows formula approaches I like to use — TTK by distance and a hit-probability model based on spread area versus target size: {% include sample-link.html key="balance_sheet" label="weapon balance sample" %}. It is a showcase of methods, not live game data.
 
 ## Tooling: loot parser {#loot-parser}
 
-**Problem.** Loot in PIONER is placed through thousands of spawners scattered across the open world, each with its own spawn rules, respawn timers and loot tables. To answer a simple balance question — *how much of what does a player find in this area?* — a designer had to open spawners one by one in the editor. That doesn’t scale.
+**Problem.** Loot in PIONER is placed through thousands of spawners scattered across the open world, each with its own spawn rules, respawn timers and loot tables. To answer a simple balance question — *how much of what does a player find in this area?* — a designer had to open spawners one by one in the editor. At this project’s scale, that is practically impossible.
 
 **Solution.** I wrote a **C++ tool that walks a level, reads every spawner and resolves its loot logic**, then exports one flat CSV. For each spawner it records:
 
 - zone, spawner class and world coordinates;
-- spawn rule (local unique / global) and respawn type and timers;
+- spawn and respawn rules and timers;
 - every loot table it can roll, with weights and the **expected number of items**.
 
 <div class="data-sample" markdown="0">
@@ -75,25 +100,17 @@ I joined the team in November 2024. The studio has about 70 people and 10 game d
 
 The first version took me a couple of evenings in my own time. Other designers in my department now use the export too, and level designers rely on it when they move loot around and clean up broken spawn points. It surfaced plenty of placement errors that would otherwise have to be found by hand, one spawner at a time.
 
-The first thing the export gave was a picture of the whole map at once. Loot is meant to be uneven: it gathers around points of interest, and the most valuable loot sits in a large PvPvE zone. The heatmap makes it easy to check that the map actually works that way — and to spot areas that are empty or overloaded by mistake:
+Beyond raw numbers, the export makes it easy to build clear infographics, such as loot heatmaps. The map below shows loot concentrated around points of interest, with the most in the PvPvE zone. A map like this also exposes mistakes: areas with too little or too much loot.
 
 {% include figure.html src="/assets/img/pioner/loot-heatmap-en.webp" alt="Heatmap of expected loot across the largest map of PIONER, built from the parser’s export" caption="Built from the parser’s export for the largest map: expected loot per map cell. Bright clusters are points of interest and the high-value PvPvE zone. Coordinates and values are left out." %}
 
-## Balancing an open-world economy
+## Content and technical work
 
-In PIONER the core activities are exploring, completing quests and collecting loot. Every so often the player returns to base to repair and upgrade gear, sell loot and store it — and then heads back out. Every number in the game feeds this loop.
-
-{% include loop.html %}
-
-I balance a set of systems that all depend on each other:
-
-- **Combat** — weapons, armor and enemy parameters, including bosses.
-- **Progression** — experience curves and equipment progression.
-- **Economy** — loot distribution, vendor pricing, crafting and overall resource flow.
-
-A change in one place ripples through the others — for example, weapon damage affects time-to-kill, which affects ammo consumption and ultimately the player’s income. I work through balance spreadsheets, internal playtests and player feedback, and re-tune as live content ships.
-
-Outside of production work, I also put together a sample sheet that balances one weapon category and shows formula approaches I like to use — TTK by distance and a hit-probability model based on spread area versus target size: {% include sample-link.html key="balance_sheet" label="weapon balance sample" %}. It is a showcase of methods, not live game data.
+- Create and tune weapons, armor, consumables and enemies using Data Tables and Primary Data Assets.
+- Prototype new mechanics in Blueprints and iterate on them from update to update.
+- Commission new content and the mechanics behind it from artists and programmers: write the specs and sign off the results.
+- Reworked the perk system from scratch without breaking the systems around it.
+- Before changing anything, dig into the project’s Behavior Trees and C++ systems to see how mechanics connect; fix gameplay bugs in Blueprints.
 
 ## Hip-fire spread and an honest crosshair
 
@@ -111,15 +128,7 @@ Outside of production work, I also put together a sample sheet that balances one
 
 **Result.** Smoke hides again, and hazard zones read at a glance, even in grass. For me it’s an example of a task I ran through a junior designer: find the problem, get sign-off, delegate it and check the result.
 
-## Features I owned end-to-end
-
-Each of these went the full path — design spec, implementation directly in Blueprints, tuning, and integration into the existing systems without breaking anything that already worked.
-
-- **Automatic reload** — players kept forgetting to reload, because other shooters had taught them to expect auto-reload. I added it to the existing weapon logic.
-- **Perk system rework** — a full redesign and re-implementation of the existing perk system, rolled out while keeping the rest of the game fully functional.
-
 ## Team and mentoring
 
-- Lead two junior designers: set their tasks, review their design documents, help them own features and share hands-on Unreal Engine experience.
-- Write and maintain balance tables and feature specs for engineers, artists and QA.
+- Lead two junior designers: set their tasks, review their design documents, help them run their tasks and share hands-on Unreal Engine experience.
 - Together with a junior designer, reworked the clunky UX of the friends, chat and clan screens.

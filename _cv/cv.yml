@@ -70,8 +70,8 @@ jobs:
       ru: "PIONER (Steam, релиз в декабре 2025) — MMO-шутер с открытым миром, Unreal Engine 5; команда ~70 человек"
     bullets:
       en:
-        - "Owned four features end-to-end, from spec to in-engine implementation in Blueprints: hip-fire spread and dynamic crosshair (spread now depends on stance, speed and sustained fire, with a crosshair that shows the actual spread), automatic reload and a full rework of the perk system — all integrated into existing systems without breaking them."
-        - "Balance a set of interconnected systems: combat, economy, progression, loot, crafting, vendor pricing and boss parameters; calculated stats for dozens of enemies, from regular mobs to bosses."
+        - "Owned hip-fire spread with an honest crosshair (spread depends on stance, speed and sustained fire, and the crosshair shows the actual spread) and a full rework of the perk system end-to-end, from spec to Blueprints, integrated without breaking existing systems."
+        - "Balance a set of interconnected systems: combat, economy, progression, loot, crafting, vendor pricing and boss parameters; calculated stats for dozens of enemies, from regular mobs to bosses. Introduced a weapon power score based on effective TTK and DPS, so weapons work in both PvP and PvE while staying distinct."
         - "Spotted and drove, through a junior designer, a fix for grenade readability: smoke and damage-zone edges."
         - "Built a C++ tool that walks a level and exports every loot spawner (~3,000 on the largest map) with its loot tables and expected item counts to CSV, so loot can be balanced across the whole map in spreadsheets; now used by designers in my department and by level designers."
         - "Prototype and iterate on weapons, armor, consumables and enemies for live updates, based on internal testing and player feedback."
@@ -93,8 +93,8 @@ jobs:
       ru: "The Braves (Steam, вышел) — live-service экшен в духе Vampire Survivors, Unity; команда ~30, 5 геймдизайнеров"
     bullets:
       en:
-        - "Built a UI-automation script that moves data from Google Sheets into a browser-only admin panel with no API — content integration became 10× faster."
         - "Wrote 25+ specs for artists and programmers and owned many mechanics — hero skills, weapon mechanics, boss variations — from concept through implementation and balance."
+        - "To speed up content setup, built a UI-automation script that moves data from Google Sheets into a browser-only admin panel with no API — content integration became 10× faster."
         - "Designed gamepad controls for every screen, including a single Sony / Xbox / Nintendo layout table in the spec; designed the achievement showcase, frames and avatars over two iterations."
         - "Set up content for live updates, tuned enemy difficulty, rewards and the gacha economy; calculated gacha drop rates for seasonal events."
         - "Worked daily with programmers, artists and UI artists to ship ongoing live-service content."
@@ -118,9 +118,9 @@ jobs:
   qa:
     bullets:
       en:
-        - "Part-time role while finishing university and my entry point into the industry: learned production pipelines, bug triage and debugging workflows from the inside."
+        - "Part-time while studying: a Random Dice-style PvP tower defense with a short update cycle; in a ~15-person team also coordinated task readiness with programmers and ran and published builds."
       ru:
-        - "Подработка во время учёбы и вход в индустрию: PvP tower defense в духе Random Dice, работа в команде с коротким циклом выпуска обновлений. В команде из ~15 человек взял на себя первую проектную роль: собирал у программистов статус готовности задач, запускал сборки и публиковал билды."
+        - "Подработка во время учёбы: PvP tower defense в духе Random Dice с коротким циклом обновлений; в команде из ~15 человек также собирал статус задач у программистов, запускал и публиковал билды."
 
 personal_projects:
   - name: { en: "UE5 Helicopter Prototype", ru: "Прототип вертолёта на UE5" }

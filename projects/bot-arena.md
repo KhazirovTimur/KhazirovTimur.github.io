@@ -6,7 +6,7 @@ section: projects
 order: 2
 title: Bot Arena
 eyebrow: "Personal project · Unity · 2023"
-summary: "An arena shooter against endless waves of enemies, inspired by Call of Duty: Zombies: waves of drones that take turns attacking, three arenas with shops, and a wave system tuned through a handful of parameters."
+summary: "An arena shooter against endless waves of drones, inspired by Call of Duty: Zombies. Three arenas with shops and weapons, tunable enemy aggression and a wave system."
 cover: "https://i.ytimg.com/vi/DEvdwnNBFe0/hqdefault.jpg"
 cover_label: "Unity"
 accent: teal

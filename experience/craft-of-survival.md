@@ -6,7 +6,7 @@ section: experience
 order: 3
 title: Craft of Survival
 eyebrow: "101XP · Unity · Mobile · 2022 — 2023"
-summary: "Single-player live-service survival RPG. When most of the team left, I was one of two designers who shipped a major update — fixing locations in Unity myself."
+summary: "Single-player live-service survival RPG. I set up content for regular updates, and when most of the team left, a colleague and I finished and shipped a major update together."
 cover: "/assets/img/craft-of-survival/cover.jpg"
 cover_pos: "center 30%"
 cover_label: "Mobile"

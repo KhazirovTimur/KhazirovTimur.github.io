@@ -6,7 +6,7 @@ section: projects
 order: 3
 title: Tiny Dozzer
 eyebrow: "Personal project · Unity · Mobile · 2021"
-summary: "A mobile arcade game about a little bulldozer that has to push an entire cube building into the moat before time runs out. 15 levels, physics-driven destruction, released on Google Play."
+summary: "A casual mobile arcade game about a bulldozer that has to clear a platform of a cube structure before time runs out. Released on Google Play."
 cover_label: "Mobile"
 accent: green
 tags: [Mobile, Arcade, Physics, Level design, Release]
