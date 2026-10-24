@@ -16,9 +16,9 @@ platform: "Android"
 genre: "Arcade"
 status: "Released on Google Play (since unpublished)"
 stack: [Unity, "C#"]
-youtube: "KzpIsz8lYrI"
+youtube: "OZtPeIX7RAQ"
 links: 
-  - { label: "Full playthrough", url: "https://www.youtube.com/watch?v=KzpIsz8lYrI" }
+  - { label: "Full playthrough", url: "https://www.youtube.com/watch?v=OZtPeIX7RAQ" }
 permalink: /projects/tiny-dozzer/
 ---
 

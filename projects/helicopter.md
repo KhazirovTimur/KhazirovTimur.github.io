@@ -22,27 +22,37 @@ links:
 permalink: /projects/helicopter/
 ---
 
-## Goal
-Build a believable helicopter flight model and a nose gun turret for it. The prototype is deliberately narrow: no sound, interface or level art — only flight and shooting. The goal was reached, so the prototype is complete.
+## About the prototype
+The goal was a believable helicopter flight model and a nose gun turret for it. The prototype is deliberately narrow: no sound, interface or level art, only flight and shooting. The goal was reached, so the prototype is complete.
 
-## Flight model
-A simplified simulation of real helicopter physics rather than an arcade “floating camera”. Rotor thrust, lift and drag are computed from real formulas; atmospheric values such as temperature and air pressure are constants, which keeps the model stable and tunable. The rotor’s reactive torque is deliberately left out to keep the controls readable.
+All code and classes are my own. The AH-64 model comes from the Vigilante asset pack, the map is Unreal’s default landscape.
 
-Tunable parameters: mass, rotor thrust, rotor drag, and separate drag coefficients for the front, side and vertical axes.
+What it demonstrates:
+- translating real-world physics into tunable gameplay parameters;
+- knowing what to simplify: dropping rotor torque kept the controls readable without losing the helicopter feel;
+- a C++ core with Blueprint content, the setup designers work with on real projects.
 
-## Controls and feel
-WASD for pitch and roll, Q/E for yaw, Shift/Ctrl for altitude, mouse for the camera. There is no stability assist — the player flies the machine. Pull the nose up at speed and the helicopter climbs on its own; build up sideways speed and it turns into the direction of travel. None of this is scripted — it emerges from the formulas.
+## Flight model and controls
+A simplified simulation of real helicopter physics rather than an arcade “floating camera”. Rotor thrust, lift and drag are computed from real formulas.
+
+<div class="data-sample data-sample--fit" markdown="0">
+<p class="data-sample__title">Flight model parameters</p>
+<div class="data-sample__scroll"><table>
+<thead><tr><th>Parameter</th><th>How it works</th></tr></thead>
+<tbody>
+<tr><td>Mass</td><td>Tunable</td></tr>
+<tr><td>Rotor thrust</td><td>Tunable</td></tr>
+<tr><td>Rotor drag</td><td>Tunable</td></tr>
+<tr><td>Body drag</td><td>Separate coefficients for the front, side and vertical axes</td></tr>
+<tr><td>Air temperature and pressure</td><td>Constants, which keeps the model stable and tunable</td></tr>
+<tr><td>Main rotor reactive torque</td><td>Left out to keep the controls readable</td></tr>
+</tbody></table></div>
+</div>
+
+WASD for pitch and roll, Q/E for yaw, Shift/Ctrl for altitude, mouse for the camera. There is no stability assist: the player flies the machine. Pull the nose up at speed and the helicopter climbs on its own; build up sideways speed and it turns into the direction of travel. None of this is scripted, it emerges from the formulas.
 
 ## Turret
 Hold the right mouse button to free the camera; the turret tries to aim at the point the camera is looking at. It has realistic limits: ±90° horizontally and −30°/+10° vertically. Shots are physical projectiles with travel time, not instant hits.
 
 ## Architecture
 Base classes are in C++: the helicopter with its flight model and the turret. A specific machine is a Blueprint on top: the AH-64 and its turret only set their own characteristics. A new helicopter or turret is a data change, not new code.
-
-## Credits
-The AH-64 model comes from the Vigilante asset pack, the map is Unreal’s default landscape. Flight model, turret, controls and code are mine.
-
-## What it demonstrates
-- Translating real-world physics into tunable gameplay parameters.
-- Knowing what to simplify: dropping rotor torque kept the controls readable without losing the helicopter feel.
-- A C++ core with Blueprint content, the setup designers work with on real projects.
