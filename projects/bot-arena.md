@@ -40,9 +40,9 @@ Kill drones, pick up the cells they drop, spend them in the arena shops, survive
 {% include loop.html %}
 
 ## Enemy AI: taking turns
-An arena shooter becomes unreadable when every enemy shoots at once. Bot Arena has an aggression controller: only a limited number of drones may attack at the same time, the rest queue up. The queue is sorted by each drone’s attack strength and distance to the player, and a new drone gets permission no more often than once per second. The limit grows with every wave, so pressure rises without becoming unreadable.
+An arena shooter becomes unreadable when every enemy shoots at once. Bot Arena has an aggression controller: only a limited number of drones may attack at the same time, the rest queue up. The queue is sorted by each drone’s attack strength and distance to the player, and a new drone gets permission no more often than once per second. The limit grows with every wave, so pressure rises while the fight stays readable.
 
-Each drone runs a small state machine: spawn, chase, attack from a static position, death. Whether a drone chases or takes up a firing position is a chance set in a ScriptableObject config, so the mix of rushers and shooters is tuned without code. Ranged drones lead their shots: they predict where the player will be from the player’s speed and the projectile’s travel time.
+Each drone runs a small state machine: spawn, chase, attack from a static position, death. Whether a drone chases or takes up a firing position is a chance set in a ScriptableObject config, so the mix of rushers and shooters is tuned without code. Ranged drones lead their shots: they predict where the player will be from their speed and the projectile’s travel time.
 
 ## Waves and difficulty
 Difficulty comes down to a handful of parameters. Every wave adds 5 enemies and 10% enemy health, allows one more drone alive at a time and raises the attacker limit by 0.2. Between waves there is a 15-second break; teleports between arenas work only during it, so the break becomes a planning moment.

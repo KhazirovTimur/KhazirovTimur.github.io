@@ -80,7 +80,7 @@ jobs:
         - "Work closely with engineers and artists to take new weapons and systems from concept to live content."
       ru:
         - "Вёл от ТЗ до реализации на Blueprints разброс от бедра (от стойки, скорости и стрельбы) с честным прицелом и переработку системы перков — и встроил их в игру, ничего не сломав."
-        - "Балансирую набор связанных систем: бой, экономику, прогрессию, лут, крафт, цены у торговцев и параметры боссов; рассчитал параметры десятков врагов, от обычных до боссов. Ввёл оценку мощи оружия на основе эффективного TTK и DPS, чтобы оружие работало и в PvP, и в PvE и при этом различалось."
+        - "Балансирую набор связанных систем: бой, экономику, прогрессию, лут, крафт, цены у торговцев; рассчитал параметры десятков врагов, от обычных до боссов. Ввёл оценку мощи оружия на основе эффективного TTK и DPS, чтобы оружие работало и в PvP, и в PvE и при этом различалось."
         - "Нашёл и через младшего дизайнера довёл до исправления проблемы читаемости эффектов гранат: дым и границы зон поражения."
         - "Написал на C++ инструмент, который проходит по уровню и выгружает в CSV все спавнеры лута (около 3 000 на самой большой карте) с лут-таблицами и ожидаемым количеством предметов — лут всей карты можно балансировать в таблицах; выгрузкой пользуются дизайнеры отдела и левел-дизайнеры."
         - "Прототипирую и дорабатываю оружие, броню, расходники и врагов для live-обновлений."
@@ -93,15 +93,15 @@ jobs:
       ru: "The Braves (Steam, вышел) — live-service экшен в духе Vampire Survivors, Unity; команда ~30, 5 геймдизайнеров"
     bullets:
       en:
-        - "Wrote 25+ specs for artists and programmers and owned many mechanics — hero skills, weapon mechanics, boss variations — from concept through implementation and balance."
+        - "Wrote 25+ specs for artists and programmers and owned many mechanics — hero skills, weapon behaviors, boss variations — from concept through implementation and balance."
         - "To speed up content setup, built a UI-automation script that moves data from Google Sheets into a browser-only admin panel with no API — content integration became 10× faster."
-        - "Designed gamepad controls for every screen, including a single Sony / Xbox / Nintendo layout table in the spec; designed the achievement showcase, frames and avatars over two iterations."
+        - "Designed gamepad controls for every screen, including a single Sony / Xbox / Nintendo layout table in the spec; designed the player profile (achievement showcase, frames, avatars) over two iterations."
         - "Set up content for live updates, tuned enemy difficulty, rewards and the gacha economy; calculated gacha drop rates for seasonal events."
         - "Worked daily with programmers, artists and UI artists to ship ongoing live-service content."
       ru:
-        - "Написал 25+ ТЗ для художников и программистов и вёл множество механик — скиллы героев, механики оружия, вариации боссов — от идеи до реализации и баланса."
-        - "Чтобы ускорить заведение контента, написал скрипт UI-автоматизации, который переносит данные из Google Таблиц в браузерную админку без API, — контент стал заводиться в 10 раз быстрее."
-        - "Спроектировал управление с геймпада для всех экранов, включая единую таблицу раскладок Sony, Xbox и Nintendo в ТЗ; спроектировал витрину достижений, рамки и аватары в две итерации."
+        - "Написал 25+ ТЗ для художников и программистов и вёл множество механик — скиллы героев, поведение оружия, вариации боссов — от идеи до реализации и баланса."
+        - "Чтобы ускорить заведение контента, написал скрипт UI-автоматизации, который переносит данные из Google Таблиц в браузерную админку без API, — это стало в 10 раз быстрее."
+        - "Спроектировал управление с геймпада для всех экранов, включая единую таблицу раскладок Sony, Xbox и Nintendo в ТЗ; спроектировал профиль игрока (витрина достижений, рамки, аватары) в две итерации."
         - "Заводил контент для live-обновлений, настраивал сложность врагов, награды и гача-экономику; рассчитывал шансы выпадения в гаче для сезонных ивентов."
         - "Каждый день работал с программистами и художниками над live-обновлениями."
   craft-of-survival:

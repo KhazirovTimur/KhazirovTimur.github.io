@@ -31,7 +31,7 @@ permalink: /experience/craft-of-survival/
 
 **Craft of Survival** is a single-player survival game with RPG elements set in a fantasy world, supported as a live-service title with regular content updates.
 
-It was my first project as a game designer at 101XP, right after moving over from QA. My main area was adding new content for its regular updates — getting designed content into the build correctly and on schedule.
+It was my first project as a game designer at 101XP, right after moving over from QA. My main area was adding new content for its regular updates — getting it into the build correctly and on schedule.
 
 ## Shipping a major update with a team of two
 

@@ -39,7 +39,7 @@ en:
       - "Automate repetitive work so the team can focus on the game."
   benchmarks:
     - { game: "Titanfall series", text: "Pilot movement and combat pace nobody has matched since, with a clever take on titans on top" }
-    - { game: "Outer Wilds", text: "Exploration and puzzles woven into a time loop, and a world in motion: crumbling planets, a comet that thaws and freezes as it moves around the sun, and a sun going supernova" }
+    - { game: "Outer Wilds", text: "Exploration and puzzles woven into a time loop with a dynamic star system" }
     - { game: "Sekiro", text: "Superb tactile, rhythm-driven combat that comes alive in one-on-one boss fights" }
     - { game: "Clair Obscur: Expedition 33", text: "Turn-based combat with action timing, story and music" }
     - { game: "Baldur’s Gate 3", text: "The best party RPG today" }
@@ -87,7 +87,7 @@ ru:
       - "Автоматизировать рутину, чтобы команда занималась игрой."
   benchmarks:
     - { game: "Серия Titanfall", text: "Мувмент и динамика боя пилотов, которые так никто и не повторил, плюс интересно сделанные титаны" }
-    - { game: "Outer Wilds", text: "Исследование и загадки, вшитые во временную петлю, и динамичный мир: разрушающиеся планеты, комета, которая тает и замерзает по мере удаления от солнца, и солнце, превращающееся в сверхновую" }
+    - { game: "Outer Wilds", text: "Исследование и загадки, вшитые во временную петлю с динамической звёздной системой" }
     - { game: "Sekiro", text: "Отличная тактильная ритм-боёвка, раскрывающаяся в битвах 1 на 1 с боссами" }
     - { game: "Clair Obscur: Expedition 33", text: "Тактический бой с экшен-элементами, сюжет и музыка" }
     - { game: "Baldur’s Gate 3", text: "Лучшая партийная RPG на сегодня" }

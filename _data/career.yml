@@ -6,15 +6,15 @@
   period: { en: "Nov 2024 — Present", ru: "Ноябрь 2024 — сейчас" }
   text:
     en: "Implement features directly in Blueprints, built a C++ loot parser for the team, balance progression, economy, loot and crafting in an open-world multiplayer shooter, own new mechanics from spec to release, and lead junior designers."
-    ru: "Реализую механики на Blueprints, написал для команды парсер лута на C++, отвечаю за баланс прогрессии, экономики, лута и крафта в мультиплеерном шутере с открытым миром, веду новые механики от ТЗ до релиза и руковожу младшими дизайнерами."
+    ru: "Реализую механики на Blueprints, написал для команды парсер лута на C++, отвечаю за баланс прогрессии, экономики, лута и крафта в мультиплеерном шутере с открытым миром, веду новые идеи от ТЗ до релиза и руковожу младшими дизайнерами."
 
 - company: 101XP
   projects: [the-braves]
   role:   { en: "Technical Game Designer · The Braves", ru: "Технический геймдизайнер · The Braves" }
   period: { en: "Mar 2023 — Nov 2024", ru: "Март 2023 — ноябрь 2024" }
   text:
-    en: "Set up content for updates and events, wrote specs for and owned mechanics: hero skills, weapons, gamepad controls. Designed boss variations and balanced updates. To speed up content setup, built a tool that moved data from Google Sheets into the admin panel 10× faster than by hand."
-    ru: "Заводил контент для обновлений и ивентов, писал ТЗ и вёл механики: скиллы героев, оружие, управление с геймпада. Проектировал вариации боссов и балансировал обновления. Чтобы ускорить заведение контента, написал инструмент, который переносит данные из Google Таблиц в админку в 10 раз быстрее ручного ввода."
+    en: "Set up content for updates and events, wrote specs for and owned mechanics: hero skills, weapons, gamepad controls. Designed boss variations and balanced updates. To work more efficiently, built a tool that moved data from Google Sheets into the admin panel 10× faster than by hand."
+    ru: "Заводил контент для обновлений и ивентов, писал ТЗ и вёл механики: скиллы героев, оружие, управление с геймпада. Проектировал вариации боссов и балансировал обновления. Для повышения эффективности работы написал инструмент, который переносит данные из Google Таблиц в админку в 10 раз быстрее ручного ввода."
 
 - company: 101XP
   projects: [craft-of-survival]

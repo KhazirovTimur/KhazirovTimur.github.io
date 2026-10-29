@@ -18,7 +18,7 @@ Going into game development was a deliberate choice: I was aiming at game design
 
 I was still studying and needed a part-time job, and in the industry that meant QA. In 2021 I joined 101XP as a QA specialist, which also let me see the production pipeline from the inside. When I graduated in 2022, I moved to full-time work and into game design at the same studio.
 
-Since then I have worked as a technical game designer on live-service games in Unity and, since November 2024, as a game designer on **PIONER**, an open-world MMO shooter in Unreal Engine 5. My strongest areas are hands-on implementation in the engine and production tools, balance and economy, and gameplay mechanics.
+Since then I have worked as a technical game designer on live-service games in Unity and, from November 2024, as a game designer on **PIONER**, an open-world MMO shooter in Unreal Engine 5. My strongest areas are hands-on implementation in the engine and production tools, balance and economy, and gameplay mechanics.
 
 What this looks like in practice: when most of the Craft of Survival team left before a major update, I fixed locations, collisions, NavMesh and enemy spawners in Unity myself, learning the studio’s internal tools on the fly — and the update shipped. I don’t stop at the design doc: if a feature needs engine work, I do it myself.
 

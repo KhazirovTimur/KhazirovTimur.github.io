@@ -45,7 +45,7 @@ permalink: /experience/pioner/
 
 **PIONER** is an MMO first-person shooter set in an open post-apocalyptic world, with a full single-player campaign and a wide range of PvP and co-op PvE activities.
 
-I joined the team in November 2024. The studio has about 70 people and 10 game designers, split roughly evenly between quest design and balance / technical design. I’m in the second group, report to the lead game designer and lead two junior designers. I implement features directly in the engine, build tools for the team, keep interconnected systems in balance and own new mechanics.
+I joined the team in November 2024. The studio has about 70 people and 10 game designers, split roughly evenly between quests and balance / tech design. I’m in the second group, report to the lead game designer and lead two junior designers. I implement features directly in the engine, build tools for the team, keep interconnected systems in balance and own new mechanics.
 
 ## Balance and economy
 
@@ -93,7 +93,7 @@ For this portfolio I put together a sample sheet that balances one weapon catego
 
 {% include sample-link.html key="balance_sheet" label="Open the weapon balance sample" cls="btn" %}
 
-**Result.** The target loop is in place: players progress steadily and keep upgrading their gear. When players reported a shortage or surplus of a resource, we fixed it quickly by adding new sources or new sinks, for example by rebalancing recipes. Opinions on weapons vary: some players call one gun the strongest, others another. For a shooter that is a good sign: there is no obvious best gun, and the balance works.
+**Result.** The target loop is in place: players progress steadily and keep upgrading their gear. When feedback pointed to a shortage or surplus of a resource, we fixed it quickly by adding new sources or new sinks, for example by rebalancing recipes. Opinions on weapons vary: some players call one gun the strongest, others another. For a shooter that is a good sign: there is no obvious best gun, and the balance works.
 
 ## Tooling: loot parser {#loot-parser}
 
@@ -145,11 +145,11 @@ Beyond raw numbers, the export makes it easy to build clear infographics, such a
 
 **Problem.** The game has many grenade types, but their effects got in the way of reading combat. A technical issue let enemy silhouettes show through smoke. Thermite, incendiary and toxic grenades had blurry damage-zone edges that disappeared in tall grass, so players couldn’t tell where not to step.
 
-**Solution.** I proposed fixing the effects to my lead and got the go-ahead. I set the requirements: lingering damage zones need clearly visible edges; effects must be bright enough not to get lost, without cluttering the screen. A junior designer turned them into a spec for the artists, and I oversaw how the finished effects were accepted and integrated.
+**Solution.** I proposed fixing the effects to my lead and got the go-ahead. I set the requirements: lingering damage zones need clearly visible edges; effects must be bright enough not to get lost, without cluttering the screen. A junior designer turned them into a spec for the artists, and I oversaw how the finished art was accepted and integrated.
 
 **Result.** Smoke hides again, and hazard zones read at a glance, even in grass. For me it’s an example of a task I ran through a junior designer: find the problem, get sign-off, delegate it and check the result.
 
 ## Team and mentoring
 
-- Lead two junior designers: set their tasks, review their design documents, help them run their tasks and share hands-on Unreal Engine experience.
+- Lead two junior designers: set their tasks, review their design documents, help them see their work through and share hands-on Unreal Engine experience.
 - Together with a junior designer, reworked the clunky UX of the friends, chat and clan screens.
