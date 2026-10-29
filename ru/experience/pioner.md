@@ -6,7 +6,7 @@ section: experience
 order: 1
 title: PIONER
 eyebrow: "GFAGAMES · Unreal Engine 5 · с 2024"
-summary: "MMO-шутер с открытым миром. Реализую механики на Blueprints, пишу инструменты для команды, балансирую связанные системы игры и веду новые механики от ТЗ до релиза."
+summary: "MMO-шутер с открытым миром. Реализую механики на Blueprints, пишу инструменты для команды, балансирую связанные системы игры и веду новые идеи от ТЗ до релиза."
 cover: "https://cdn.cloudflare.steamstatic.com/steam/apps/3105890/header.jpg"
 cover_label: "UE5"
 accent: orange
