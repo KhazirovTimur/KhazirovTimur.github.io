@@ -6,7 +6,7 @@ section: experience
 order: 2
 title: The Braves
 eyebrow: "101XP · Unity · 2023 — 2024"
-summary: "Live-service аркада в духе Vampire Survivors. Заводил контент, писал ТЗ и вёл множество механик: скиллы героев, оружие, управление с геймпада. Балансировал обновления и ивенты, а работу по этому направлению ускорил в 10 раз своим инструментом."
+summary: "Live-service аркада в духе Vampire Survivors. Заводил контент, писал ТЗ и вёл множество механик: скиллы героев, оружие, управление с геймпада, балансировал обновления и ивенты. Ускорил работы по добавлению контента в 10 раз своим инструментом."
 cover: "https://cdn.cloudflare.steamstatic.com/steam/apps/2479830/header.jpg"
 cover_label: "Unity"
 accent: teal
