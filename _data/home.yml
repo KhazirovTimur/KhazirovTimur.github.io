@@ -13,9 +13,9 @@ en:
       - title: "Balance & economy"
         text: "Progression, loot, crafting, vendor prices and resource flow are all connected, so I balance them together, using spreadsheets, playtests and player feedback."
       - title: "Gameplay & combat mechanics"
-        text: "50+ mechanics across shipped games and personal projects — weapon behaviour, hip-fire spread and crosshair, reload and perk systems, hero skills, boss variations and gamepad controls."
+        text: "50+ mechanics across shipped games and personal projects: weapon behavior, hip-fire spread and crosshair, reload and perk systems, hero skills, boss variations and gamepad controls."
       - title: "Team & documentation"
-        text: "I write specs and balance tables that engineers, artists and QA actually work from, and lead junior designers: reviewing their docs and helping them run their tasks."
+        text: "I write specs and balance tables that engineers, artists and QA actually work from, and lead junior designers: I review their docs and help them see their work through."
   toolkit:
     eyebrow: "Toolkit"
     title: "Technical skills"
@@ -31,9 +31,9 @@ en:
   approach:
     eyebrow: "Approach"
     title: "How I work"
-    quote: "A good mechanic isn’t just interesting — it fits the project’s goals, plays well with existing systems, is feasible to build and stays maintainable through production."
+    quote: "A good mechanic needs more than an interesting idea. It fits the project’s goals, plays well with existing systems, is feasible to build and stays maintainable through production."
     points:
-      - "Prototype early — playable beats documented."
+      - "Prototype early: playable beats documented."
       - "Understand how existing systems interact before changing them."
       - "Balance against measurable goals, not gut feeling."
       - "Automate repetitive work so the team can focus on the game."
@@ -55,11 +55,11 @@ ru:
     title: "Где от меня больше всего пользы"
     items:
       - title: "Техдизайн и реализация"
-        text: "Сам прототипирую механики и довожу их до релиза — на Blueprints и C++ в UE5 или на C# в Unity. Прежде чем что-то менять, разбираюсь в Blueprints, Behavior Trees и C++-коде проекта, чтобы понять, как связаны системы."
+        text: "Сам прототипирую механики и довожу их до релиза на Blueprints и C++ в UE5 или на C# в Unity. Прежде чем что-то менять, разбираюсь в Blueprints, Behavior Trees и C++-коде проекта, чтобы понять, как связаны системы."
       - title: "Инструменты и пайплайн"
         text: "Если задача повторяется, я её автоматизирую. Например, написал на C++ парсер, который выгружает в CSV около 3 000 спавнеров лута с карты открытого мира, и инструмент, который переносит данные из Google-таблиц в админку в 10 раз быстрее, чем руками."
       - title: "Баланс и экономика"
-        text: "Прогрессия, лут, крафт, цены у торговцев и поток ресурсов — всё это связано, поэтому я балансирую эти системы вместе, опираясь на таблицы, плейтесты и отзывы игроков."
+        text: "Прогрессия, лут, крафт, цены у торговцев и поток ресурсов связаны между собой, поэтому я балансирую эти системы вместе, опираясь на таблицы, плейтесты и отзывы игроков."
       - title: "Геймплей и боевые механики"
         text: "50+ механик в вышедших играх и личных проектах: поведение оружия, разброс от бедра и прицел, перезарядка и перки, скиллы героев, вариации боссов, управление с геймпада."
       - title: "Команда и документация"
@@ -79,7 +79,7 @@ ru:
   approach:
     eyebrow: "Подход"
     title: "Как я работаю"
-    quote: "Хорошая механика — это не только интересная идея. Она работает на цели проекта, сочетается с остальными системами, реализуема и не превращается в головную боль при поддержке."
+    quote: "Хорошей механике мало интересной идеи. Она работает на цели проекта, сочетается с остальными системами, реализуема и не превращается в головную боль при поддержке."
     points:
       - "Прототип как можно раньше: поиграть лучше, чем прочитать."
       - "Сначала понять, как устроены существующие системы, и только потом их менять."

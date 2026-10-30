@@ -31,15 +31,15 @@ permalink: /experience/craft-of-survival/
 
 **Craft of Survival** is a single-player survival game with RPG elements set in a fantasy world, supported as a live-service title with regular content updates.
 
-It was my first project as a game designer at 101XP, right after moving over from QA. My main area was adding new content for its regular updates — getting it into the build correctly and on schedule.
+It was my first project as a game designer at 101XP, right after moving over from QA. My main area was adding new content for its regular updates and getting it into the build correctly and on schedule.
 
 ## Shipping a major update with a team of two
 
-**Situation.** After the decision to pause support for the project, most of the team left. A fairly large update with a new location and a teleport mechanic was still unfinished, and it had to ship anyway. Two game designers remained — a colleague and me; the colleague took the teleports, I took the location.
+**Situation.** After the decision to pause support for the project, most of the team left. A fairly large update with a new location and a teleport mechanic was still unfinished, and it had to ship anyway. Two game designers remained, a colleague and me. The colleague took the teleports, and I took the location.
 
 **What I did.** Much of the remaining work was outside a designer’s usual scope, so I took it on myself in Unity:
 
-- fixed location bugs — collisions, NavMesh, enemy spawners, the minimap and other level issues;
+- fixed location bugs: collisions, NavMesh, enemy spawners, the minimap and other level issues;
 - worked through the studio’s internal tools that nobody had time to teach me, figuring them out on the fly;
 - kept testing and fixing until the content was stable enough to ship.
 

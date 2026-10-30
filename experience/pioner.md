@@ -6,7 +6,7 @@ section: experience
 order: 1
 title: PIONER
 eyebrow: "GFAGAMES · Unreal Engine 5 · 2024 — now"
-summary: "Open-world MMO shooter. I implement features directly in Blueprints, build tools for the team, balance the game’s interconnected systems and own new mechanics from spec to release."
+summary: "Open-world MMO shooter. I implement features directly in Blueprints, build tools for the team, balance the game’s interconnected systems and take new ideas from spec to release."
 cover: "https://cdn.cloudflare.steamstatic.com/steam/apps/3105890/header.jpg"
 cover_label: "UE5"
 accent: orange
@@ -55,9 +55,9 @@ In PIONER the core activities are exploring, completing quests and collecting lo
 
 I balance a set of systems that all depend on each other:
 
-- **Combat** — weapons, armor and enemy parameters, including bosses.
-- **Progression** — experience curves and equipment progression.
-- **Economy** — loot distribution, vendor pricing, crafting and overall resource flow.
+- **Combat**: weapons, armor and enemy parameters, including bosses.
+- **Progression**: experience curves and equipment progression.
+- **Economy**: loot distribution, vendor pricing, crafting and overall resource flow.
 
 A change in one place ripples through the others. For example, this is how enemy health and damage reach the economy:
 
@@ -89,7 +89,7 @@ Enemy parameters are mine too: I calculated damage, health, resistances and move
 
 I also maintain a large document with all the balance tables: many sheets for weapons, crafting, armor and resources, cross-linked throughout to keep manual work to a minimum and track every dependency and change. It is a key part of the team’s work: almost every game and level designer relies on it to some degree.
 
-For this portfolio I put together a sample sheet that balances one weapon category with formulas I like to use — TTK by distance and hit probability from the ratio of spread area to target size. It shows the approach, not live game data.
+For this portfolio I put together a sample sheet that balances one weapon category with formulas I like to use: TTK by distance and hit probability from the ratio of spread area to target size. It shows the approach, not live game data.
 
 {% include sample-link.html key="balance_sheet" label="Open the weapon balance sample" cls="btn" %}
 
@@ -97,7 +97,7 @@ For this portfolio I put together a sample sheet that balances one weapon catego
 
 ## Tooling: loot parser {#loot-parser}
 
-**Problem.** Loot in PIONER is placed through thousands of spawners scattered across the open world, each with its own spawn rules, respawn timers and loot tables. To answer a simple balance question — *how much of what does a player find in this area?* — a designer had to open spawners one by one in the editor. At this project’s scale, that is practically impossible.
+**Problem.** Loot in PIONER is placed through thousands of spawners scattered across the open world, each with its own spawn rules, respawn timers and loot tables. To answer a simple balance question like *how much of what does a player find in this area?*, a designer had to open spawners one by one in the editor. At this project’s scale, that is practically impossible.
 
 **Solution.** I wrote a **C++ tool that walks a level, reads every spawner and resolves its loot logic**, then exports one flat CSV. For each spawner it records:
 
@@ -106,7 +106,7 @@ For this portfolio I put together a sample sheet that balances one weapon catego
 - every loot table it can roll, with weights and the **expected number of items**.
 
 <div class="data-sample" markdown="0">
-<p class="data-sample__title">Output format · names and values are anonymised</p>
+<p class="data-sample__title">Output format · names and values are anonymized</p>
 <div class="data-sample__scroll"><table>
 <thead><tr><th>Zone</th><th>Spawner</th><th>Respawn</th><th>Timer, s</th><th>Loot table</th><th>Weight</th><th>Expected items</th></tr></thead>
 <tbody>
@@ -117,7 +117,7 @@ For this portfolio I put together a sample sheet that balances one weapon catego
 </tbody></table></div>
 </div>
 
-**Result.** The loot of the game’s largest map became a spreadsheet: **about 3,000 spawners, 300+ zones and 160+ loot tables** in a single export. Loot can now be filtered, summed and compared by zone, tier or item category — and checked again after every change.
+**Result.** The loot of the game’s largest map became a spreadsheet: **about 3,000 spawners, 300+ zones and 160+ loot tables** in a single export. Loot can now be filtered, summed and compared by zone, tier or item category, and checked again after every change.
 
 The first version took me a couple of evenings in my own time. Other designers in my department now use the export too, and level designers rely on it when they move loot around and clean up broken spawn points. It surfaced plenty of placement errors that would otherwise have to be found by hand, one spawner at a time.
 

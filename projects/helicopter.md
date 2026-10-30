@@ -6,7 +6,7 @@ section: projects
 order: 1
 title: Helicopter Prototype
 eyebrow: "Personal project · Unreal Engine 5 · 2025"
-summary: "A physics-based helicopter flight model built from real aerodynamic formulas, plus a nose turret that tracks where the camera looks — C++ core, Blueprint content."
+summary: "A physics-based helicopter flight model built from real aerodynamic formulas, plus a nose turret that tracks where the camera looks. C++ core, Blueprint content."
 cover_label: "UE5"
 accent: orange
 tags: [Vehicles, Physics, "C++", Blueprints]
@@ -25,7 +25,7 @@ permalink: /projects/helicopter/
 ## About the prototype
 The goal was a believable helicopter flight model and a nose gun turret for it. The prototype is deliberately narrow: no sound, interface or level art, only flight and shooting. The goal was reached, so the prototype is complete.
 
-All code and classes are my own. The AH-64 model comes from the Vigilante asset pack, the map is Unreal’s default landscape.
+All code and classes are my own. The AH-64 model comes from the Vigilante asset pack, and the map is Unreal’s default landscape.
 
 What it demonstrates:
 - translating real-world physics into tunable gameplay parameters;
@@ -55,4 +55,4 @@ WASD for pitch and roll, Q/E for yaw, Shift/Ctrl for altitude, mouse for the cam
 Hold the right mouse button to free the camera; the turret tries to aim at the point the camera is looking at. It has realistic limits: ±90° horizontally and −30°/+10° vertically. Shots are physical projectiles with travel time, not instant hits.
 
 ## Architecture
-Base classes are in C++: the helicopter with its flight model and the turret. A specific machine is a Blueprint on top: the AH-64 and its turret only set their own characteristics. A new helicopter or turret is a data change, not new code.
+Base classes are in C++: the helicopter with its flight model and the turret. A specific machine is a Blueprint on top: the AH-64 and its turret only set their own characteristics. A new helicopter or turret only needs new data, no new code.

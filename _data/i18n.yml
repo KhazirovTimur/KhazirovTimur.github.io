@@ -44,6 +44,6 @@ ui:
   stack_label:     { en: "Tools & tech", ru: "Инструменты и технологии" }
   contacts_title:  { en: "Let’s talk", ru: "Давайте поговорим" }
   contacts_text:
-    en: "I’m open to Technical / Gameplay Designer roles — on-site with relocation or remote. The fastest way to reach me is e-mail or Telegram."
-    ru: "Рассматриваю позиции технического или геймплейного дизайнера — в офисе с релокацией или удалённо. Быстрее всего отвечу в почте или Telegram."
+    en: "I’m open to Technical / Gameplay Designer roles, on-site with relocation or remote. The fastest way to reach me is e-mail or Telegram."
+    ru: "Рассматриваю позиции технического или геймплейного дизайнера: в офисе с релокацией или удалённо. Быстрее всего отвечу в почте или Telegram."
   footer_note:     { en: "Built with Jekyll · Hosted on GitHub Pages", ru: "Сделано на Jekyll · Работает на GitHub Pages" }

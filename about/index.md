@@ -20,23 +20,23 @@ I was still studying and needed a part-time job, and in the industry that meant 
 
 Since then I have worked as a technical game designer on live-service games in Unity and, from November 2024, as a game designer on **PIONER**, an open-world MMO shooter in Unreal Engine 5. My strongest areas are hands-on implementation in the engine and production tools, balance and economy, and gameplay mechanics.
 
-What this looks like in practice: when most of the Craft of Survival team left before a major update, I fixed locations, collisions, NavMesh and enemy spawners in Unity myself, learning the studio’s internal tools on the fly — and the update shipped. I don’t stop at the design doc: if a feature needs engine work, I do it myself.
+What this looks like in practice: when most of the Craft of Survival team left before a major update, I fixed locations, collisions, NavMesh and enemy spawners in Unity myself, learning the studio’s internal tools on the fly. The update shipped. I don’t stop at the design doc: if a feature needs engine work, I do it myself.
 
 ## What I’m looking for
 
 A Senior Technical or Balance Game Designer role: either diving into technical implementation, building and tuning mechanics in-engine for the best game feel, or shaping balance and economy. I’m also open to generalist game design roles.
 
-I’m most at home on PC and console projects — action and shooters, RPGs, strategy, simulation: games I play myself. I’m based in Moscow, open to relocation or remote work, and available immediately.
+I’m most at home on PC and console projects: action and shooters, RPGs, strategy and simulation, the games I play myself. I’m based in Moscow, open to relocation or remote work, and available immediately.
 
 ## Work samples
 
-- {% include sample-link.html key="balance_sheet" label="Weapon balance sample" %} — one weapon category balanced through TTK by distance and a hit-probability model; a showcase of formula approaches, not live game data.
-- [Loot parser output](/experience/pioner/#loot-parser) — ~3,000 loot spawners of an open-world map in one export (anonymised sample).
-- [Bot Arena source code](https://github.com/KhazirovTimur/BotArena){:target="_blank" rel="noopener"} — a complete Unity shooter prototype (C#).
+- {% include sample-link.html key="balance_sheet" label="Weapon balance sample" %}: one weapon category balanced through TTK by distance and a hit-probability model. It shows how I build formulas and is not live game data.
+- [Loot parser output](/experience/pioner/#loot-parser): ~3,000 spawners in one export (anonymized sample).
+- [Bot Arena source code](https://github.com/KhazirovTimur/BotArena){:target="_blank" rel="noopener"}: a complete Unity shooter prototype (C#).
 
 ## Education
 
-**Bauman Moscow State Technical University** — Specialist degree in Information Security, 2022.  
+**Bauman Moscow State Technical University**: Specialist degree in Information Security, 2022.  
 A five-year engineering programme, equivalent to a Bachelor’s plus Master’s degree.
 
 ## Certificates
@@ -45,5 +45,5 @@ A five-year engineering programme, equivalent to a Bachelor’s plus Master’s 
 
 ## Languages
 
-- **Russian** — native
-- **English** — C1: comfortable with documentation, technical discussions and day-to-day communication
+- **Russian**: native
+- **English**: C1, comfortable with documentation, technical discussions and day-to-day communication

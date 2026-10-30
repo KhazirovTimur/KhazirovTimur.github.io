@@ -32,7 +32,7 @@ permalink: /projects/bot-arena/
 ---
 
 ## Goal
-Build a complete, playable shooter on my own in Unity — enemy AI, waves, economy and weapons — in about a month. Most of the environment and weapon art comes from the Asset Store; the drone enemies, gameplay and code are mine.
+Build a complete, playable shooter in Unity on my own in about a month: enemy AI, waves, economy and weapons. Most of the environment and weapon art comes from the Asset Store, while the drone enemies, gameplay and code are mine.
 
 ## Core loop
 Kill drones, pick up the cells they drop, spend them in the arena shops, survive the next, harder wave.
@@ -50,7 +50,7 @@ Difficulty comes down to a handful of parameters. Every wave adds 5 enemies and 
 ## Arenas, shops and weapons
 - **Three arenas**, each with its own shops: health restore, a 10% weapon damage upgrade and a weapon to buy.
 - **Four weapons:** pistol, rifle, sniper rifle and shotgun. Shots are either instant raycasts or physical projectiles, with recoil per weapon; bullets and effects come from object pools.
-- **Dash and grenade** with short cooldowns. The grenade’s blast can launch the player — a rocket jump that turns an attack into a movement skill.
+- **Dash and grenade** with short cooldowns. The grenade’s blast can launch the player, and the rocket jump turns an attack into a movement skill.
 
 ## Where I’d take it next
 The scaling only makes the same drones tougher and more numerous. A full game needs variety: new enemy types and elites whose share grows over time, the way Call of Duty: Zombies does it.

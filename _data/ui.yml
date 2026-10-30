@@ -13,7 +13,7 @@ en:
   about: About &amp; CV
   avail: Open to new roles, available immediately. Based in Moscow, open to relocation or remote.
   lang: Language
-  pitch: A game designer who builds, not just documents. I take features from idea to release, balance combat, economy and progression, and prototype in UE5 with Blueprints and C++.
+  pitch: A game designer who writes the docs and builds the mechanics in-engine. I take features from idea to release, balance combat, economy and progression, and prototype in UE5 with Blueprints and C++.
   chips:
   - Blueprints &amp; C++
   - PC &amp; mobile
@@ -218,7 +218,7 @@ ru:
   about: Обо мне и резюме
   avail: Открыт к предложениям, могу выйти сразу. Москва, готов к релокации или удалёнке.
   lang: Язык
-  pitch: Геймдизайнер, который не только пишет документацию, но и сам реализует механики в движке. Довожу идеи до релиза, балансирую бой, экономику и прогрессию, прототипирую в UE5 на Blueprints и C++.
+  pitch: Геймдизайнер, который пишет документацию и сам реализует механики в движке. Довожу идеи до релиза, балансирую бой, экономику и прогрессию, прототипирую в UE5 на Blueprints и C++.
   chips:
   - Blueprints и C++
   - PC и мобильные
@@ -228,7 +228,7 @@ ru:
   - k: Движки
     v: UE5 · Unity
   - k: Языки
-    v: русский — родной · английский — C1
+    v: русский (родной) · английский (C1)
   - k: Город
     v: Москва · релокация или удалёнка
   - k: Выход на работу
@@ -337,7 +337,7 @@ ru:
   notes_intro: Разборы механик и игр, а также смежные навыки, которые я освоил, чтобы понимать, как делается каждая часть игры.
   notes_h: Заметки
   notes_sub: Разборы механик, баланса и игр
-  notes_soon: Разборы механик и игр скоро появятся. Рабочие кейсы — на страницах проектов.
+  notes_soon: Разборы механик и игр скоро появятся. Рабочие кейсы можно посмотреть на страницах проектов.
   soon: Скоро
   side_h: Смежные навыки
   side_sub: Мои интересы помимо геймдизайна
