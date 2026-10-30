@@ -9,7 +9,7 @@ title:
 
 note:
   en: "Moscow · Open to relocation or remote · Available immediately"
-  ru: "Москва · Готов к релокации или удалёнке · Выход сразу"
+  ru: "Москва · Готов к релокации или удалённой работе · Выход сразу"
 
 headings:
   profile:     { en: "Profile", ru: "О себе" }
@@ -27,15 +27,15 @@ profile:
   en:
     - "Technical game designer with 5+ years of professional experience on multiplayer and live-service games in Unreal Engine and Unity, and three shipped commercial titles."
     - "I own features from design through release, prototype gameplay in Blueprints and C++, balance combat, progression and economy systems, and work closely with engineering teams."
-    - "A strong technical background lets me iterate on gameplay quickly, build prototypes myself and create internal production tools."
+    - "My technical background lets me build prototypes and internal production tools myself and iterate on gameplay quickly."
     - "Built 50+ mechanics across shipped games and personal projects in C#, C++ and Blueprints."
-    - "Lead two junior designers in a team of 10 game designers; contributed to commercial PC and mobile titles."
+    - "Lead two junior designers in a team of 10 game designers."
   ru:
     - "Технический геймдизайнер: 5+ лет в коммерческой разработке мультиплеерных и live-service игр на Unreal Engine и Unity, три вышедших проекта."
     - "Веду механики от идеи до релиза, сам прототипирую геймплей на Blueprints и C++, балансирую бой, прогрессию и экономику и плотно работаю с программистами."
-    - "Технический бэкграунд позволяет быстро итерировать геймплей, собирать прототипы и делать внутренние инструменты для команды."
+    - "Благодаря технической базе сам собираю прототипы, быстро дорабатываю геймплей итерациями и делаю внутренние инструменты для команды."
     - "Реализовал 50+ механик в вышедших играх и личных проектах на C#, C++ и Blueprints."
-    - "Руковожу двумя младшими дизайнерами в команде из 10 геймдизайнеров; участвовал в выпуске коммерческих проектов на PC и мобильных платформах."
+    - "Руковожу двумя младшими дизайнерами в команде из 10 геймдизайнеров."
 
 competencies:
   en: ["Weapon & combat mechanics", "In-engine implementation (Blueprints / C++)", "Rapid prototyping & iteration", "Systems integration", "Vehicle & locomotion prototyping", "Design & technical documentation", "Cross-department collaboration", "Tools & workflow improvement", "Mentoring & feedback", "Balance & economy", "Systemic design"]
@@ -70,18 +70,18 @@ jobs:
       ru: "PIONER (Steam, релиз в декабре 2025) — MMO-шутер с открытым миром, Unreal Engine 5; команда ~70 человек"
     bullets:
       en:
-        - "Owned hip-fire spread with an honest crosshair (spread depends on stance, speed and sustained fire, and the crosshair shows the actual spread) and a full rework of the perk system end-to-end, from spec to Blueprints, integrated without breaking existing systems."
-        - "Balance a set of interconnected systems: combat, economy, progression, loot, crafting, vendor pricing and boss parameters; calculated stats for dozens of enemies, from regular mobs to bosses. Introduced a weapon power score based on effective TTK and DPS, so weapons work in both PvP and PvE while staying distinct."
-        - "Spotted and drove, through a junior designer, a fix for grenade readability: smoke and damage-zone edges."
+        - "Owned two features from spec to Blueprints: hip-fire spread with an honest crosshair (spread depends on stance, speed and sustained fire, and the crosshair shows the actual spread) and a full rework of the perk system. Integrated both without breaking existing systems."
+        - "Balance a set of interconnected systems: combat, economy, progression, loot, crafting, vendor pricing; calculated stats for dozens of enemies, from regular mobs to bosses. Introduced a weapon power score based on effective TTK and DPS, so weapons work in both PvP and PvE while staying distinct."
+        - "Spotted a grenade readability problem (smoke and damage-zone edges) and got it fixed through a junior designer."
         - "Built a C++ tool that walks a level and exports every loot spawner (~3,000 on the largest map) with its loot tables and expected item counts to CSV, so loot can be balanced across the whole map in spreadsheets; now used by designers in my department and by level designers."
         - "Prototype and iterate on weapons, armor, consumables and enemies for live updates, based on internal testing and player feedback."
         - "Before changing mechanics, dig into the project’s Behavior Trees and C++ systems to see how they connect; fix gameplay bugs in Blueprints."
         - "Write and maintain balance tables and feature specs. Lead two junior designers: set tasks and review design docs; redesigned the friends, chat and clan UX with one of them."
         - "Work closely with engineers and artists to take new weapons and systems from concept to live content."
       ru:
-        - "Вёл от ТЗ до реализации на Blueprints разброс от бедра (от стойки, скорости и стрельбы) с честным прицелом и переработку системы перков и встроил их в игру, ничего не сломав."
-        - "Балансирую набор связанных систем: бой, экономику, прогрессию, лут, крафт, цены у торговцев; рассчитал параметры десятков врагов, от обычных до боссов. Ввёл оценку мощи оружия на основе эффективного TTK и DPS, чтобы оружие работало и в PvP, и в PvE и при этом различалось."
-        - "Нашёл и через младшего дизайнера довёл до исправления проблемы читаемости эффектов гранат: дым и границы зон поражения."
+        - "Вёл от ТЗ до реализации на Blueprints разброс от бедра с честным прицелом (зависит от стойки, скорости и стрельбы) и переработку системы перков. Обе механики встроил в игру, ничего не сломав."
+        - "Балансирую набор связанных систем: бой, экономику, прогрессию, лут, крафт, цены у торговцев; рассчитал параметры десятков врагов, от обычных до боссов. Ввёл оценку мощи оружия, которая считается из эффективных TTK и DPS, чтобы оружие работало и в PvP, и в PvE и при этом различалось."
+        - "Нашёл проблему с читаемостью эффектов гранат (дым и границы зон поражения) и через младшего дизайнера добился её исправления."
         - "Написал на C++ инструмент, который проходит по уровню и выгружает в CSV все спавнеры лута (около 3 000 на самой большой карте) с лут-таблицами и ожидаемым количеством предметов, так что лут всей карты можно балансировать в таблицах; выгрузкой пользуются дизайнеры отдела и левел-дизайнеры."
         - "Прототипирую и дорабатываю оружие, броню, расходники и врагов для live-обновлений."
         - "Прежде чем менять механики, разбираюсь в Behavior Trees и C++-системах проекта; геймплейные баги чиню через Blueprints."
@@ -94,14 +94,14 @@ jobs:
     bullets:
       en:
         - "Wrote 25+ specs for artists and programmers and owned many mechanics (hero skills, weapon behaviors, boss variations) from concept through implementation and balance."
-        - "To speed up content setup, built a UI-automation script that moves data from Google Sheets into a browser-only admin panel with no API, which made content integration 10× faster."
-        - "Designed gamepad controls for every screen, including a single Sony / Xbox / Nintendo layout table in the spec; designed the player profile (achievement showcase, frames, avatars) over two iterations."
+        - "Built a UI-automation script that moves data from Google Sheets into a browser-only admin panel with no API, making content setup 10× faster."
+        - "Designed gamepad controls for every screen, including a single Sony / Xbox / Nintendo layout table in the spec; the player profile (achievement showcase, frames, avatars) took two design iterations."
         - "Set up content for live updates, tuned enemy difficulty, rewards and the gacha economy; calculated gacha drop rates for seasonal events."
         - "Worked daily with programmers, artists and UI artists to ship ongoing live-service content."
       ru:
         - "Написал 25+ ТЗ для художников и программистов и вёл множество механик (скиллы героев, поведение оружия, вариации боссов) от идеи до реализации и баланса."
-        - "Чтобы ускорить заведение контента, написал скрипт UI-автоматизации, который переносит данные из Google Таблиц в браузерную админку без API, и это стало в 10 раз быстрее."
-        - "Спроектировал управление с геймпада для всех экранов, включая единую таблицу раскладок Sony, Xbox и Nintendo в ТЗ; спроектировал профиль игрока (витрина достижений, рамки, аватары) в две итерации."
+        - "Написал скрипт UI-автоматизации, который переносит данные из Google Таблиц в браузерную админку без API; контент стал заводиться в 10 раз быстрее."
+        - "Спроектировал управление с геймпада для всех экранов, включая единую таблицу раскладок Sony, Xbox и Nintendo в ТЗ; профиль игрока (витрина достижений, рамки, аватары) сделал за две итерации."
         - "Заводил контент для live-обновлений, настраивал сложность врагов, награды и гача-экономику; рассчитывал шансы выпадения в гаче для сезонных ивентов."
         - "Каждый день работал с программистами и художниками над live-обновлениями."
   craft-of-survival:
