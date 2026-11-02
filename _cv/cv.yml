@@ -116,9 +116,9 @@ jobs:
   qa:
     bullets:
       en:
-        - "Part-time while studying: a Random Dice-style PvP tower defense with a short update cycle; in a ~15-person team also coordinated task readiness with programmers and ran and published builds."
+        - "A Random Dice-style PvP tower defense with a short update cycle; in a ~15-person team also coordinated task readiness with programmers and ran and published builds."
       ru:
-        - "Подработка во время учёбы: PvP tower defense в духе Random Dice с коротким циклом обновлений; в команде из ~15 человек также собирал статус задач у программистов, запускал и публиковал билды."
+        - "PvP tower defense в духе Random Dice с коротким циклом обновлений; в команде из ~15 человек также собирал статус задач у программистов, запускал и публиковал билды."
 
 personal_projects:
   - name: { en: "Unreal Engine Helicopter Prototype", ru: "Прототип вертолёта на Unreal Engine" }
