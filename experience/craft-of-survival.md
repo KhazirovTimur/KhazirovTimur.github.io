@@ -35,15 +35,15 @@ It was my first project as a game designer at 101XP, right after moving over fro
 
 ## Shipping a major update with a team of two
 
-**Situation.** After the decision to pause support for the project, most of the team left. A fairly large update with a new location and a teleport mechanic was still unfinished, and it had to ship anyway. Two game designers remained, a colleague and me. The colleague took the teleports, and I took the location.
+**Situation.** After the decision to pause support for the project, most of the team left. But a fairly large update with a new location was still unfinished, and it had to ship anyway. The only game designers left were a colleague and me. The colleague handled the location’s quest setup and game logic, and I handled the location itself, the enemies and the new content.
 
-**What I did.** Much of the remaining work was outside a designer’s usual scope, so I took it on myself in Unity:
+**What I did.** This is where my technical side came in. Before joining the company I had already learned Unity well: I knew its architecture and quirks and could read code. Many of the remaining tasks were outside a game designer’s usual scope, but there was nobody else to do them, so I took them on myself:
 
 - fixed location bugs: collisions, NavMesh, enemy spawners, the minimap and other level issues;
 - worked through the studio’s internal tools that nobody had time to teach me, figuring them out on the fly;
 - kept testing and fixing until the content was stable enough to ship.
 
-**Result.** The update **was released successfully**. This is where my habit of learning the engine beyond design paid off: when there was nobody to hand a task to, I could still do it. After the release I moved on to The Braves.
+**Result.** The update **shipped** on schedule with no critical bugs. After the release I moved on to The Braves.
 
 ## What it gave me
 

@@ -5,15 +5,15 @@
   role:   { en: "Game Designer (Balance / Technical)", ru: "Геймдизайнер (баланс / техдизайн)" }
   period: { en: "Nov 2024 — Present", ru: "Ноябрь 2024 — сейчас" }
   text:
-    en: "Implement features directly in Blueprints, built a C++ loot parser for the team, balance progression, economy, loot and crafting in an open-world multiplayer shooter, own new mechanics from spec to release, and lead junior designers."
-    ru: "Реализую механики на Blueprints, отвечаю за баланс прогрессии, экономики, лута и крафта в мультиплеерном шутере с открытым миром. Написал для команды парсер лута на C++,  веду новые идеи от ТЗ до релиза и руковожу младшими дизайнерами."
+    en: "Implement features in Blueprints and balance progression, economy, loot and crafting in an open-world multiplayer shooter. Take new ideas from spec to release, lead junior designers, and built a C++ loot parser for the team."
+    ru: "Реализую механики на Blueprints, отвечаю за баланс прогрессии, экономики, лута и крафта в мультиплеерном шутере с открытым миром. Веду новые идеи от ТЗ до релиза, руковожу младшими дизайнерами и написал для команды парсер лута на C++."
 
 - company: 101XP
   projects: [the-braves]
   role:   { en: "Technical Game Designer · The Braves", ru: "Технический геймдизайнер · The Braves" }
   period: { en: "Mar 2023 — Nov 2024", ru: "Март 2023 — ноябрь 2024" }
   text:
-    en: "Set up content for updates and events, wrote specs for and owned mechanics: hero skills, weapons, gamepad controls. Designed boss variations and balanced updates. To work more efficiently, built a tool that moved data from Google Sheets into the admin panel 10× faster than by hand."
+    en: "Set up content for updates and events, wrote specs for and owned mechanics: hero skills, weapons, gamepad controls. Designed boss variations and balanced enemies. To work more efficiently, built a tool that moved data from Google Sheets into the admin panel 10× faster than by hand."
     ru: "Заводил контент для обновлений и ивентов, писал ТЗ и вёл механики: скиллы героев, оружие, управление с геймпада. Проектировал вариации боссов и балансировал врагов. Для повышения эффективности работы написал инструмент, который переносит данные из Google Таблиц в админку в 10 раз быстрее ручного ввода."
 
 - company: 101XP
@@ -21,7 +21,7 @@
   role:   { en: "Technical Game Designer · Craft of Survival", ru: "Технический геймдизайнер · Craft of Survival" }
   period: { en: "Dec 2022 — Mar 2023", ru: "Декабрь 2022 — март 2023" }
   text:
-    en: "First project after moving from QA into design: set up content for regular updates. When most of the team left, I was one of two designers who shipped a major update, fixing locations in Unity myself."
+    en: "First project after moving from QA into design: set up content for regular updates. When most of the team left, a colleague and I finished and shipped a major update."
     ru: "Первый проект после перехода из QA в дизайн: заводил контент для регулярных обновлений. Когда большая часть команды ушла, мы с коллегой вдвоём доделали и выпустили крупное обновление."
 
 - company: 101XP
@@ -29,5 +29,5 @@
   role:   { en: "QA Specialist (part-time while studying)", ru: "QA-специалист (подработка во время учёбы)" }
   period: { en: "May 2021 — Dec 2022", ru: "Май 2021 — декабрь 2022" }
   text:
-    en: "A part-time role while finishing university, on a PvP tower defense game in the spirit of Random Dice, where I got used to working in a team with a short update cycle. The team was small, about 15 people, so I also took on my first project-coordination role: checking task readiness with programmers, running builds and publishing them. After graduating I moved full-time into game design at the same studio."
-    ru: "Подрабатывал, пока доучивался в университете: работал на PvP tower defense в духе Random Dice и получил опыт работы в команде с коротким циклом выпуска обновлений. Команда была небольшой, около 15 человек, поэтому мне досталась и первая проектная роль: узнавал у программистов о готовности задач, запускал сборки билдов и публиковал их. После выпуска перешёл на другой проект в той же студии, и начал переход в геймдизайн"
+    en: "A part-time role while finishing university, on a PvP tower defense game in the spirit of Random Dice, where I got used to working in a team with a short update cycle. The team was small, about 15 people, so I also took on my first project-coordination role: checking task readiness with programmers, running builds and publishing them. After graduating I moved to another project at the same studio and started my move into game design."
+    ru: "Подрабатывал, пока доучивался в университете: работал на PvP tower defense в духе Random Dice и получил опыт работы в команде с коротким циклом выпуска обновлений. Команда была небольшой, около 15 человек, поэтому мне досталась и первая проектная роль: узнавал у программистов о готовности задач, запускал сборки билдов и публиковал их. После выпуска перешёл в той же студии на другой проект и начал осваивать геймдизайн."

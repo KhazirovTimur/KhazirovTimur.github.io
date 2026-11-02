@@ -23,12 +23,12 @@ permalink: /projects/tiny-dozzer/
 ---
 
 ## About
-The player drives a bulldozer with an on-screen joystick across a platform surrounded by a moat. Each level is a structure built from cubes, and every last cube has to go over the edge before the countdown ends. The HUD shows how much of the structure is already cleared and how many seconds are left. The run ends if time runs out, if the bulldozer falls into the moat, or if it is caught in a barrel explosion.
+The player drives a bulldozer with an on-screen joystick across a platform surrounded by a moat. Each level is a structure built from cubes, and every last cube has to go over the edge before the countdown ends. The HUD shows how much of the structure is already cleared and how many seconds are left. The run ends if time runs out, the bulldozer falls into the moat, or if it is caught in a barrel explosion.
 
 ## Levels and progression
 - 15 levels in three seasons of five: summer, autumn and winter.
 - The seasons are mostly cosmetic, with one gameplay change: in winter the platform is icy, friction is lower, and pushed cubes slide further, which helps and hurts at the same time.
-- Structures grow from small piles to a castle with walls, a maze and a multi-storey building; bigger levels get more time, from about a minute to two and a half.
+- Structures grow from small piles to a castle with walls, a maze and a multi-storey building. Bigger levels get more time.
 - A few joke levels break the pattern: a single cube with red barrels set up like bowling pins, or a structure built as a copy of the player’s own bulldozer.
 
 ## Red barrels

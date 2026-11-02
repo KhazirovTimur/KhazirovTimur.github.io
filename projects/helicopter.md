@@ -29,11 +29,11 @@ All code and classes are my own. The AH-64 model comes from the Vigilante asset 
 
 What it demonstrates:
 - translating real-world physics into tunable gameplay parameters;
-- knowing what to simplify: dropping rotor torque kept the controls readable without losing the helicopter feel;
+- knowing what to simplify: real aerodynamic formulas are the base, but many parameters are replaced with constants or simplified, and the flight still feels believable;
 - a C++ core with Blueprint content, the setup designers work with on real projects.
 
 ## Flight model and controls
-A simplified simulation of real helicopter physics rather than an arcade “floating camera”. Rotor thrust, lift and drag are computed from real formulas.
+In this prototype I aimed for a believable, simplified simulation of real helicopter physics, somewhere between Battlefield 3/4 and Arma 3. Rotor thrust, lift and drag are computed from real formulas.
 
 <div class="data-sample data-sample--fit" markdown="0">
 <p class="data-sample__title">Flight model parameters</p>
@@ -49,10 +49,10 @@ A simplified simulation of real helicopter physics rather than an arcade “floa
 </tbody></table></div>
 </div>
 
-WASD for pitch and roll, Q/E for yaw, Shift/Ctrl for altitude, mouse for the camera. There is no stability assist: the player flies the machine. Pull the nose up at speed and the helicopter climbs on its own; build up sideways speed and it turns into the direction of travel. None of this is scripted, it emerges from the formulas.
+WASD for pitch and roll, Q/E for yaw, Shift/Ctrl for altitude, mouse for the camera. There is no stability assist: the player flies the machine. Pull the nose up at speed and the helicopter climbs on its own; build up sideways speed and it turns into the direction of travel.
 
 ## Turret
-Hold the right mouse button to free the camera; the turret tries to aim at the point the camera is looking at. It has realistic limits: ±90° horizontally and −30°/+10° vertically. Shots are physical projectiles with travel time, not instant hits.
+Hold the right mouse button to free the camera; the turret tries to aim at the point the camera is looking at. It has realistic limits: ±90° horizontally and −30°/+10° vertically. It fires physical projectiles.
 
 ## Architecture
-Base classes are in C++: the helicopter with its flight model and the turret. A specific machine is a Blueprint on top: the AH-64 and its turret only set their own characteristics. A new helicopter or turret only needs new data, no new code.
+Base classes are in C++: the helicopter with its flight model, and the turret. On top of them sit specific Blueprint classes for the AH-64 and its turret, which only set their characteristics. A new helicopter or turret only needs new data, no new code.

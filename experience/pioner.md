@@ -6,7 +6,7 @@ section: experience
 order: 1
 title: PIONER
 eyebrow: "GFAGAMES · Unreal Engine 5 · 2024 — now"
-summary: "Open-world MMO shooter. I implement features directly in Blueprints, build tools for the team, balance the game’s interconnected systems and take new ideas from spec to release."
+summary: "Open-world MMO shooter. I balance the game’s interconnected systems and economy, take new ideas from spec to release, and implement features in Blueprints."
 cover: "https://cdn.cloudflare.steamstatic.com/steam/apps/3105890/header.jpg"
 cover_label: "UE5"
 accent: orange
@@ -45,7 +45,7 @@ permalink: /experience/pioner/
 
 **PIONER** is an MMO first-person shooter set in an open post-apocalyptic world, with a full single-player campaign and a wide range of PvP and co-op PvE activities.
 
-I joined the team in November 2024. The studio has about 70 people and 10 game designers, split roughly evenly between quests and balance / tech design. I’m in the second group, report to the lead game designer and lead two junior designers. I implement features directly in the engine, build tools for the team, keep interconnected systems in balance and own new mechanics.
+I joined the team in November 2024. The studio has about 70 people and 10 game designers, split roughly evenly between quests and balance / tech design. I’m in the second group, report to the lead game designer and lead two junior designers. I tune and balance almost every game system, work on new ideas, prototype and implement some of the mechanics, and build new tools for the team when needed.
 
 ## Balance and economy
 
@@ -119,7 +119,7 @@ For this portfolio I put together a sample sheet that balances one weapon catego
 
 **Result.** The loot of the game’s largest map became a spreadsheet: **about 3,000 spawners, 300+ zones and 160+ loot tables** in a single export. Loot can now be filtered, summed and compared by zone, tier or item category, and checked again after every change.
 
-The first version took me a couple of evenings in my own time. Other designers in my department now use the export too, and level designers rely on it when they move loot around and clean up broken spawn points. It surfaced plenty of placement errors that would otherwise have to be found by hand, one spawner at a time.
+The first version took me a couple of evenings in my own time. Other designers in my department now use the export too, and level designers rely on it when they move loot around and clean up broken spawn points. It surfaced plenty of placement errors that would otherwise have to be found by hand.
 
 Beyond raw numbers, the export makes it easy to build clear infographics, such as loot heatmaps. The map below shows loot concentrated around points of interest, with the most in the PvPvE zone. A map like this also exposes mistakes: areas with too little or too much loot.
 
@@ -130,14 +130,14 @@ Beyond raw numbers, the export makes it easy to build clear infographics, such a
 - Create and tune weapons, armor, consumables and enemies using Data Tables and Primary Data Assets.
 - Prototype new mechanics in Blueprints and iterate on them from update to update.
 - Commission new content and the mechanics behind it from artists and programmers: write the specs and sign off the results.
+- Before changing anything, dig into the project’s Behavior Trees and C++ systems to see how mechanics connect. Fix gameplay bugs in Blueprints.
 - Reworked the perk system from scratch without breaking the systems around it.
-- Before changing anything, dig into the project’s Behavior Trees and C++ systems to see how mechanics connect; fix gameplay bugs in Blueprints.
 
 ## Hip-fire spread and an honest crosshair
 
 **Problem.** The crosshair grew and shrank as the character moved, but hip-fire spread didn’t depend on movement at all: the player always fired with the same spread. The crosshair was a visual gimmick that told the player nothing.
 
-**Solution.** I spotted this myself and took on the rework. Spread now depends on stance, movement speed and sustained fire, tuned per weapon, as is standard in arcade shooters. The crosshair reads the current spread and shows the actual area a bullet can land in.
+**Solution.** I spotted this myself and took on the rework. Spread now depends on stance, movement speed and sustained fire, and it is tuned per weapon: all as is standard in arcade shooters. The crosshair reads the current spread and shows the actual area a bullet can land in.
 
 **Result.** Hip-fire became a real decision: players see how accurate they are right now, and weapon classes handle differently. The change slotted into the game without issues.
 

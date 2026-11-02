@@ -6,7 +6,7 @@ section: experience
 order: 2
 title: The Braves
 eyebrow: "101XP · Unity · 2023 — 2024"
-summary: "Live-service arcade game in the spirit of Vampire Survivors. I set up content, wrote specs for and owned many mechanics: hero skills, weapons, gamepad controls. I balanced updates and events, and made content setup 10× faster with a tool I built."
+summary: "Live-service arcade game in the spirit of Vampire Survivors. I set up content, wrote specs for and owned many mechanics: hero skills, weapons, gamepad controls. I balanced enemies and the event economy, and made content setup 10× faster with a tool I built."
 cover: "https://cdn.cloudflare.steamstatic.com/steam/apps/2479830/header.jpg"
 cover_label: "Unity"
 accent: teal
@@ -29,13 +29,13 @@ permalink: /experience/the-braves/
 
 ## Overview
 
-**The Braves** is a live-service arcade game heavily inspired by *Vampire Survivors*, built around hero collection, progression systems and a steady flow of new content.
+**The Braves** is a live-service arcade game heavily inspired by *Vampire Survivors*. The player collects heroes, upgrades them, their gear and the hub, and fights monsters and bosses across different locations.
 
-I joined the project after Craft of Survival and stayed until I left 101XP. The team had about 30 people, five of them game designers: tasks came from the project owner, and we split them among ourselves. As a technical game designer I worked both on the game itself and on the way content got into it. Since the game was continuously updated, features were rarely designed once and left alone: they were refined through iteration based on internal feedback, playtests and production priorities.
+I joined the project after Craft of Survival and stayed until I left 101XP. The team had about 30 people, five of them game designers: tasks came from the project owner, and we split them among ourselves. As a technical game designer I worked both on the game itself and on the way content got into it. The game was continuously updated, so there was a constant flow of new tasks and content.
 
 ## Content pipeline tool
 
-**Problem.** Every piece of new content was designed in Google Sheets and then had to be transferred into the project’s admin panel by hand. With regular updates this was slow, repetitive and error-prone.
+**Problem.** Every piece of new content was calculated and balanced in Google Sheets and then had to be transferred into the project’s admin panel by hand. With regular updates this was slow, repetitive and error-prone.
 
 **Solution.** The admin panel had no usable API and only ran in a browser. So I wrote a script for a screen automation tool (Clickerman, in BASIC) that moves the data from Google Sheets into the admin panel by itself. A typical job: 5 armor sets × 4 pieces × 5 rarities, which makes 100 near-identical entries.
 
@@ -49,14 +49,10 @@ I wrote design specs for and owned a large number of mechanics. Most of them are
 - **Weapon mechanics**: new weapon behaviors added as part of content updates.
 - **Gamepad controls**: the UI was built for a mouse, so controller support had to fit into existing screens full of tabs and sub-menus. I followed familiar conventions: bumpers switch main tabs, triggers switch nested ones, holding the upgrade button upgrades to max. The spec had a single layout table for Sony, Xbox and Nintendo built on abstract actions (“Action 1” = Square / X), and the rest of the document referred only to actions, so a layout could change in one place without rewriting the spec.
 - **Boss variations**: for example, an elite version of a boss that fires a wave and advances inside a ring of spinning discs. Mine first spawns a ring wide enough to trap the player, then adds tighter and tighter rings that herd the player toward the boss. Only then does it fire the wave, which the player has to dodge.
-- **Player profile**: designed its UX from scratch: the achievement showcase, frames and avatars, groundwork for future social features. The first iteration of the showcase followed Steam (click a slot, then pick from a list) and didn’t convince the project owner. In the second, the list is open from the start and each click adds an achievement to it in order. That version was approved.
+- **Player profile**: designed its UX from scratch: the achievement showcase, frames and avatars, groundwork for future social features.
 
 ## Content and live operations
 
-- Set up new content in the game for regular updates.
-- For seasonal events, Halloween and New Year, new heroes and skins were added to the gacha. I calculated the drop rates and set them up in the game.
-- Tuned enemy difficulty, rewards and the gacha economy across live updates, making sure new content didn’t disrupt the player’s progression.
-
-## Challenges
-
-Adding features to a game that is already live means respecting what players have: new mechanics had to fit existing systems, stay compatible with future content and not break progression. Much of the work was careful, incremental improvement rather than replacing what already worked.
+- Set up new content: heroes, gear, abilities, monsters and more.
+- Seasonal events such as Halloween or New Year brought a seasonal gacha with limited heroes, skins and weapons. I calculated the drop rates and set them up in the game.
+- Tuned enemy difficulty and level completion rewards.
