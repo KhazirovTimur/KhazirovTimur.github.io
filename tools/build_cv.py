@@ -31,6 +31,8 @@ FACTS = [
     {"en": "50+", "ru": "50+", "site": ["_data/home.yml"]},
     {"en": "Senior Technical / Balance Game Designer", "ru": "Senior-геймдизайнер: техдизайн и баланс", "site": ["_data/i18n.yml", "_data/ui.yml"]},
     {"en": "3,000", "ru": "3 000", "site": ["experience/pioner.md", "ru/experience/pioner.md"]},
+    {"en": "50+ enemy types", "ru": "50+ типов врагов", "site": ["experience/pioner.md", "ru/experience/pioner.md"]},
+    {"en": "~7 mo", "ru": "~7 мес", "site": ["experience/pioner.md", "ru/experience/pioner.md"]},
 ]
 
 

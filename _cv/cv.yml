@@ -71,7 +71,7 @@ jobs:
     bullets:
       en:
         - "Owned two features from spec to Blueprints: hip-fire spread with an honest crosshair (spread depends on stance, speed and sustained fire, and the crosshair shows the actual spread) and a full rework of the perk system. Integrated both without breaking existing systems."
-        - "Balance a set of interconnected systems: combat, economy, progression, loot, crafting, vendor pricing; calculated stats for dozens of enemies, from regular mobs to bosses. Introduced a weapon power score based on effective TTK and DPS, so weapons work in both PvP and PvE while staying distinct."
+        - "Balance a set of interconnected systems: combat, economy, progression, loot, crafting, vendor pricing; calculated stats for 50+ enemy types, from regular mobs to bosses. In my first ~7 months, a colleague and I rebalanced the entire game. Introduced a weapon power score based on effective TTK and DPS, so weapons work in both PvP and PvE while staying distinct."
         - "Spotted a grenade readability problem (smoke and damage-zone edges) and got it fixed through a junior designer."
         - "Built a C++ tool that walks a level and exports every loot spawner (~3,000 on the largest map) with its loot tables and expected item counts to CSV, so loot can be balanced across the whole map in spreadsheets; now used by designers in my department and by level designers."
         - "Prototype and iterate on weapons, armor, consumables and enemies for live updates, based on internal testing and player feedback."
@@ -80,7 +80,7 @@ jobs:
         - "Work closely with engineers and artists to take new weapons and systems from concept to live content."
       ru:
         - "Вёл от ТЗ до реализации на Blueprints разброс от бедра с честным прицелом (зависит от стойки, скорости и стрельбы) и переработку системы перков. Обе механики встроил в игру, ничего не сломав."
-        - "Балансирую набор связанных систем: бой, экономику, прогрессию, лут, крафт, цены у торговцев; рассчитал параметры десятков врагов, от обычных до боссов. Ввёл оценку мощи оружия, которая считается из эффективных TTK и DPS, чтобы оружие работало и в PvP, и в PvE и при этом различалось."
+        - "Балансирую набор связанных систем: бой, экономику, прогрессию, лут, крафт, цены у торговцев; рассчитал параметры 50+ типов врагов, от обычных до боссов. За первые ~7 месяцев вдвоём с коллегой пересобрали баланс всей игры. Ввёл оценку мощи оружия, которая считается из эффективных TTK и DPS, чтобы оружие работало и в PvP, и в PvE и при этом различалось."
         - "Нашёл проблему с читаемостью эффектов гранат (дым и границы зон поражения) и через младшего дизайнера добился её исправления."
         - "Написал на C++ инструмент, который проходит по уровню и выгружает в CSV все спавнеры лута (около 3 000 на самой большой карте) с лут-таблицами и ожидаемым количеством предметов, так что лут всей карты можно балансировать в таблицах; выгрузкой пользуются дизайнеры отдела и левел-дизайнеры."
         - "Прототипирую и дорабатываю оружие, броню, расходники и врагов для live-обновлений."

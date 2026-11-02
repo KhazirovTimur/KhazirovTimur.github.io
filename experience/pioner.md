@@ -22,8 +22,8 @@ links:
   - { label: "Steam page", url: "https://store.steampowered.com/app/3105890/PIONER/" }
 highlights:
   - { value: "~3,000", label: "loot spawners exported by my C++ parser" }
-  - { value: "300+", label: "zones of the largest map in one pass" }
-  - { value: "160+", label: "loot tables traced to every spawn point" }
+  - { value: "~7 mo", label: "to rebalance the entire game with a colleague, down to every number" }
+  - { value: "50+", label: "enemy types whose stats I calculated" }
 stack: [Unreal Engine 5, Blueprints, "C++", Gameplay Tags, Enhanced Input, Data Tables, Primary Data Assets, Behavior Trees, Excel / Google Sheets, Jira, Confluence, Git]
 loop:
   - { title: "Explore", text: "open world, quests, enemies" }
@@ -53,13 +53,7 @@ In PIONER the core activities are exploring, completing quests and collecting lo
 
 {% include loop.html %}
 
-I balance a set of systems that all depend on each other:
-
-- **Combat**: weapons, armor and enemy parameters, including bosses.
-- **Progression**: experience curves and equipment progression.
-- **Economy**: loot distribution, vendor pricing, crafting and overall resource flow.
-
-A change in one place ripples through the others. For example, this is how enemy health and damage reach the economy:
+The game’s systems pull on each other: combat, progression, loot, crafting, the economy. A change in one place ripples through the others. Here is how raising an enemy’s health can affect the economy:
 
 {% include chain.html label="Chain of effects" %}
 
@@ -83,7 +77,7 @@ These are tendencies, not hard rules: the machine gun is still viable in PvP.
 
 After the math, every weapon goes through three checks: a PvE sandbox, the open world and internal PvP tests. If needed, I tune it afterwards.
 
-Enemy parameters are mine too: I calculated damage, health, resistances and movement speed for dozens of enemies, from regular mobs to bosses.
+Enemy parameters are mine too: I calculated damage, health, resistances and movement speed for 50+ enemy types, from regular mobs to bosses.
 
 ### Balance tables
 
