@@ -5,16 +5,16 @@ lang: en
 section: experience
 order: 1
 title: PIONER
-eyebrow: "GFAGAMES · Unreal Engine 5 · 2024 — now"
+eyebrow: "GFAGAMES · Unreal Engine · 2024 — now"
 summary: "Open-world MMO shooter. I balance the game’s interconnected systems and economy, take new ideas from spec to release, and implement features in Blueprints."
 cover: "https://cdn.cloudflare.steamstatic.com/steam/apps/3105890/header.jpg"
-cover_label: "UE5"
+cover_label: "UE"
 accent: orange
 tags: [Blueprints, "C++", Tools, Balance, Economy]
 role: "Game Designer (Balance / Technical)"
 company: GFAGAMES
 period: "Nov 2024 — Present"
-engine: "Unreal Engine 5"
+engine: "Unreal Engine"
 platform: "PC (Steam)"
 genre: "Open-world MMO shooter"
 status: "Released December 2025, live service"
@@ -24,7 +24,7 @@ highlights:
   - { value: "~3,000", label: "loot spawners exported by my C++ parser" }
   - { value: "~7 mo", label: "to rebalance the entire game with a colleague, down to every number" }
   - { value: "50+", label: "enemy types whose stats I calculated" }
-stack: [Unreal Engine 5, Blueprints, "C++", Gameplay Tags, Enhanced Input, Data Tables, Primary Data Assets, Behavior Trees, Excel / Google Sheets, Jira, Confluence, Git]
+stack: [Unreal Engine, Blueprints, "C++", Gameplay Tags, Enhanced Input, Data Tables, Primary Data Assets, Behavior Trees, Excel / Google Sheets, Jira, Confluence, Git]
 loop:
   - { title: "Explore", text: "open world, quests, enemies" }
   - { title: "Loot", text: "weapons, gear, resources" }
@@ -69,7 +69,7 @@ PIONER has both PvP and PvE, so every weapon has to work in both and still feel 
 <p class="power__f"><b>Effective TTK</b> + <b>Effective DPS</b> → <b class="res">Power score</b></p>
 <dl class="power__rows">
 <div><dt>Heavy machine gun</dt><dd><span class="up">▲ PvE and bosses</span> thanks to high DPS · <span class="down">▼ PvP</span>: slow to aim down sights, reduced mobility</dd></div>
-<div><dt>SMG with a small magazine</dt><dd><span class="up">▲ PvP</span></dd></div>
+<div><dt>SMG with a small magazine</dt><dd><span class="up">▲ PvP</span>: high mobility and good TTK give an edge in PvP · <span class="down">▼ PvE</span>: the small magazine makes fights against many enemies harder</dd></div>
 </dl>
 </div>
 
@@ -119,14 +119,6 @@ Beyond raw numbers, the export makes it easy to build clear infographics, such a
 
 {% include figure.html src="/assets/img/pioner/loot-heatmap-en.webp" alt="Heatmap of expected loot across the largest map of PIONER, built from the parser’s export" caption="Built from the parser’s export for the largest map: expected loot per map cell. Bright clusters are points of interest and the high-value PvPvE zone. Coordinates and values are left out." %}
 
-## Content and technical work
-
-- Create and tune weapons, armor, consumables and enemies using Data Tables and Primary Data Assets.
-- Prototype new mechanics in Blueprints and iterate on them from update to update.
-- Commission new content and the mechanics behind it from artists and programmers: write the specs and sign off the results.
-- Before changing anything, dig into the project’s Behavior Trees and C++ systems to see how mechanics connect. Fix gameplay bugs in Blueprints.
-- Reworked the perk system from scratch without breaking the systems around it.
-
 ## Hip-fire spread and an honest crosshair
 
 **Problem.** The crosshair grew and shrank as the character moved, but hip-fire spread didn’t depend on movement at all: the player always fired with the same spread. The crosshair was a visual gimmick that told the player nothing.
@@ -142,6 +134,14 @@ Beyond raw numbers, the export makes it easy to build clear infographics, such a
 **Solution.** I proposed fixing the effects to my lead and got the go-ahead. I set the requirements: lingering damage zones need clearly visible edges; effects must be bright enough not to get lost, without cluttering the screen. A junior designer turned them into a spec for the artists, and I oversaw how the finished art was accepted and integrated.
 
 **Result.** Smoke hides again, and hazard zones read at a glance, even in grass. For me it’s an example of a task I ran through a junior designer: find the problem, get sign-off, delegate it and check the result.
+
+## Content and technical work
+
+- Create and tune weapons, armor, consumables and enemies using Data Tables and Primary Data Assets.
+- Prototype new mechanics in Blueprints and iterate on them from update to update.
+- Commission new content and the mechanics behind it from artists and programmers: write the specs and sign off the results.
+- Before changing anything, dig into the project’s Behavior Trees and C++ systems to see how mechanics connect. Fix gameplay bugs in Blueprints.
+- Reworked the perk system from scratch without breaking the systems around it.
 
 ## Team and mentoring
 

@@ -5,17 +5,17 @@ lang: en
 section: projects
 order: 1
 title: Helicopter Prototype
-eyebrow: "Personal project · Unreal Engine 5 · 2025"
+eyebrow: "Personal project · Unreal Engine · 2025"
 summary: "A physics-based helicopter flight model built from real aerodynamic formulas, plus a nose turret that tracks where the camera looks. C++ core, Blueprint content."
-cover_label: "UE5"
+cover_label: "UE"
 accent: orange
 tags: [Vehicles, Physics, "C++", Blueprints]
 role: "Solo developer"
-engine: "Unreal Engine 5"
+engine: "Unreal Engine"
 platform: "PC"
 genre: "Vehicle / flight prototype"
 status: "Completed"
-stack: [Unreal Engine 5, "C++", Blueprints, Enhanced Input]
+stack: [Unreal Engine, "C++", Blueprints, Enhanced Input]
 youtube: "_W8JCll1D7o"
 links: 
   - { label: "Flight video", url: "https://www.youtube.com/watch?v=_W8JCll1D7o" }

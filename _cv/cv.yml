@@ -48,8 +48,8 @@ skills:
       ru: "Механики оружия и боя, интеграция геймплейных систем, прототипирование и итерации, прототипирование техники и передвижения, прогрессия игрока, дизайн экономики, документация"
   - name: { en: "Unreal Engine", ru: "Unreal Engine" }
     text:
-      en: "UE4/UE5, Blueprints, C++ gameplay programming, Gameplay Tags, Enhanced Input, Animation Blueprints, Behavior Trees, AI Controllers, State Machines, Data Tables, Primary Data Assets, NavMesh, Gameplay Debugging"
-      ru: "UE4/UE5, Blueprints, геймплейное программирование на C++, Gameplay Tags, Enhanced Input, Animation Blueprints, Behavior Trees, AI Controllers, State Machines, Data Tables, Primary Data Assets, NavMesh, Gameplay Debugging"
+      en: "Blueprints, C++ gameplay programming, Gameplay Tags, Enhanced Input, Animation Blueprints, Behavior Trees, AI Controllers, State Machines, Data Tables, Primary Data Assets, NavMesh, Gameplay Debugging"
+      ru: "Blueprints, геймплейное программирование на C++, Gameplay Tags, Enhanced Input, Animation Blueprints, Behavior Trees, AI Controllers, State Machines, Data Tables, Primary Data Assets, NavMesh, Gameplay Debugging"
   - name: { en: "Unity", ru: "Unity" }
     text:
       en: "C#, MonoBehaviour, ScriptableObjects, NavMesh, gameplay implementation & prototyping"
@@ -66,8 +66,8 @@ skills:
 jobs:
   pioner:
     project:
-      en: "PIONER (Steam, released December 2025) — open-world MMO shooter, Unreal Engine 5; team of ~70"
-      ru: "PIONER (Steam, релиз в декабре 2025) — MMO-шутер с открытым миром, Unreal Engine 5; команда ~70 человек"
+      en: "PIONER (Steam, released December 2025) — open-world MMO shooter, Unreal Engine; team of ~70"
+      ru: "PIONER (Steam, релиз в декабре 2025) — MMO-шутер с открытым миром, Unreal Engine; команда ~70 человек"
     bullets:
       en:
         - "Owned two features from spec to Blueprints: hip-fire spread with an honest crosshair (spread depends on stance, speed and sustained fire, and the crosshair shows the actual spread) and a full rework of the perk system. Integrated both without breaking existing systems."
@@ -123,7 +123,7 @@ jobs:
         - "Подработка во время учёбы: PvP tower defense в духе Random Dice с коротким циклом обновлений; в команде из ~15 человек также собирал статус задач у программистов, запускал и публиковал билды."
 
 personal_projects:
-  - name: { en: "UE5 Helicopter Prototype", ru: "Прототип вертолёта на UE5" }
+  - name: { en: "Unreal Engine Helicopter Prototype", ru: "Прототип вертолёта на Unreal Engine" }
     text:
       en: "Flight model based on real thrust, lift and drag formulas with tunable mass and drag coefficients, plus a nose turret with realistic aim limits and physical projectiles; C++ base classes, Blueprint content. (2025)"
       ru: "Модель полёта на реальных формулах тяги, подъёмной силы и сопротивления с настраиваемой массой и коэффициентами, носовая турель с реалистичными углами наведения и физическими снарядами; базовые классы на C++, контент на Blueprints. (2025)"

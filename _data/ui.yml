@@ -13,7 +13,7 @@ en:
   about: About &amp; CV
   avail: Open to new roles, available immediately. Based in Moscow, open to relocation or remote.
   lang: Language
-  pitch: A game designer who writes the docs and builds the mechanics in-engine. I take features from idea to release, balance combat, economy and progression, and prototype in UE5 with Blueprints and C++.
+  pitch: A game designer who writes the docs and builds the mechanics in-engine. I take features from idea to release, balance combat, economy and progression, and prototype in Unreal Engine with Blueprints and C++.
   chips:
   - Blueprints &amp; C++
   - PC &amp; mobile
@@ -21,7 +21,7 @@ en:
   - k: Current job
     v: PIONER · GFAGAMES
   - k: Engines
-    v: UE5 · Unity
+    v: Unreal Engine · Unity
   - k: Languages
     v: Russian (native) · English (C1)
   - k: Location
@@ -218,7 +218,7 @@ ru:
   about: Обо мне и резюме
   avail: Открыт к предложениям, могу выйти сразу. Москва, готов к релокации или удалёнке.
   lang: Язык
-  pitch: Геймдизайнер, который пишет документацию и сам реализует механики в движке. Довожу идеи до релиза, балансирую бой, экономику и прогрессию, прототипирую в UE5 на Blueprints и C++.
+  pitch: Геймдизайнер, который пишет документацию и сам реализует механики в движке. Довожу идеи до релиза, балансирую бой, экономику и прогрессию, прототипирую в Unreal Engine на Blueprints и C++.
   chips:
   - Blueprints и C++
   - PC и мобильные
@@ -226,7 +226,7 @@ ru:
   - k: Место работы
     v: PIONER · GFAGAMES
   - k: Движки
-    v: UE5 · Unity
+    v: Unreal Engine · Unity
   - k: Языки
     v: русский (родной) · английский (C1)
   - k: Город

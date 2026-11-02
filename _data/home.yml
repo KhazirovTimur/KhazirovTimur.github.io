@@ -7,7 +7,7 @@ en:
     title: "Where I bring the most value"
     items:
       - title: "Technical design & implementation"
-        text: "I prototype and ship features myself in UE5 Blueprints and C++ or Unity C#. Before changing anything, I dig into the project’s Blueprints, Behavior Trees and C++ code to see how its systems connect."
+        text: "I prototype and ship features myself in Unreal Engine Blueprints and C++ or Unity C#. Before changing anything, I dig into the project’s Blueprints, Behavior Trees and C++ code to see how its systems connect."
       - title: "Tools & pipeline"
         text: "When a task repeats, I automate it: a C++ parser that exports ~3,000 loot spawners of an open-world map to CSV, a tool that moves content data from Google Sheets into an admin panel 10× faster than by hand."
       - title: "Balance & economy"
@@ -20,7 +20,7 @@ en:
     eyebrow: "Toolkit"
     title: "Technical skills"
     groups:
-      - name: "Unreal Engine 5"
+      - name: "Unreal Engine"
         items: [Blueprints, "C++", Gameplay Tags, Enhanced Input, Animation Blueprints, Behavior Trees, AI Controllers, State Machines, Data Tables, Primary Data Assets, NavMesh, Gameplay Debugging]
       - name: "Unity"
         items: ["C#", MonoBehaviour, ScriptableObjects, Gameplay prototyping]
@@ -55,7 +55,7 @@ ru:
     title: "Где от меня больше всего пользы"
     items:
       - title: "Техдизайн и реализация"
-        text: "Сам прототипирую механики и довожу их до релиза на Blueprints и C++ в UE5 или на C# в Unity. Прежде чем что-то менять, разбираюсь в Blueprints, Behavior Trees и C++-коде проекта, чтобы понять, как связаны системы."
+        text: "Сам прототипирую механики и довожу их до релиза на Blueprints и C++ в Unreal Engine или на C# в Unity. Прежде чем что-то менять, разбираюсь в Blueprints, Behavior Trees и C++-коде проекта, чтобы понять, как связаны системы."
       - title: "Инструменты и пайплайн"
         text: "Если задача повторяется, я её автоматизирую. Например, написал на C++ парсер, который выгружает в CSV около 3 000 спавнеров лута с карты открытого мира, и инструмент, который переносит данные из Google-таблиц в админку в 10 раз быстрее, чем руками."
       - title: "Баланс и экономика"
@@ -68,7 +68,7 @@ ru:
     eyebrow: "Инструменты"
     title: "Технические навыки"
     groups:
-      - name: "Unreal Engine 5"
+      - name: "Unreal Engine"
         items: [Blueprints, "C++", Gameplay Tags, Enhanced Input, Animation Blueprints, Behavior Trees, AI Controllers, State Machines, Data Tables, Primary Data Assets, NavMesh, Gameplay Debugging]
       - name: "Unity"
         items: ["C#", MonoBehaviour, ScriptableObjects, Прототипирование геймплея]

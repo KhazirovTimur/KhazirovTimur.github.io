@@ -1,5 +1,5 @@
 /* Sidebar portfolio design. */
-:root{color-scheme:dark;--bg:#0f1012;--card:#17181b;--card2:#1d1f23;--line:#2a2c31;--ink:#ecebe8;--dim:#a3a29e;--faint:#8b8a86;--acc:#f0b35a;--acc-ink:#241603;--acc2:#7fd4c1;--acc2-bg:#14302b}
+:root{color-scheme:dark;--bg:#0f1012;--card:#17181b;--card2:#1d1f23;--line:#2a2c31;--ink:#ecebe8;--dim:#a3a29e;--faint:#8b8a86;--acc:#f0b35a;--acc-ink:#241603;--acc2:#7fd4c1;--acc2-bg:#14302b;--neg:#f2837a}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scrollbar-color:var(--line) var(--bg)}
 body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 "Hanken Grotesk",system-ui,sans-serif}
@@ -399,7 +399,7 @@ a.video:hover .play{background:var(--acc);color:var(--acc-ink)}
 .power__rows{display:grid;gap:8px;margin:0;padding:12px 0 0;border-top:1px solid var(--line)}
 .power__rows>div{display:grid;grid-template-columns:minmax(0,190px) minmax(0,1fr);gap:4px 14px;font-size:14px}
 .power__rows dt{font-weight:700;color:var(--ink)}.power__rows dd{margin:0;color:var(--dim)}
-.power__rows .up{color:var(--acc2)}.power__rows .down{color:var(--faint)}
+.power__rows .up{color:var(--acc2)}.power__rows .down{color:var(--neg)}
 @media (max-width:560px){.power__rows>div{grid-template-columns:1fr}}
 .prose p .btn{margin-top:2px}
 .totop{position:fixed;right:18px;bottom:18px;z-index:20;width:44px;height:44px;display:grid;place-items:center;border-radius:50%;background:var(--card2);border:1px solid var(--line);color:var(--ink);box-shadow:0 6px 18px rgba(0,0,0,.35);opacity:0;visibility:hidden;transform:translateY(8px);transition:opacity .2s,transform .2s,visibility .2s}

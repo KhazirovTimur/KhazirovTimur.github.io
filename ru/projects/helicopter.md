@@ -5,17 +5,17 @@ lang: ru
 section: projects
 order: 1
 title: Прототип вертолёта
-eyebrow: "Личный проект · Unreal Engine 5 · 2025"
+eyebrow: "Личный проект · Unreal Engine · 2025"
 summary: "Полётная модель вертолёта на реальных аэродинамических формулах и носовая турель, которая наводится туда, куда смотрит камера. Основа на C++, конкретные классы на Blueprints."
-cover_label: "UE5"
+cover_label: "UE"
 accent: orange
 tags: [Техника, Физика, "C++", Blueprints]
 role: "Соло-разработчик"
-engine: "Unreal Engine 5"
+engine: "Unreal Engine"
 platform: "PC"
 genre: "Прототип техники / полёта"
 status: "Завершён"
-stack: [Unreal Engine 5, "C++", Blueprints, Enhanced Input]
+stack: [Unreal Engine, "C++", Blueprints, Enhanced Input]
 youtube: "_W8JCll1D7o"
 links: 
   - { label: "Видео полёта", url: "https://www.youtube.com/watch?v=_W8JCll1D7o" }
