@@ -79,8 +79,8 @@ en:
   - icon: tool
     tier: gold
     name: Toolsmith
-    text: Built content tools that made integration 10× faster
-    where: The Braves · 101XP
+    text: Built tools that speed up routine work
+    where: The Braves · PIONER
   - icon: cap
     tier: gold
     name: Mentor
@@ -91,11 +91,11 @@ en:
     name: Army of Two
     text: When the team left, one of two designers who shipped a major Craft of Survival update
     where: Craft of Survival · 2023
-  - icon: grid
+  - icon: flag
     tier: silver
-    name: Data Miner
-    text: Wrote a C++ loot parser that exports ~3,000 spawners to CSV
-    where: PIONER
+    name: Solo Release
+    text: Built Tiny Dozzer on my own and released it on Google Play in about a month
+    where: Tiny Dozzer · 2021
   - icon: scales
     tier: silver
     name: Balancer
@@ -284,8 +284,8 @@ ru:
   - icon: tool
     tier: gold
     name: Инструментальщик
-    text: Написал инструменты для заведения контента, и работа пошла в 10 раз быстрее
-    where: The Braves · 101XP
+    text: Написал инструменты для ускорения рутинной работы
+    where: The Braves · PIONER
   - icon: cap
     tier: gold
     name: Наставник
@@ -296,11 +296,11 @@ ru:
     name: Army of Two
     text: Когда команда ушла, вдвоём с коллегой доделали и выпустили крупное обновление Craft of Survival
     where: Craft of Survival · 2023
-  - icon: grid
+  - icon: flag
     tier: silver
-    name: Дата-майнер
-    text: Написал C++-парсер, который выгружает в CSV около 3 000 спавнеров лута
-    where: PIONER
+    name: Соло-релиз
+    text: Сам примерно за месяц сделал Tiny Dozzer и выпустил его в Google Play
+    where: Tiny Dozzer · 2021
   - icon: scales
     tier: silver
     name: Балансер
