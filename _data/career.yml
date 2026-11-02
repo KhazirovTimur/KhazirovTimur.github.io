@@ -26,7 +26,7 @@
 
 - company: 101XP
   projects: []
-  role:   { en: "QA Specialist (part-time while studying)", ru: "QA-специалист (подработка во время учёбы)" }
+  role:   { en: "QA Specialist", ru: "QA-специалист" }
   period: { en: "May 2021 — Dec 2022", ru: "Май 2021 — декабрь 2022" }
   text:
     en: "A part-time role while finishing university, on a PvP tower defense game in the spirit of Random Dice, where I got used to working in a team with a short update cycle. The team was small, about 15 people, so I also took on my first project-coordination role: checking task readiness with programmers, running builds and publishing them. After graduating I moved to another project at the same studio and started my move into game design."
