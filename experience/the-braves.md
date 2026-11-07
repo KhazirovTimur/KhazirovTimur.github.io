@@ -59,13 +59,13 @@ I wrote design specs for and owned a large number of mechanics. Most of them are
 
 ## Working with analytics
 
-The project had a dedicated analyst and a large set of dashboards in Looker Studio. The project owner made checking analytics every day part of every game designer’s job, and each day I followed:
+The project had a dedicated analyst and a large set of dashboards in Looker Studio, so you could look up almost anything. The project owner made checking analytics every day part of every game designer’s job. Day to day I mostly watched:
 
 - D1/D7/D30 retention and DAU/WAU/MAU;
 - ARPU, ARPPU and payer conversion;
 - which bundles sold, where paying players came from, and what different cohorts bought;
 - hero and gear popularity and win rates.
 
-We relied on this data when discussing new content, mechanics, shop bundles, enemy difficulty and rewards. When a slice I needed was missing, I requested it from the analyst through a Jira task.
+Other metrics I pulled up as needed for a specific task. We relied on this data when discussing new content, mechanics, shop bundles, enemy difficulty and rewards. When a slice I needed was missing, I requested it from the analyst through a Jira task.
 
 **The event currency case.** During events a shop opened where items were sold for event currency, which players earned on regular levels. For the next event both prices and earnings were raised tenfold: roughly, a player earned 100 coins instead of 10, and an item cost 1,000 instead of 100. In practice nothing changed, but players mostly noticed the higher prices. Reviews turned negative, and analytics showed lower engagement with the event. We took this into account for later events: prices still changed for variety, but never that sharply.
