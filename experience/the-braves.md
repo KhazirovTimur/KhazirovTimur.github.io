@@ -23,7 +23,7 @@ links:
 highlights:
   - { value: "×10", label: "faster content integration with my tool" }
   - { value: "25+", label: "specs written for artists and programmers" }
-stack: [Unity, "C#", ScriptableObjects, Google Sheets, Jira, Confluence, Git]
+stack: [Unity, "C#", ScriptableObjects, Google Sheets, Looker Studio, Jira, Confluence, Git]
 permalink: /experience/the-braves/
 ---
 
@@ -56,3 +56,16 @@ I wrote design specs for and owned a large number of mechanics. Most of them are
 - Set up new content: heroes, gear, abilities, monsters and more.
 - Seasonal events such as Halloween or New Year brought a seasonal gacha with limited heroes, skins and weapons. I calculated the drop rates and set them up in the game.
 - Tuned enemy difficulty and level completion rewards.
+
+## Working with analytics
+
+The project had a dedicated analyst and a large set of dashboards in Looker Studio. The project owner made checking analytics every day part of every game designer’s job, and each day I followed:
+
+- D1/D7/D30 retention and DAU/WAU/MAU;
+- ARPU, ARPPU and payer conversion;
+- which bundles sold, where paying players came from, and what different cohorts bought;
+- hero and gear popularity and win rates.
+
+We relied on this data when discussing new content, mechanics, shop bundles, enemy difficulty and rewards. When a slice I needed was missing, I requested it from the analyst through a Jira task.
+
+**The event currency case.** During events a shop opened where items were sold for event currency, which players earned on regular levels. For the next event both prices and earnings were raised tenfold: roughly, a player earned 100 coins instead of 10, and an item cost 1,000 instead of 100. In practice nothing changed, but players mostly noticed the higher prices. Reviews turned negative, and analytics showed lower engagement with the event. We took this into account for later events: prices still changed for variety, but never that sharply.
