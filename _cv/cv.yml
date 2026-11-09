@@ -118,9 +118,9 @@ jobs:
   qa:
     bullets:
       en:
-        - "A Random Dice-style PvP tower defense with a short update cycle; in a ~15-person team also coordinated task readiness with programmers and ran and published builds."
+        - "A Random Dice-style PvP tower defense with a short update cycle; in a ~15-person team also coordinated task readiness with programmers and ran and published builds. From December 2022 I worked full-time as a game designer; my official title changed to Technical Game Designer only in February 2024."
       ru:
-        - "PvP tower defense в духе Random Dice с коротким циклом обновлений; в команде из ~15 человек также собирал статус задач у программистов, запускал и публиковал билды."
+        - "PvP tower defense в духе Random Dice с коротким циклом обновлений; в команде из ~15 человек также собирал статус задач у программистов, запускал и публиковал билды. С декабря 2022 года работал уже только геймдизайнером, хотя официально должность сменили на «технический геймдизайнер» лишь в феврале 2024-го."
 
 personal_projects:
   - name: { en: "Unreal Engine Helicopter Prototype", ru: "Прототип вертолёта на Unreal Engine" }
